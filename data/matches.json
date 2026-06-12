@@ -1,7 +1,7 @@
 {
   "_meta": {
     "source": "football-data.org",
-    "updated_at": "2026-06-12T19:32:45.055Z"
+    "updated_at": "2026-06-12T20:13:03.994Z"
   },
   "matches": [
     {
@@ -102,8 +102,8 @@
       "score": {
         "home": 0,
         "away": 1,
-        "halftime_home": null,
-        "halftime_away": null
+        "halftime_home": 0,
+        "halftime_away": 1
       },
       "scorers": [],
       "broadcast_mx": [],
@@ -306,7 +306,7 @@
         "id": 9460,
         "name": "Curaçao",
         "short_name": "Curaçao",
-        "tla": "CUW",
+        "tla": "CUR",
         "crest": "https://crests.football-data.org/curacao.svg"
       },
       "score": {
@@ -359,7 +359,7 @@
       "matchday": 1,
       "stage": "GROUP_STAGE",
       "group": "GROUP_E",
-      "status": "TIMED",
+      "status": "SCHEDULED",
       "utc_date": "2026-06-14T23:00:00Z",
       "local_date": null,
       "minute": null,
@@ -1216,7 +1216,7 @@
         "id": 9460,
         "name": "Curaçao",
         "short_name": "Curaçao",
-        "tla": "CUW",
+        "tla": "CUR",
         "crest": "https://crests.football-data.org/curacao.svg"
       },
       "score": {
@@ -1944,7 +1944,7 @@
         "id": 9460,
         "name": "Curaçao",
         "short_name": "Curaçao",
-        "tla": "CUW",
+        "tla": "CUR",
         "crest": "https://crests.football-data.org/curacao.svg"
       },
       "away_team": {
