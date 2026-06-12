@@ -1,0 +1,118 @@
+{
+  "_meta": {
+    "source": "football-data.org v4 /competitions/WC/matches",
+    "updated_at": "2026-06-11T18:00:00Z",
+    "note": "Generado por script en servidor. broadcast_mx es manual, no viene de la API."
+  },
+  "matches": [
+    {
+      "id": 537851,
+      "matchday": 1,
+      "stage": "GROUP_STAGE",
+      "group": "Group A",
+      "status": "SCHEDULED",
+      "utc_date": "2026-06-11T19:00:00Z",
+      "local_date": "2026-06-11T13:00:00",
+      "minute": null,
+      "venue": "Estadio Azteca",
+      "city": "CDMX",
+      "home_team": {
+        "id": 2274,
+        "name": "Mexico",
+        "short_name": "MEX",
+        "tla": "MEX",
+        "crest": "https://crests.football-data.org/2274.png"
+      },
+      "away_team": {
+        "id": null,
+        "name": "Por definir",
+        "short_name": "A2",
+        "tla": "A2",
+        "crest": null
+      },
+      "score": {
+        "home": null,
+        "away": null,
+        "halftime_home": null,
+        "halftime_away": null
+      },
+      "scorers": [],
+      "broadcast_mx": ["TUDN", "AZTECA7", "VIX"],
+      "is_inaugural": true
+    },
+    {
+      "id": 537852,
+      "matchday": 2,
+      "stage": "GROUP_STAGE",
+      "group": "Group A",
+      "status": "IN_PLAY",
+      "utc_date": "2026-06-12T18:00:00Z",
+      "local_date": "2026-06-12T12:00:00",
+      "minute": 65,
+      "venue": "Estadio BBVA",
+      "city": "Monterrey",
+      "home_team": {
+        "id": 2274,
+        "name": "Mexico",
+        "short_name": "MEX",
+        "tla": "MEX",
+        "crest": "https://crests.football-data.org/2274.png"
+      },
+      "away_team": {
+        "id": 2257,
+        "name": "Colombia",
+        "short_name": "COL",
+        "tla": "COL",
+        "crest": "https://crests.football-data.org/2257.png"
+      },
+      "score": {
+        "home": 2,
+        "away": 1,
+        "halftime_home": 1,
+        "halftime_away": 1
+      },
+      "scorers": [
+        { "team": "home", "player": "Jiménez", "minute": 14 },
+        { "team": "home", "player": "Lozano", "minute": 42 },
+        { "team": "away", "player": "Díaz", "minute": 28 }
+      ],
+      "broadcast_mx": ["VIX"],
+      "is_inaugural": false
+    },
+    {
+      "id": 537853,
+      "matchday": 2,
+      "stage": "GROUP_STAGE",
+      "group": "Group D",
+      "status": "FINISHED",
+      "utc_date": "2026-06-12T15:00:00Z",
+      "local_date": "2026-06-12T09:00:00",
+      "minute": null,
+      "venue": "Mercedes-Benz Stadium",
+      "city": "Atlanta",
+      "home_team": {
+        "id": 773,
+        "name": "France",
+        "short_name": "FRA",
+        "tla": "FRA",
+        "crest": "https://crests.football-data.org/773.png"
+      },
+      "away_team": {
+        "id": 1118,
+        "name": "England",
+        "short_name": "ENG",
+        "tla": "ENG",
+        "crest": "https://crests.football-data.org/770.png"
+      },
+      "score": {
+        "home": 3,
+        "away": 1,
+        "halftime_home": 1,
+        "halftime_away": 0
+      },
+      "scorers": [],
+      "broadcast_mx": ["VIX", "TUDN"],
+      "is_inaugural": false
+    }
+  ]
+}

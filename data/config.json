@@ -1,0 +1,39 @@
+{
+  "_meta": {
+    "note": "Datos relativamente estaticos: equipos por grupo, sedes, logos de canales TV. Se actualiza manualmente o pocas veces."
+  },
+  "groups_teams": {
+    "Group A": ["Mexico", "Argentina", "Poland", "Saudi Arabia"],
+    "Group B": ["England", "Senegal", "France", "Wales"],
+    "Group C": ["Argentina", "Poland", "Saudi Arabia", "Mexico"],
+    "Group D": ["France", "Australia", "Denmark", "Tunisia"]
+  },
+  "broadcast_channels": {
+    "VIX": {
+      "name": "ViX",
+      "color": "#FF0000",
+      "bg": "#ffffff",
+      "note": "Transmitira los 104 partidos del Mundial",
+      "logo": "vix.svg"
+    },
+    "TUDN": {
+      "name": "TUDN / Televisa",
+      "color": "#FF0000",
+      "bg": "#ffffff",
+      "note": "Cobertura selectiva, confirmar por partido",
+      "logo": "tudn.svg"
+    },
+    "AZTECA7": {
+      "name": "TV Azteca (Canal 7)",
+      "color": "#00A5E0",
+      "bg": "#ffffff",
+      "note": "Cobertura selectiva, confirmar por partido",
+      "logo": "azteca.svg"
+    }
+  },
+  "host_cities": [
+    "CDMX", "Monterrey", "Guadalajara",
+    "Los Angeles", "New York/New Jersey", "Atlanta", "Dallas", "Houston", "Kansas City", "Miami", "Philadelphia", "San Francisco Bay Area", "Seattle", "Boston",
+    "Toronto", "Vancouver"
+  ]
+}

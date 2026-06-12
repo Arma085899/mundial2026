@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html class="dark" lang="es-MX">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>MEXICO 2026 - Fase de Grupos</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Anybody:wght@400;700;800&family=Hanken+Grotesk:wght@400;500;700&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="./assets/css/theme.css" rel="stylesheet"/>
+<script src="./assets/js/data.js"></script>
+<script>tailwind.config = window.WC26_TAILWIND_CONFIG;</script>
+</head>
+<body class="bg-background text-on-surface font-body-md min-h-screen pb-24 md:pb-0">
+
+<header id="wc26-topnav" class="hidden md:flex w-full top-0 sticky bg-surface-container-high z-50"></header>
+
+<header class="md:hidden w-full top-0 sticky z-50 bg-surface-dim/90 backdrop-blur-md border-b border-surface-container py-md px-margin-mobile flex justify-between items-center">
+    <span class="font-headline-lg-mobile text-headline-lg-mobile text-secondary tracking-tight">MEXICO 2026</span>
+</header>
+
+<main class="max-w-screen-2xl mx-auto px-margin-mobile md:px-margin-desktop py-lg md:py-xl">
+    <div class="mb-xl">
+        <h1 class="font-headline-xl text-headline-xl hidden md:block">Fase de Grupos</h1>
+        <h1 class="font-headline-lg-mobile text-headline-lg-mobile md:hidden">Fase de Grupos</h1>
+        <p class="font-body-lg text-body-lg text-on-surface-variant">Tabla de posiciones y escenarios de clasificación.</p>
+    </div>
+
+    <div id="groups-grid" class="grid grid-cols-1 lg:grid-cols-2 gap-gutter md:gap-lg">
+        <div class="skeleton h-64 rounded-lg"></div>
+        <div class="skeleton h-64 rounded-lg"></div>
+        <div class="skeleton h-64 rounded-lg"></div>
+        <div class="skeleton h-64 rounded-lg"></div>
+    </div>
+</main>
+
+<nav id="wc26-bottomnav"></nav>
+
+<script src="./assets/js/nav.js" data-active="grupos"></script>
+<script>
+(async function () {
+    const data = await WC26.getStandings();
+    const gridEl = document.getElementById("groups-grid");
+
+    if (!data || !data.groups || !data.groups.length) {
+        gridEl.innerHTML = `<div class="lg:col-span-2 bg-surface-container rounded-lg p-lg text-center text-on-surface-variant">
+            Tablas de grupos no disponibles aún.
+        </div>`;
+        return;
+    }
+
+    // Sort groups alphabetically by name (Group A, Group B, ...)
+    const groups = [...data.groups].sort((a, b) => a.group.localeCompare(b.group));
+
+    gridEl.innerHTML = groups.map(renderGroup).join("");
+
+    function renderGroup(group) {
+        const rows = group.standings.map(s => {
+            const qualBorder = s.qualified
+                ? `<div class="absolute left-0 top-0 bottom-0 w-[2px] bg-secondary"></div>`
+                : "";
+            const ptsClass = s.qualified ? "text-secondary" : "";
+            return `
+            <tr class="border-b border-outline-variant/50 relative">
+                <td class="py-md px-xs text-center">
+                    ${qualBorder}
+                    ${s.position}
+                </td>
+                <td class="py-md px-xs flex items-center gap-xs">
+                    ${WC26.crestImg(s.team, "w-5 h-5 rounded-sm")}
+                    <span>${s.team.name}</span>
+                </td>
+                <td class="py-md px-xs text-center text-on-surface-variant">${s.played}</td>
+                <td class="py-md px-xs text-center text-on-surface-variant">${s.goal_difference > 0 ? '+' : ''}${s.goal_difference}</td>
+                <td class="py-md px-xs text-center ${ptsClass}">${s.points}</td>
+            </tr>`;
+        }).join("");
+
+        const groupLabel = group.group.replace("Group ", "Grupo ");
+
+        return `
+        <div class="bg-surface-container rounded-lg p-md md:p-lg flex flex-col">
+            <div class="flex justify-between items-center mb-md">
+                <h2 class="font-headline-lg-mobile text-headline-lg-mobile md:font-headline-lg md:text-headline-lg">${groupLabel}</h2>
+                <span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-widest">Jornada ${group.matchday ?? "-"}</span>
+            </div>
+            <div class="overflow-x-auto no-scrollbar w-full">
+                <table class="w-full text-left border-collapse min-w-[300px]">
+                    <thead>
+                        <tr class="border-b border-outline-variant font-label-sm text-label-sm text-on-surface-variant uppercase">
+                            <th class="py-sm px-xs font-medium w-8 text-center">POS</th>
+                            <th class="py-sm px-xs font-medium">EQUIPO</th>
+                            <th class="py-sm px-xs font-medium text-center w-8">PJ</th>
+                            <th class="py-sm px-xs font-medium text-center w-8">DG</th>
+                            <th class="py-sm px-xs font-medium text-center w-12">PTS</th>
+                        </tr>
+                    </thead>
+                    <tbody class="font-label-bold text-label-bold">
+                        ${rows}
+                    </tbody>
+                </table>
+            </div>
+        </div>`;
+    }
+})();
+</script>
+</body>
+</html>

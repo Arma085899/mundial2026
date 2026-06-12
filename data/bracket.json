@@ -1,0 +1,78 @@
+{
+  "_meta": {
+    "source": "football-data.org v4 /competitions/WC/matches?stage=...",
+    "updated_at": "2026-06-11T18:00:00Z",
+    "note": "Round of 32 puede venir con placeholders (ej. '1A' = primero de Grupo A) hasta que se definan los cruces reales."
+  },
+  "stages": [
+    {
+      "stage": "ROUND_OF_32",
+      "label": "Ronda de 32",
+      "matches": [
+        {
+          "id": 537901,
+          "slot": "R32-1",
+          "utc_date": "2026-06-29T18:00:00Z",
+          "venue": "Estadio Azteca",
+          "city": "CDMX",
+          "status": "SCHEDULED",
+          "home": { "placeholder": "1A", "team": null },
+          "away": { "placeholder": "2C", "team": null },
+          "score": { "home": null, "away": null },
+          "broadcast_mx": ["VIX"]
+        }
+      ]
+    },
+    {
+      "stage": "ROUND_OF_16",
+      "label": "Octavos de Final",
+      "matches": [
+        {
+          "id": 537933,
+          "slot": "R16-1",
+          "utc_date": "2026-07-04T18:00:00Z",
+          "venue": "SoFi Stadium",
+          "city": "Los Angeles",
+          "status": "SCHEDULED",
+          "home": { "placeholder": "Ganador R32-1", "team": null },
+          "away": { "placeholder": "Ganador R32-2", "team": null },
+          "score": { "home": null, "away": null },
+          "broadcast_mx": ["VIX"]
+        }
+      ]
+    },
+    {
+      "stage": "QUARTER_FINALS",
+      "label": "Cuartos de Final",
+      "matches": []
+    },
+    {
+      "stage": "SEMI_FINALS",
+      "label": "Semifinales",
+      "matches": []
+    },
+    {
+      "stage": "THIRD_PLACE",
+      "label": "Tercer Lugar",
+      "matches": []
+    },
+    {
+      "stage": "FINAL",
+      "label": "Final",
+      "matches": [
+        {
+          "id": 537999,
+          "slot": "FINAL",
+          "utc_date": "2026-07-19T18:00:00Z",
+          "venue": "MetLife Stadium",
+          "city": "New York/New Jersey",
+          "status": "SCHEDULED",
+          "home": { "placeholder": "Ganador SF1", "team": null },
+          "away": { "placeholder": "Ganador SF2", "team": null },
+          "score": { "home": null, "away": null },
+          "broadcast_mx": ["VIX", "TUDN", "AZTECA7"]
+        }
+      ]
+    }
+  ]
+}

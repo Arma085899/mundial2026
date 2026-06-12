@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html class="dark" lang="es-MX">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>MEXICO 2026 - Eliminatorias</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Anybody:wght@400;700;800&family=Hanken+Grotesk:wght@400;500;700&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="./assets/css/theme.css" rel="stylesheet"/>
+<script src="./assets/js/data.js"></script>
+<script>tailwind.config = window.WC26_TAILWIND_CONFIG;</script>
+<style>
+    .bracket-scroll { overflow-x: auto; }
+    .bracket-track { display: flex; gap: 24px; min-width: max-content; padding-bottom: 8px; }
+    .bracket-col { display: flex; flex-direction: column; justify-content: center; gap: 16px; min-width: 240px; }
+</style>
+</head>
+<body class="bg-background text-on-surface font-body-md min-h-screen pb-24 md:pb-0">
+
+<header id="wc26-topnav" class="hidden md:flex w-full top-0 sticky bg-surface-container-high z-50"></header>
+
+<header class="md:hidden w-full top-0 sticky z-50 bg-surface-dim/90 backdrop-blur-md border-b border-surface-container py-md px-margin-mobile flex justify-between items-center">
+    <span class="font-headline-lg-mobile text-headline-lg-mobile text-secondary tracking-tight">MEXICO 2026</span>
+</header>
+
+<main class="max-w-screen-2xl mx-auto px-margin-mobile md:px-margin-desktop py-lg md:py-xl">
+    <div class="mb-xl">
+        <h1 class="font-headline-xl text-headline-xl hidden md:block">Eliminatorias</h1>
+        <h1 class="font-headline-lg-mobile text-headline-lg-mobile md:hidden">Eliminatorias</h1>
+        <p class="font-body-lg text-body-lg text-on-surface-variant">El camino al título, ronda por ronda.</p>
+    </div>
+
+    <div id="bracket-container" class="bracket-scroll no-scrollbar">
+        <div class="bracket-track">
+            <div class="skeleton h-96 w-60 rounded-lg"></div>
+            <div class="skeleton h-96 w-60 rounded-lg"></div>
+            <div class="skeleton h-96 w-60 rounded-lg"></div>
+        </div>
+    </div>
+</main>
+
+<nav id="wc26-bottomnav"></nav>
+
+<script src="./assets/js/nav.js" data-active="bracket"></script>
+<script>
+(async function () {
+    const data = await WC26.getBracket();
+    const container = document.getElementById("bracket-container");
+
+    if (!data || !data.stages || !data.stages.length) {
+        container.innerHTML = `<div class="bg-surface-container rounded-lg p-lg text-center text-on-surface-variant">
+            Bracket de eliminatorias no disponible aún.
+        </div>`;
+        return;
+    }
+
+    // Filter out empty stages (not yet populated)
+    const stages = data.stages.filter(s => s.matches && s.matches.length);
+
+    if (!stages.length) {
+        container.innerHTML = `<div class="bg-surface-container rounded-lg p-lg text-center text-on-surface-variant">
+            El bracket se irá llenando conforme avance la fase de grupos.
+        </div>`;
+        return;
+    }
+
+    container.innerHTML = `<div class="bracket-track">${stages.map(renderStage).join("")}</div>`;
+
+    function renderStage(stage) {
+        return `
+        <div class="bracket-col">
+            <h2 class="font-headline-lg-mobile text-headline-lg-mobile md:font-headline-lg md:text-headline-lg text-center mb-sm">${stage.label}</h2>
+            ${stage.matches.map(renderMatch).join("")}
+        </div>`;
+    }
+
+    function teamSideLabel(side) {
+        if (side.team) return WC26.teamLabel(side.team);
+        return side.placeholder || "Por definir";
+    }
+
+    function teamSideCrest(side) {
+        if (side.team && side.team.crest) {
+            return WC26.crestImg(side.team, "w-8 h-8");
+        }
+        return `<div class="w-8 h-8 rounded-full bg-surface-variant border border-outline-variant border-dashed flex items-center justify-center font-label-sm text-label-sm text-on-surface-variant">${side.team ? WC26.teamShort(side.team) : "?"}</div>`;
+    }
+
+    function renderMatch(match) {
+        const info = WC26.statusInfo({ status: match.status, utc_date: match.utc_date, minute: match.minute });
+        const live = match.status === "IN_PLAY" || match.status === "PAUSED";
+        const venueLabel = [match.venue, match.city].filter(Boolean).join(", ");
+        const homeDefined = !!match.home.team;
+        const awayDefined = !!match.away.team;
+
+        const score = (match.score.home != null && match.score.away != null)
+            ? `${match.score.home} - ${match.score.away}`
+            : null;
+
+        const cardCls = live ? "border-secondary/40 glow-live" : "border-outline-variant/30";
+        const linkOpen = (match.status !== "SCHEDULED" || homeDefined) ? `<a href="partido.html?id=${match.id}" class="block">` : `<div>`;
+        const linkClose = (match.status !== "SCHEDULED" || homeDefined) ? `</a>` : `</div>`;
+
+        return `
+        ${linkOpen}
+        <div class="bg-surface-container rounded-lg p-md border ${cardCls} transition-colors hover:border-outline-variant flex flex-col gap-xs">
+            <div class="flex justify-between items-center mb-xs">
+                <span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-widest">${venueLabel || ""}</span>
+                <span class="px-2 py-0.5 rounded-sm uppercase tracking-wider font-label-bold text-[10px] ${info.badge}">${info.label}</span>
+            </div>
+            <div class="flex items-center justify-between gap-sm">
+                <div class="flex items-center gap-xs flex-1 ${homeDefined ? '' : 'text-on-surface-variant'}">
+                    ${teamSideCrest(match.home)}
+                    <span class="font-label-bold text-label-bold truncate">${teamSideLabel(match.home)}</span>
+                </div>
+                <span class="font-headline-lg-mobile text-headline-lg-mobile font-bold">${score ?? (homeDefined && awayDefined ? "VS" : "")}</span>
+            </div>
+            <div class="flex items-center justify-between gap-sm">
+                <div class="flex items-center gap-xs flex-1 ${awayDefined ? '' : 'text-on-surface-variant'}">
+                    ${teamSideCrest(match.away)}
+                    <span class="font-label-bold text-label-bold truncate">${teamSideLabel(match.away)}</span>
+                </div>
+            </div>
+            ${match.broadcast_mx && match.broadcast_mx.length ? `<div class="flex gap-xs flex-wrap pt-xs border-t border-outline-variant/30 mt-xs">${WC26.broadcastChips(match.broadcast_mx)}</div>` : ""}
+        </div>
+        ${linkClose}`;
+    }
+})();
+</script>
+</body>
+</html>

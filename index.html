@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html class="dark" lang="es-MX">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>MEXICO 2026 - Resultados en Vivo</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Anybody:wght@400;700;800&family=Hanken+Grotesk:wght@400;500;700&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="./assets/css/theme.css" rel="stylesheet"/>
+<script src="./assets/js/data.js"></script>
+<script>tailwind.config = window.WC26_TAILWIND_CONFIG;</script>
+</head>
+<body class="bg-background text-on-surface font-body-md min-h-screen pb-24 md:pb-0">
+
+<!-- TopAppBar (Web) -->
+<header id="wc26-topnav" class="hidden md:flex w-full top-0 sticky bg-surface-container-high z-50"></header>
+
+<!-- Header (Mobile) -->
+<header class="md:hidden w-full top-0 sticky z-50 bg-surface-dim/90 backdrop-blur-md border-b border-surface-container py-md px-margin-mobile flex justify-between items-center">
+    <span class="font-headline-lg-mobile text-headline-lg-mobile text-secondary tracking-tight">MEXICO 2026</span>
+    <span id="wc26-live-indicator-mobile" class="hidden items-center gap-xs font-label-sm text-label-sm text-secondary uppercase tracking-widest">
+        <span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span> En vivo
+    </span>
+</header>
+
+<!-- Main Content Canvas -->
+<main class="max-w-screen-2xl mx-auto px-margin-mobile md:px-margin-desktop py-lg md:py-xl">
+
+    <div class="mb-xl">
+        <h1 class="font-headline-xl text-headline-xl hidden md:block">Resultados del Día</h1>
+        <h1 class="font-headline-lg-mobile text-headline-lg-mobile md:hidden">Resultados del Día</h1>
+        <p class="font-body-lg text-body-lg text-on-surface-variant mt-xs" id="today-subtitle">Cargando partidos de hoy…</p>
+    </div>
+
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-gutter md:gap-lg">
+
+        <!-- Results / Live Matches Column -->
+        <section class="lg:col-span-2 flex flex-col gap-gutter">
+
+            <div class="flex justify-between items-end mb-sm border-b border-outline-variant/30 pb-sm">
+                <h2 class="font-headline-lg text-headline-lg hidden md:block">Partidos de Hoy</h2>
+                <h2 class="font-headline-lg-mobile text-headline-lg-mobile md:hidden">Partidos de Hoy</h2>
+                <a class="font-label-sm text-label-sm text-primary hover:underline flex items-center" href="calendario.html">
+                    Ver calendario completo <span class="material-symbols-outlined text-[16px]">chevron_right</span>
+                </a>
+            </div>
+
+            <div id="matches-list" class="flex flex-col gap-gutter">
+                <!-- Skeleton loaders -->
+                <div class="skeleton h-24 rounded-lg"></div>
+                <div class="skeleton h-24 rounded-lg"></div>
+                <div class="skeleton h-24 rounded-lg"></div>
+            </div>
+
+        </section>
+
+        <!-- Group Standings Preview -->
+        <section class="lg:col-span-1">
+            <div class="flex justify-between items-end mb-gutter border-b border-outline-variant/30 pb-sm">
+                <h2 class="font-headline-lg text-headline-lg hidden md:block">Grupo de México</h2>
+                <h2 class="font-headline-lg-mobile text-headline-lg-mobile md:hidden">Grupo de México</h2>
+                <a class="font-label-sm text-label-sm text-primary hover:underline flex items-center" href="grupos.html">
+                    Ver todos <span class="material-symbols-outlined text-[16px]">chevron_right</span>
+                </a>
+            </div>
+
+            <div id="standings-preview" class="bg-surface-container rounded-lg overflow-hidden border border-outline-variant/30">
+                <div class="skeleton h-48 w-full"></div>
+            </div>
+        </section>
+
+    </div>
+</main>
+
+<!-- BottomNavBar (Mobile) -->
+<nav id="wc26-bottomnav"></nav>
+
+<script src="./assets/js/nav.js" data-active="inicio"></script>
+<script>
+(async function () {
+    const [matchesData, standingsData] = await Promise.all([
+        WC26.getMatches(),
+        WC26.getStandings()
+    ]);
+
+    const subtitleEl = document.getElementById("today-subtitle");
+    const listEl = document.getElementById("matches-list");
+    const liveIndicatorDesktop = document.getElementById("wc26-live-indicator");
+    const liveIndicatorMobile = document.getElementById("wc26-live-indicator-mobile");
+
+    if (!matchesData) {
+        listEl.innerHTML = `<div class="bg-surface-container rounded-lg p-lg text-center text-on-surface-variant">
+            No se pudieron cargar los partidos. Intenta de nuevo más tarde.
+        </div>`;
+        subtitleEl.textContent = "Sin datos disponibles.";
+        return;
+    }
+
+    const allMatches = matchesData.matches || [];
+
+    // Determine "today" in Mexico City time
+    const todayKey = new Date().toLocaleDateString("en-CA", { timeZone: "America/Mexico_City" });
+    const grouped = WC26.groupByDate(allMatches);
+    let todaysMatches = grouped[todayKey] || [];
+
+    // Fallback: if nothing today, show the next upcoming match day
+    let usedFallback = false;
+    if (todaysMatches.length === 0) {
+        const futureDates = Object.keys(grouped)
+            .filter(k => k >= todayKey)
+            .sort();
+        if (futureDates.length > 0) {
+            todaysMatches = grouped[futureDates[0]];
+            usedFallback = true;
+            subtitleEl.textContent = `No hay partidos hoy. Próximos: ${WC26.formatDateHeading(futureDates[0])}`;
+        } else {
+            const pastDates = Object.keys(grouped).sort().reverse();
+            if (pastDates.length > 0) {
+                todaysMatches = grouped[pastDates[0]];
+                usedFallback = true;
+                subtitleEl.textContent = `Últimos resultados: ${WC26.formatDateHeading(pastDates[0])}`;
+            }
+        }
+    } else {
+        const dateStr = new Date().toLocaleDateString("es-MX", { weekday: "long", day: "numeric", month: "long", timeZone: "America/Mexico_City" });
+        subtitleEl.textContent = dateStr.charAt(0).toUpperCase() + dateStr.slice(1);
+    }
+
+    // Sort: live first, then scheduled by time, then finished
+    const statusOrder = { IN_PLAY: 0, PAUSED: 0, SCHEDULED: 1, TIMED: 1, FINISHED: 2, POSTPONED: 3, SUSPENDED: 3, CANCELLED: 4 };
+    todaysMatches = [...todaysMatches].sort((a, b) => {
+        const sa = statusOrder[a.status] ?? 5;
+        const sb = statusOrder[b.status] ?? 5;
+        if (sa !== sb) return sa - sb;
+        return new Date(a.utc_date) - new Date(b.utc_date);
+    });
+
+    const anyLive = allMatches.some(m => WC26.isLive(m));
+    if (anyLive) {
+        liveIndicatorDesktop.classList.remove("hidden");
+        liveIndicatorDesktop.classList.add("flex");
+        liveIndicatorMobile.classList.remove("hidden");
+        liveIndicatorMobile.classList.add("flex");
+    }
+
+    if (todaysMatches.length === 0) {
+        listEl.innerHTML = `<div class="bg-surface-container rounded-lg p-lg text-center text-on-surface-variant">
+            Aún no hay partidos programados.
+        </div>`;
+    } else {
+        listEl.innerHTML = todaysMatches.map(renderMatchCard).join("");
+    }
+
+    // Standings preview: prioritize Mexico's group, fallback to first group
+    if (standingsData && standingsData.groups && standingsData.groups.length) {
+        let group = standingsData.groups.find(g =>
+            g.standings.some(s => /mexico/i.test(s.team.name))
+        ) || standingsData.groups[0];
+
+        renderStandingsPreview(group);
+    } else {
+        document.getElementById("standings-preview").innerHTML = `
+            <div class="p-lg text-center text-on-surface-variant font-body-md text-body-md">
+                Tabla no disponible.
+            </div>`;
+    }
+
+    function renderMatchCard(match) {
+        const info = WC26.statusInfo(match);
+        const live = WC26.isLive(match);
+        const home = match.home_team;
+        const away = match.away_team;
+        const cardGlow = live ? "border-secondary/40 glow-live" : "border-transparent hover:border-outline-variant";
+
+        return `
+        <a href="partido.html?id=${match.id}" class="bg-surface-container rounded-lg p-md flex items-center justify-between border ${cardGlow} transition-colors group">
+            <div class="flex items-center gap-md flex-1">
+                <span class="font-label-sm text-label-sm ${live ? 'text-secondary' : 'text-on-surface-variant'} w-16 ${live ? '' : 'text-right'} ${live ? '' : ''}">
+                    <span class="px-2 py-0.5 rounded-sm uppercase tracking-wider font-label-bold text-[10px] ${info.badge}">${info.label}</span>
+                </span>
+                <div class="flex items-center gap-sm flex-1 justify-end">
+                    <span class="font-label-bold text-label-bold text-on-surface">${WC26.teamShort(home)}</span>
+                    ${WC26.crestImg(home, "w-8 h-8")}
+                </div>
+            </div>
+            <div class="px-lg font-headline-lg-mobile text-headline-lg-mobile font-bold bg-surface-container-highest rounded mx-md group-hover:bg-primary-container group-hover:text-on-primary-container transition-colors text-center min-w-[80px]">
+                ${WC26.formatScore(match)}
+            </div>
+            <div class="flex items-center gap-md flex-1">
+                <div class="flex items-center gap-sm flex-1 justify-start">
+                    ${WC26.crestImg(away, "w-8 h-8")}
+                    <span class="font-label-bold text-label-bold text-on-surface">${WC26.teamShort(away)}</span>
+                </div>
+                <div class="hidden sm:flex items-center gap-xs flex-wrap justify-end">
+                    ${WC26.broadcastChips(match.broadcast_mx)}
+                </div>
+            </div>
+        </a>`;
+    }
+
+    function renderStandingsPreview(group) {
+        const rows = group.standings.map(s => {
+            const qualBorder = s.qualified
+                ? `<td class="absolute left-0 top-0 bottom-0 w-[3px] bg-secondary"></td>`
+                : "";
+            const ptsClass = s.qualified ? "text-secondary" : "";
+            return `
+            <tr class="border-b border-outline-variant/20 relative">
+                ${qualBorder}
+                <td class="p-sm text-center ${s.qualified ? '' : 'text-on-surface-variant'}">${s.position}</td>
+                <td class="p-sm flex items-center gap-xs">
+                    ${WC26.crestImg(s.team, "w-5 h-5 rounded-sm")}
+                    <span class="font-label-bold text-label-bold">${s.team.tla}</span>
+                </td>
+                <td class="p-sm text-center text-on-surface-variant font-body-md text-body-md">${s.played}</td>
+                <td class="p-sm text-center text-on-surface-variant font-body-md text-body-md">${s.goal_difference > 0 ? '+' : ''}${s.goal_difference}</td>
+                <td class="p-sm text-center font-label-bold text-label-bold ${ptsClass}">${s.points}</td>
+            </tr>`;
+        }).join("");
+
+        document.getElementById("standings-preview").innerHTML = `
+        <table class="w-full text-left border-collapse">
+            <thead>
+                <tr class="bg-surface-container-highest font-label-sm text-label-sm text-on-surface-variant border-b border-outline-variant/50">
+                    <th class="p-sm font-medium w-8 text-center">#</th>
+                    <th class="p-sm font-medium">${group.group}</th>
+                    <th class="p-sm font-medium text-center">PJ</th>
+                    <th class="p-sm font-medium text-center">DG</th>
+                    <th class="p-sm font-medium text-center text-on-surface font-bold">PTS</th>
+                </tr>
+            </thead>
+            <tbody class="font-label-bold text-label-bold">
+                ${rows}
+            </tbody>
+        </table>`;
+    }
+})();
+</script>
+</body>
+</html>

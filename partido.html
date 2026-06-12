@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html class="dark" lang="es-MX">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>MEXICO 2026 - Detalle del Partido</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Anybody:wght@400;700;800&family=Hanken+Grotesk:wght@400;500;700&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="./assets/css/theme.css" rel="stylesheet"/>
+<script src="./assets/js/data.js"></script>
+<script>tailwind.config = window.WC26_TAILWIND_CONFIG;</script>
+</head>
+<body class="bg-background text-on-background font-body-md min-h-screen pb-24 md:pb-0">
+
+<!-- Back header -->
+<header class="w-full top-0 sticky z-50 bg-surface-dim/90 backdrop-blur-md border-b border-surface-container py-md px-margin-mobile md:px-margin-desktop flex justify-between items-center">
+    <div class="flex items-center gap-sm">
+        <button onclick="history.back()" class="p-2 hover:bg-surface-container rounded-full transition-colors text-primary flex items-center justify-center">
+            <span class="material-symbols-outlined">arrow_back</span>
+        </button>
+        <span class="font-headline-lg-mobile md:font-headline-lg text-headline-lg-mobile md:text-headline-lg text-secondary tracking-tight">MEXICO 2026</span>
+    </div>
+</header>
+
+<main class="max-w-screen-xl mx-auto px-margin-mobile md:px-margin-desktop py-lg flex flex-col gap-lg">
+
+    <div id="match-content">
+        <div class="skeleton h-64 rounded-xl mb-lg"></div>
+        <div class="skeleton h-48 rounded-xl"></div>
+    </div>
+
+</main>
+
+<script src="./assets/js/data.js"></script>
+<script>
+(async function () {
+    const params = new URLSearchParams(location.search);
+    const matchId = parseInt(params.get("id"), 10);
+    const container = document.getElementById("match-content");
+
+    if (!matchId) {
+        container.innerHTML = `<div class="bg-surface-container rounded-lg p-lg text-center text-on-surface-variant">
+            Partido no especificado. <a class="text-primary hover:underline" href="index.html">Volver al inicio</a>
+        </div>`;
+        return;
+    }
+
+    const data = await WC26.getMatches();
+    const match = data && (data.matches || []).find(m => m.id === matchId);
+
+    if (!match) {
+        container.innerHTML = `<div class="bg-surface-container rounded-lg p-lg text-center text-on-surface-variant">
+            Partido no encontrado. <a class="text-primary hover:underline" href="index.html">Volver al inicio</a>
+        </div>`;
+        return;
+    }
+
+    const info = WC26.statusInfo(match);
+    const live = WC26.isLive(match);
+    const home = match.home_team;
+    const away = match.away_team;
+    const homeScorers = (match.scorers || []).filter(s => s.team === "home");
+    const awayScorers = (match.scorers || []).filter(s => s.team === "away");
+
+    const groupLabel = (match.group || "").replace("Group ", "Grupo ");
+    const stageLabel = match.stage === "GROUP_STAGE"
+        ? `${groupLabel}${match.matchday ? ` • Jornada ${match.matchday}` : ""}`
+        : (match.stage || "").replace(/_/g, " ");
+
+    const statusBadge = live
+        ? `<div class="absolute top-md right-md bg-tertiary-container text-on-tertiary-container px-3 py-1 rounded-full flex items-center gap-xs pulse-live">
+                <div class="w-2 h-2 rounded-full bg-on-tertiary-container animate-pulse"></div>
+                <span class="font-label-bold text-label-bold uppercase tracking-wider text-[10px]">${info.label}</span>
+           </div>`
+        : `<div class="absolute top-md right-md ${info.badge} px-3 py-1 rounded-full">
+                <span class="font-label-bold text-label-bold uppercase tracking-wider text-[10px]">${info.label}</span>
+           </div>`;
+
+    const scorersBlock = (homeScorers.length || awayScorers.length) ? `
+        <div class="w-full max-w-2xl mt-md flex justify-between px-xs relative z-10 font-label-sm text-label-sm text-on-surface-variant">
+            <div class="flex flex-col items-start gap-1">
+                ${homeScorers.map(s => `<span>${s.player} ${s.minute}' <span class="material-symbols-outlined text-[12px] text-secondary">sports_soccer</span></span>`).join("")}
+            </div>
+            <div class="flex flex-col items-end gap-1">
+                ${awayScorers.map(s => `<span><span class="material-symbols-outlined text-[12px] text-on-surface">sports_soccer</span> ${s.player} ${s.minute}'</span>`).join("")}
+            </div>
+        </div>` : "";
+
+    const broadcastSection = (match.broadcast_mx && match.broadcast_mx.length) ? `
+        <section class="bg-surface-container-high rounded-xl p-md border border-outline-variant/50 relative overflow-hidden">
+            <div class="absolute -right-4 -top-4 opacity-10">
+                <span class="material-symbols-outlined text-9xl">connected_tv</span>
+            </div>
+            <h3 class="font-label-bold text-label-bold text-on-surface mb-md uppercase tracking-wider relative z-10 flex items-center gap-xs">
+                <span class="material-symbols-outlined text-[18px]">tv</span> TRANSMISIÓN (MEX)
+            </h3>
+            <div class="flex flex-wrap gap-sm relative z-10">
+                ${WC26.broadcastChips(match.broadcast_mx)}
+            </div>
+        </section>` : "";
+
+    const stadiumSection = (match.venue || match.city) ? `
+        <section class="bg-surface-container-low rounded-xl overflow-hidden border border-surface-container-high flex flex-col">
+            <div class="p-md flex flex-col gap-xs">
+                ${match.venue ? `<p class="font-body-md text-sm text-on-surface flex items-center gap-xs font-bold">
+                    <span class="material-symbols-outlined text-[16px] text-primary">stadium</span> ${match.venue}
+                </p>` : ""}
+                ${match.city ? `<p class="font-body-md text-sm text-on-surface-variant flex items-center gap-xs">
+                    <span class="material-symbols-outlined text-[14px]">location_city</span> ${match.city}
+                </p>` : ""}
+            </div>
+        </section>` : "";
+
+    container.innerHTML = `
+    <!-- Scorecard Header -->
+    <section class="bg-surface-container rounded-xl p-lg relative overflow-hidden flex flex-col items-center justify-center border border-outline-variant/30 mb-lg">
+        <div class="absolute inset-0 bg-gradient-to-b from-surface-container-high to-transparent opacity-50 pointer-events-none"></div>
+        ${statusBadge}
+        <p class="text-on-surface-variant font-label-sm text-label-sm uppercase tracking-widest mb-md relative z-10">${stageLabel}</p>
+        <div class="flex items-center justify-between w-full max-w-2xl relative z-10 gap-sm">
+            <div class="flex flex-col items-center flex-1">
+                ${WC26.crestImg(home, "w-16 h-16 md:w-24 md:h-24")}
+                <h2 class="font-headline-lg-mobile md:font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-surface mt-sm">${WC26.teamShort(home)}</h2>
+                <p class="font-body-md text-body-md text-on-surface-variant">${WC26.teamLabel(home)}</p>
+            </div>
+            <div class="flex flex-col items-center justify-center px-md">
+                <div class="flex items-center gap-sm">
+                    <span class="font-score-display text-score-display ${live ? 'text-secondary' : 'text-on-surface'}">${match.score.home ?? "-"}</span>
+                    <span class="font-headline-xl text-headline-xl text-on-surface-variant opacity-50">-</span>
+                    <span class="font-score-display text-score-display text-on-surface">${match.score.away ?? "-"}</span>
+                </div>
+            </div>
+            <div class="flex flex-col items-center flex-1">
+                ${WC26.crestImg(away, "w-16 h-16 md:w-24 md:h-24")}
+                <h2 class="font-headline-lg-mobile md:font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-surface mt-sm">${WC26.teamShort(away)}</h2>
+                <p class="font-body-md text-body-md text-on-surface-variant">${WC26.teamLabel(away)}</p>
+            </div>
+        </div>
+        ${scorersBlock}
+    </section>
+
+    <!-- Bento Grid -->
+    <div class="grid grid-cols-1 md:grid-cols-12 gap-gutter">
+        <div class="col-span-1 md:col-span-8 flex flex-col gap-gutter">
+            <!-- Reserved for future: live stats, lineups, when source API provides them -->
+            ${!live && !broadcastSection && !stadiumSection ? `
+            <section class="bg-surface-container-low rounded-xl p-lg border border-surface-container-high text-center text-on-surface-variant font-body-md">
+                Más estadísticas estarán disponibles cuando comience el partido.
+            </section>` : ""}
+        </div>
+        <div class="col-span-1 md:col-span-4 flex flex-col gap-gutter">
+            ${broadcastSection}
+            ${stadiumSection}
+        </div>
+    </div>
+    `;
+})();
+</script>
+</body>
+</html>

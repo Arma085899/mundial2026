@@ -1,0 +1,141 @@
+/* =========================================================
+   MEXICO 2026 — Theme tokens (DESIGN.md)
+   Compartido por todas las paginas. Cargar despues de Tailwind CDN.
+   ========================================================= */
+
+:root {
+    /* Colors */
+    --color-surface: #0f131f;
+    --color-surface-dim: #0f131f;
+    --color-surface-bright: #353946;
+    --color-surface-container-lowest: #0a0e1a;
+    --color-surface-container-low: #171b28;
+    --color-surface-container: #1b1f2c;
+    --color-surface-container-high: #262a37;
+    --color-surface-container-highest: #313442;
+    --color-on-surface: #dfe2f3;
+    --color-on-surface-variant: #c3c5d9;
+    --color-inverse-surface: #dfe2f3;
+    --color-inverse-on-surface: #2c303d;
+    --color-outline: #8d90a2;
+    --color-outline-variant: #434656;
+    --color-surface-tint: #b6c4ff;
+    --color-primary: #b6c4ff;
+    --color-on-primary: #002780;
+    --color-primary-container: #0055ff;
+    --color-on-primary-container: #e3e6ff;
+    --color-inverse-primary: #004dea;
+    --color-secondary: #43fc76;
+    --color-on-secondary: #003912;
+    --color-secondary-container: #00de5e;
+    --color-on-secondary-container: #005c22;
+    --color-tertiary: #ffb3b3;
+    --color-on-tertiary: #680014;
+    --color-tertiary-container: #d00033;
+    --color-on-tertiary-container: #ffe0df;
+    --color-error: #ffb4ab;
+    --color-on-error: #690005;
+    --color-error-container: #93000a;
+    --color-on-error-container: #ffdad6;
+    --color-background: #0f131f;
+    --color-on-background: #dfe2f3;
+    --color-surface-variant: #313442;
+
+    /* Spacing */
+    --space-xs: 4px;
+    --space-sm: 8px;
+    --space-md: 16px;
+    --space-lg: 24px;
+    --space-xl: 40px;
+    --space-gutter: 16px;
+    --space-margin-mobile: 16px;
+    --space-margin-desktop: 64px;
+}
+
+/* =========================================================
+   Tailwind config shared across pages.
+   Include via: <script>tailwind.config = window.WC26_TAILWIND_CONFIG;</script>
+   ========================================================= */
+
+html, body {
+    background-color: var(--color-background);
+    color: var(--color-on-background);
+}
+
+.material-symbols-outlined {
+    font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+}
+.material-symbols-outlined[data-weight="fill"] {
+    font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+}
+
+.no-scrollbar::-webkit-scrollbar { display: none; }
+.no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+
+/* Live glow / pulse, consistent across pages */
+.glow-live {
+    box-shadow: 0 0 15px rgba(67, 252, 118, 0.4);
+}
+.pulse-live {
+    animation: pulse-ring 2s cubic-bezier(0.215, 0.61, 0.355, 1) infinite;
+}
+@keyframes pulse-ring {
+    0% { box-shadow: 0 0 0 0 rgba(67, 252, 118, 0.7); }
+    70% { box-shadow: 0 0 0 10px rgba(67, 252, 118, 0); }
+    100% { box-shadow: 0 0 0 0 rgba(67, 252, 118, 0); }
+}
+@keyframes pulse {
+    0% { transform: scale(0.95); opacity: 0.5; }
+    50% { transform: scale(1.05); opacity: 1; }
+    100% { transform: scale(0.95); opacity: 0.5; }
+}
+
+/* Skeleton loading shimmer (used while fetch resolves) */
+.skeleton {
+    background: linear-gradient(90deg, var(--color-surface-container) 25%, var(--color-surface-container-high) 37%, var(--color-surface-container) 63%);
+    background-size: 400% 100%;
+    animation: skeleton-loading 1.4s ease infinite;
+    border-radius: 0.25rem;
+}
+@keyframes skeleton-loading {
+    0% { background-position: 100% 50%; }
+    100% { background-position: 0 50%; }
+}
+
+/* Broadcast chips (VIX / TUDN / Azteca) */
+.chip-broadcast {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    background: #ffffff;
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    padding: 4px 8px;
+    border-radius: 0.125rem;
+}
+.chip-vix { color: #FF0000; }
+.chip-tudn { color: #FF0000; }
+.chip-azteca7 { color: #00A5E0; }
+
+/* Status badges */
+.badge-live {
+    background: var(--color-tertiary-container);
+    color: var(--color-on-tertiary-container);
+}
+.badge-finished {
+    background: var(--color-surface-container-highest);
+    color: var(--color-on-surface-variant);
+}
+.badge-scheduled {
+    background: var(--color-surface-container-highest);
+    color: var(--color-on-surface);
+}
+
+/* Active bottom-nav tab */
+.nav-active {
+    background: var(--color-secondary-container);
+    color: var(--color-on-secondary-container);
+}
