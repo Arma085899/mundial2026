@@ -1,7 +1,7 @@
 {
   "_meta": {
     "source": "football-data.org",
-    "updated_at": "2026-06-12T17:52:17.513Z"
+    "updated_at": "2026-06-12T19:32:45.055Z"
   },
   "matches": [
     {
@@ -79,7 +79,7 @@
       "matchday": 1,
       "stage": "GROUP_STAGE",
       "group": "GROUP_B",
-      "status": "TIMED",
+      "status": "IN_PLAY",
       "utc_date": "2026-06-12T19:00:00Z",
       "local_date": null,
       "minute": null,
@@ -100,8 +100,8 @@
         "crest": "https://crests.football-data.org/bosnia.svg"
       },
       "score": {
-        "home": null,
-        "away": null,
+        "home": 0,
+        "away": 1,
         "halftime_home": null,
         "halftime_away": null
       },
@@ -306,7 +306,7 @@
         "id": 9460,
         "name": "Curaçao",
         "short_name": "Curaçao",
-        "tla": "CUR",
+        "tla": "CUW",
         "crest": "https://crests.football-data.org/curacao.svg"
       },
       "score": {
@@ -359,7 +359,7 @@
       "matchday": 1,
       "stage": "GROUP_STAGE",
       "group": "GROUP_E",
-      "status": "SCHEDULED",
+      "status": "TIMED",
       "utc_date": "2026-06-14T23:00:00Z",
       "local_date": null,
       "minute": null,
@@ -1216,7 +1216,7 @@
         "id": 9460,
         "name": "Curaçao",
         "short_name": "Curaçao",
-        "tla": "CUR",
+        "tla": "CUW",
         "crest": "https://crests.football-data.org/curacao.svg"
       },
       "score": {
@@ -1944,7 +1944,7 @@
         "id": 9460,
         "name": "Curaçao",
         "short_name": "Curaçao",
-        "tla": "CUR",
+        "tla": "CUW",
         "crest": "https://crests.football-data.org/curacao.svg"
       },
       "away_team": {
