@@ -1,0 +1,3 @@
+{
+  "_comment": "Mapeo manual de match_id (numero de football-data.org) a canales de TV en Mexico. Edita este archivo conforme se confirmen transmisiones. Codigos validos: VIX, TUDN, AZTECA7. Ejemplo: \"537851\": [\"VIX\", \"TUDN\"]"
+}
