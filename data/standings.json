@@ -1,7 +1,7 @@
 {
   "_meta": {
     "source": "football-data.org",
-    "updated_at": "2026-06-13T18:09:17.072Z"
+    "updated_at": "2026-06-13T19:54:27.399Z"
   },
   "groups": [
     {
@@ -93,6 +93,25 @@
         {
           "position": 1,
           "team": {
+            "id": 788,
+            "name": "Switzerland",
+            "short_name": "Switzerland",
+            "tla": "SUI",
+            "crest": "https://crests.football-data.org/788.svg"
+          },
+          "played": 1,
+          "won": 1,
+          "draw": 0,
+          "lost": 0,
+          "goals_for": 1,
+          "goals_against": 0,
+          "goal_difference": 1,
+          "points": 3,
+          "qualified": true
+        },
+        {
+          "position": 2,
+          "team": {
             "id": 1060,
             "name": "Bosnia-Herzegovina",
             "short_name": "Bosnia-H.",
@@ -110,7 +129,7 @@
           "qualified": true
         },
         {
-          "position": 2,
+          "position": 3,
           "team": {
             "id": 828,
             "name": "Canada",
@@ -126,10 +145,10 @@
           "goals_against": 1,
           "goal_difference": 0,
           "points": 1,
-          "qualified": true
+          "qualified": false
         },
         {
-          "position": 3,
+          "position": 4,
           "team": {
             "id": 8030,
             "name": "Qatar",
@@ -137,32 +156,13 @@
             "tla": "QAT",
             "crest": "https://crests.football-data.org/8030.svg"
           },
-          "played": 0,
+          "played": 1,
           "won": 0,
           "draw": 0,
-          "lost": 0,
+          "lost": 1,
           "goals_for": 0,
-          "goals_against": 0,
-          "goal_difference": 0,
-          "points": 0,
-          "qualified": false
-        },
-        {
-          "position": 4,
-          "team": {
-            "id": 788,
-            "name": "Switzerland",
-            "short_name": "Switzerland",
-            "tla": "SUI",
-            "crest": "https://crests.football-data.org/788.svg"
-          },
-          "played": 0,
-          "won": 0,
-          "draw": 0,
-          "lost": 0,
-          "goals_for": 0,
-          "goals_against": 0,
-          "goal_difference": 0,
+          "goals_against": 1,
+          "goal_difference": -1,
           "points": 0,
           "qualified": false
         }
