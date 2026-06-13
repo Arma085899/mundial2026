@@ -1,7 +1,7 @@
 {
   "_meta": {
     "source": "football-data.org",
-    "updated_at": "2026-06-13T01:54:48.506Z"
+    "updated_at": "2026-06-13T02:13:52.957Z"
   },
   "groups": [
     {
@@ -110,7 +110,7 @@
           "qualified": true
         },
         {
-          "position": 1,
+          "position": 2,
           "team": {
             "id": 828,
             "name": "Canada",
@@ -148,7 +148,7 @@
           "qualified": false
         },
         {
-          "position": 3,
+          "position": 4,
           "team": {
             "id": 788,
             "name": "Switzerland",
@@ -192,7 +192,7 @@
           "qualified": true
         },
         {
-          "position": 1,
+          "position": 2,
           "team": {
             "id": 836,
             "name": "Haiti",
@@ -211,7 +211,7 @@
           "qualified": true
         },
         {
-          "position": 1,
+          "position": 3,
           "team": {
             "id": 815,
             "name": "Morocco",
@@ -227,10 +227,10 @@
           "goals_against": 0,
           "goal_difference": 0,
           "points": 0,
-          "qualified": true
+          "qualified": false
         },
         {
-          "position": 1,
+          "position": 4,
           "team": {
             "id": 8873,
             "name": "Scotland",
@@ -246,7 +246,7 @@
           "goals_against": 0,
           "goal_difference": 0,
           "points": 0,
-          "qualified": true
+          "qualified": false
         }
       ]
     },
@@ -267,9 +267,9 @@
           "won": 1,
           "draw": 0,
           "lost": 0,
-          "goals_for": 1,
+          "goals_for": 3,
           "goals_against": 0,
-          "goal_difference": 1,
+          "goal_difference": 3,
           "points": 3,
           "qualified": true
         },
@@ -293,7 +293,7 @@
           "qualified": true
         },
         {
-          "position": 2,
+          "position": 3,
           "team": {
             "id": 803,
             "name": "Turkey",
@@ -309,7 +309,7 @@
           "goals_against": 0,
           "goal_difference": 0,
           "points": 0,
-          "qualified": true
+          "qualified": false
         },
         {
           "position": 4,
@@ -325,8 +325,8 @@
           "draw": 0,
           "lost": 1,
           "goals_for": 0,
-          "goals_against": 1,
-          "goal_difference": -1,
+          "goals_against": 3,
+          "goal_difference": -3,
           "points": 0,
           "qualified": false
         }
@@ -356,7 +356,7 @@
           "qualified": true
         },
         {
-          "position": 1,
+          "position": 2,
           "team": {
             "id": 759,
             "name": "Germany",
@@ -375,7 +375,7 @@
           "qualified": true
         },
         {
-          "position": 1,
+          "position": 3,
           "team": {
             "id": 791,
             "name": "Ecuador",
@@ -391,10 +391,10 @@
           "goals_against": 0,
           "goal_difference": 0,
           "points": 0,
-          "qualified": true
+          "qualified": false
         },
         {
-          "position": 1,
+          "position": 4,
           "team": {
             "id": 1935,
             "name": "Ivory Coast",
@@ -410,7 +410,7 @@
           "goals_against": 0,
           "goal_difference": 0,
           "points": 0,
-          "qualified": true
+          "qualified": false
         }
       ]
     },
@@ -438,7 +438,7 @@
           "qualified": true
         },
         {
-          "position": 1,
+          "position": 2,
           "team": {
             "id": 8601,
             "name": "Netherlands",
@@ -457,7 +457,7 @@
           "qualified": true
         },
         {
-          "position": 1,
+          "position": 3,
           "team": {
             "id": 792,
             "name": "Sweden",
@@ -473,10 +473,10 @@
           "goals_against": 0,
           "goal_difference": 0,
           "points": 0,
-          "qualified": true
+          "qualified": false
         },
         {
-          "position": 1,
+          "position": 4,
           "team": {
             "id": 802,
             "name": "Tunisia",
@@ -492,7 +492,7 @@
           "goals_against": 0,
           "goal_difference": 0,
           "points": 0,
-          "qualified": true
+          "qualified": false
         }
       ]
     },
@@ -520,7 +520,7 @@
           "qualified": true
         },
         {
-          "position": 1,
+          "position": 2,
           "team": {
             "id": 805,
             "name": "Belgium",
@@ -539,7 +539,7 @@
           "qualified": true
         },
         {
-          "position": 1,
+          "position": 3,
           "team": {
             "id": 840,
             "name": "Iran",
@@ -555,10 +555,10 @@
           "goals_against": 0,
           "goal_difference": 0,
           "points": 0,
-          "qualified": true
+          "qualified": false
         },
         {
-          "position": 1,
+          "position": 4,
           "team": {
             "id": 783,
             "name": "New Zealand",
@@ -574,7 +574,7 @@
           "goals_against": 0,
           "goal_difference": 0,
           "points": 0,
-          "qualified": true
+          "qualified": false
         }
       ]
     },
@@ -602,7 +602,7 @@
           "qualified": true
         },
         {
-          "position": 1,
+          "position": 2,
           "team": {
             "id": 801,
             "name": "Saudi Arabia",
@@ -621,7 +621,7 @@
           "qualified": true
         },
         {
-          "position": 1,
+          "position": 3,
           "team": {
             "id": 760,
             "name": "Spain",
@@ -637,10 +637,10 @@
           "goals_against": 0,
           "goal_difference": 0,
           "points": 0,
-          "qualified": true
+          "qualified": false
         },
         {
-          "position": 1,
+          "position": 4,
           "team": {
             "id": 758,
             "name": "Uruguay",
@@ -656,7 +656,7 @@
           "goals_against": 0,
           "goal_difference": 0,
           "points": 0,
-          "qualified": true
+          "qualified": false
         }
       ]
     },
@@ -684,7 +684,7 @@
           "qualified": true
         },
         {
-          "position": 1,
+          "position": 2,
           "team": {
             "id": 8062,
             "name": "Iraq",
@@ -703,7 +703,7 @@
           "qualified": true
         },
         {
-          "position": 1,
+          "position": 3,
           "team": {
             "id": 8872,
             "name": "Norway",
@@ -719,10 +719,10 @@
           "goals_against": 0,
           "goal_difference": 0,
           "points": 0,
-          "qualified": true
+          "qualified": false
         },
         {
-          "position": 1,
+          "position": 4,
           "team": {
             "id": 804,
             "name": "Senegal",
@@ -738,7 +738,7 @@
           "goals_against": 0,
           "goal_difference": 0,
           "points": 0,
-          "qualified": true
+          "qualified": false
         }
       ]
     },
@@ -766,7 +766,7 @@
           "qualified": true
         },
         {
-          "position": 1,
+          "position": 2,
           "team": {
             "id": 762,
             "name": "Argentina",
@@ -785,7 +785,7 @@
           "qualified": true
         },
         {
-          "position": 1,
+          "position": 3,
           "team": {
             "id": 8049,
             "name": "Jordan",
@@ -801,10 +801,10 @@
           "goals_against": 0,
           "goal_difference": 0,
           "points": 0,
-          "qualified": true
+          "qualified": false
         },
         {
-          "position": 1,
+          "position": 4,
           "team": {
             "id": 816,
             "name": "Austria",
@@ -820,7 +820,7 @@
           "goals_against": 0,
           "goal_difference": 0,
           "points": 0,
-          "qualified": true
+          "qualified": false
         }
       ]
     },
@@ -848,7 +848,7 @@
           "qualified": true
         },
         {
-          "position": 1,
+          "position": 2,
           "team": {
             "id": 818,
             "name": "Colombia",
@@ -867,7 +867,7 @@
           "qualified": true
         },
         {
-          "position": 1,
+          "position": 3,
           "team": {
             "id": 765,
             "name": "Portugal",
@@ -883,10 +883,10 @@
           "goals_against": 0,
           "goal_difference": 0,
           "points": 0,
-          "qualified": true
+          "qualified": false
         },
         {
-          "position": 1,
+          "position": 4,
           "team": {
             "id": 8070,
             "name": "Uzbekistan",
@@ -902,7 +902,7 @@
           "goals_against": 0,
           "goal_difference": 0,
           "points": 0,
-          "qualified": true
+          "qualified": false
         }
       ]
     },
@@ -930,7 +930,7 @@
           "qualified": true
         },
         {
-          "position": 1,
+          "position": 2,
           "team": {
             "id": 763,
             "name": "Ghana",
@@ -949,7 +949,7 @@
           "qualified": true
         },
         {
-          "position": 1,
+          "position": 3,
           "team": {
             "id": 799,
             "name": "Croatia",
@@ -965,10 +965,10 @@
           "goals_against": 0,
           "goal_difference": 0,
           "points": 0,
-          "qualified": true
+          "qualified": false
         },
         {
-          "position": 1,
+          "position": 4,
           "team": {
             "id": 1836,
             "name": "Panama",
@@ -984,7 +984,7 @@
           "goals_against": 0,
           "goal_difference": 0,
           "points": 0,
-          "qualified": true
+          "qualified": false
         }
       ]
     }
