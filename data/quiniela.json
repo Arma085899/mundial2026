@@ -1,52 +1,201 @@
 {
   "_meta": {
     "source": "manual",
-    "updated_at": "2026-06-12T00:00:00Z",
-    "note": "Este archivo se edita manualmente. 'status' de cada equipo: 'active' o 'eliminated'. Cuando todos los equipos de un participante estan 'eliminated', su tarjeta se muestra como ELIMINADO en la pagina de Quiniela."
+    "updated_at": "2026-06-13T00:00:00Z",
+    "note": "Edita 'status' de cada equipo: 'active' o 'eliminated'. Cuando AMBOS equipos de un participante quedan 'eliminated', su tarjeta se muestra como ELIMINADO. El campo 'quote' es opcional y solo se muestra en ese estado."
   },
   "participants": [
     {
-      "name": "Carlos",
+      "name": "Juan",
       "teams": [
-        { "tla": "MEX", "name": "México", "status": "active" },
-        { "tla": "BRA", "name": "Brasil", "status": "active" }
-      ]
-    },
-    {
-      "name": "Ana",
-      "teams": [
-        { "tla": "ARG", "name": "Argentina", "status": "active" },
-        { "tla": "ENG", "name": "Inglaterra", "status": "eliminated" }
-      ]
-    },
-    {
-      "name": "Roberto",
-      "teams": [
-        { "tla": "ITA", "name": "Italia", "status": "eliminated" },
-        { "tla": "BEL", "name": "Bélgica", "status": "eliminated" }
+        { "tla": "MAR", "name": "Marruecos", "status": "active" },
+        { "tla": "TUR", "name": "Turquía", "status": "active" }
       ],
-      "quote": "Pagaría los tacos"
+      "quote": "Bueno... siempre quedan las quesadillas del Oxxo."
     },
     {
-      "name": "Lucía",
+      "name": "Carmen",
+      "teams": [
+        { "tla": "CUW", "name": "Curazao", "status": "active" },
+        { "tla": "GER", "name": "Alemania", "status": "active" }
+      ],
+      "quote": "Alemania me falló más que el Excel sin guardar."
+    },
+    {
+      "name": "Beto V",
+      "teams": [
+        { "tla": "TUN", "name": "Túnez", "status": "active" },
+        { "tla": "PAR", "name": "Paraguay", "status": "active" }
+      ],
+      "quote": "Eliminado, pero con la frente en alto y la calculadora lista para la próxima."
+    },
+    {
+      "name": "Sandra",
       "teams": [
         { "tla": "ESP", "name": "España", "status": "active" },
-        { "tla": "GER", "name": "Alemania", "status": "active" }
-      ]
+        { "tla": "QAT", "name": "Catar", "status": "active" }
+      ],
+      "quote": "España me presumió mucho y se fue antes que yo del trabajo un viernes."
     },
     {
-      "name": "Francisco",
+      "name": "Xochil",
       "teams": [
-        { "tla": "MEX", "name": "México", "status": "active" },
-        { "tla": "ARG", "name": "Argentina", "status": "active" }
-      ]
+        { "tla": "CIV", "name": "Costa de Marfil", "status": "active" },
+        { "tla": "AUS", "name": "Australia", "status": "active" }
+      ],
+      "quote": "Me quedé más fuera que reunión a la que no me invitaron."
     },
     {
-      "name": "Marta",
+      "name": "Erik",
+      "teams": [
+        { "tla": "CPV", "name": "Cabo Verde", "status": "active" },
+        { "tla": "COD", "name": "RD del Congo", "status": "active" }
+      ],
+      "quote": "Sabía que era difícil, pero le eché ganas como al café del office."
+    },
+    {
+      "name": "Arturo",
+      "teams": [
+        { "tla": "IRQ", "name": "Irak", "status": "active" },
+        { "tla": "SWE", "name": "Suecia", "status": "active" }
+      ],
+      "quote": "Eliminado antes que mi propuesta de home office los viernes."
+    },
+    {
+      "name": "Mariana",
+      "teams": [
+        { "tla": "CZE", "name": "República Checa", "status": "active" },
+        { "tla": "ENG", "name": "Inglaterra", "status": "active" }
+      ],
+      "quote": "Inglaterra y yo tenemos algo en común: prometemos mucho y tronamos en penales."
+    },
+    {
+      "name": "Mimo",
+      "teams": [
+        { "tla": "SEN", "name": "Senegal", "status": "active" },
+        { "tla": "ENG", "name": "Inglaterra", "status": "active" }
+      ],
+      "quote": "Hasta aquí llegué, como mi presupuesto a mitad de mes."
+    },
+    {
+      "name": "Cesar",
+      "teams": [
+        { "tla": "BRA", "name": "Brasil", "status": "active" },
+        { "tla": "ALG", "name": "Argelia", "status": "active" }
+      ],
+      "quote": "Brasil prometió samba y me dejó bailando solo."
+    },
+    {
+      "name": "Naim",
+      "teams": [
+        { "tla": "POR", "name": "Portugal", "status": "active" },
+        { "tla": "CAN", "name": "Canadá", "status": "active" }
+      ],
+      "quote": "Eliminado, pero al menos no tan tronado como el Wifi de la sala de juntas."
+    },
+    {
+      "name": "Eloy",
+      "teams": [
+        { "tla": "ECU", "name": "Ecuador", "status": "active" },
+        { "tla": "DEN", "name": "Dinamarca", "status": "active" }
+      ],
+      "quote": "Me fui del torneo igual de rápido que se va el saldo del celular."
+    },
+    {
+      "name": "Sara",
+      "teams": [
+        { "tla": "FRA", "name": "Francia", "status": "active" },
+        { "tla": "SCO", "name": "Escocia", "status": "active" }
+      ],
+      "quote": "Francia se rindió antes que yo el lunes a las 7am."
+    },
+    {
+      "name": "Jona",
+      "teams": [
+        { "tla": "IRN", "name": "Irán", "status": "active" },
+        { "tla": "PAN", "name": "Panamá", "status": "active" }
+      ],
+      "quote": "Fuera de la quiniela, pero invicto en optimismo."
+    },
+    {
+      "name": "Ashley",
+      "teams": [
+        { "tla": "NOR", "name": "Noruega", "status": "active" },
+        { "tla": "KOR", "name": "Corea del Sur", "status": "active" }
+      ],
+      "quote": "Eliminada con estilo, como cuando renuncias a un grupo de WhatsApp sin avisar."
+    },
+    {
+      "name": "Beto G",
+      "teams": [
+        { "tla": "KSA", "name": "Arabia Saudita", "status": "active" },
+        { "tla": "RSA", "name": "Sudáfrica", "status": "active" }
+      ],
+      "quote": "Que alguien me pase el aguacate, porque aquí terminé."
+    },
+    {
+      "name": "Omar",
+      "teams": [
+        { "tla": "JPN", "name": "Japón", "status": "active" },
+        { "tla": "EGY", "name": "Egipto", "status": "active" }
+      ],
+      "quote": "Eliminado, pero mi espíritu sigue en fuera de lugar."
+    },
+    {
+      "name": "Romel",
+      "teams": [
+        { "tla": "HAI", "name": "Haití", "status": "active" },
+        { "tla": "BEL", "name": "Bélgica", "status": "active" }
+      ],
+      "quote": "Bélgica jugó como mi conexión a internet: prometedora al inicio, decepción al final."
+    },
+    {
+      "name": "Mago",
+      "teams": [
+        { "tla": "AUT", "name": "Austria", "status": "active" },
+        { "tla": "URU", "name": "Uruguay", "status": "active" }
+      ],
+      "quote": "Me quedé fuera más rápido que mi propósito de año nuevo del gym."
+    },
+    {
+      "name": "Adriel",
+      "teams": [
+        { "tla": "BIH", "name": "Bosnia y Herzegovina", "status": "active" },
+        { "tla": "MEX", "name": "México", "status": "active" }
+      ],
+      "quote": "Si hasta México me falla, ya nada es sagrado."
+    },
+    {
+      "name": "Angel",
+      "teams": [
+        { "tla": "JOR", "name": "Jordania", "status": "active" },
+        { "tla": "COL", "name": "Colombia", "status": "active" }
+      ],
+      "quote": "Colombia se fue de fiesta y se le olvidó volver."
+    },
+    {
+      "name": "Toño",
+      "teams": [
+        { "tla": "UZB", "name": "Uzbekistán", "status": "active" },
+        { "tla": "NZL", "name": "Nueva Zelanda", "status": "active" }
+      ],
+      "quote": "Eliminado, pero con el orgullo intacto de haber elegido equipos exóticos."
+    },
+    {
+      "name": "Felipe",
       "teams": [
         { "tla": "SUI", "name": "Suiza", "status": "active" },
-        { "tla": "DEN", "name": "Dinamarca", "status": "eliminated" }
-      ]
+        { "tla": "NED", "name": "Países Bajos", "status": "active" }
+      ],
+      "quote": "Suiza, neutral hasta para eliminarme."
+    },
+    {
+      "name": "Javi",
+      "teams": [
+        { "tla": "ARG", "name": "Argentina", "status": "active" },
+        { "tla": "USA", "name": "Estados Unidos", "status": "active" }
+      ],
+      "quote": "Argentina prometió Messi-magia y me dejó viendo el partido desde el banquito."
     }
   ]
 }

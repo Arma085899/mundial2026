@@ -12,11 +12,6 @@
         { key: "quiniela", label: "Quiniela Social", href: "quiniela.html" }
     ];
 
-    function currentScript() {
-        const scripts = document.getElementsByTagName("script");
-        return scripts[scripts.length - 1];
-    }
-
     function renderTop(active) {
         const el = document.getElementById("wc26-topnav");
         if (!el) return;
@@ -77,7 +72,7 @@
     }
 
     document.addEventListener("DOMContentLoaded", function () {
-        const script = currentScript() || document.querySelector('script[data-active]');
+        const script = document.querySelector('script[data-active]');
         const active = (script && script.dataset.active) || "inicio";
         renderTop(active);
         renderFooter();
