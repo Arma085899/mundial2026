@@ -1,7 +1,7 @@
 {
   "_meta": {
     "source": "football-data.org",
-    "updated_at": "2026-06-13T01:50:18.503Z"
+    "updated_at": "2026-06-13T01:54:48.506Z"
   },
   "matches": [
     {
@@ -114,7 +114,7 @@
       "matchday": 1,
       "stage": "GROUP_STAGE",
       "group": "GROUP_D",
-      "status": "IN_PLAY",
+      "status": "TIMED",
       "utc_date": "2026-06-13T01:00:00Z",
       "local_date": null,
       "minute": null,
