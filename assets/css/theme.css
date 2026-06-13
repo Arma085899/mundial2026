@@ -1,61 +1,54 @@
 /* =========================================================
-   MEXICO 2026 — Theme tokens (DESIGN.md)
+   UNITY ARENA — Theme tokens (DESIGN.md "Unity Arena")
    Compartido por todas las paginas. Cargar despues de Tailwind CDN.
    ========================================================= */
 
 :root {
-    /* Colors */
-    --color-surface: #0f131f;
-    --color-surface-dim: #0f131f;
-    --color-surface-bright: #353946;
-    --color-surface-container-lowest: #0a0e1a;
-    --color-surface-container-low: #171b28;
-    --color-surface-container: #1b1f2c;
-    --color-surface-container-high: #262a37;
-    --color-surface-container-highest: #313442;
-    --color-on-surface: #dfe2f3;
-    --color-on-surface-variant: #c3c5d9;
-    --color-inverse-surface: #dfe2f3;
-    --color-inverse-on-surface: #2c303d;
-    --color-outline: #8d90a2;
-    --color-outline-variant: #434656;
-    --color-surface-tint: #b6c4ff;
-    --color-primary: #b6c4ff;
-    --color-on-primary: #002780;
-    --color-primary-container: #0055ff;
-    --color-on-primary-container: #e3e6ff;
-    --color-inverse-primary: #004dea;
-    --color-secondary: #43fc76;
-    --color-on-secondary: #003912;
-    --color-secondary-container: #00de5e;
-    --color-on-secondary-container: #005c22;
-    --color-tertiary: #ffb3b3;
-    --color-on-tertiary: #680014;
-    --color-tertiary-container: #d00033;
-    --color-on-tertiary-container: #ffe0df;
-    --color-error: #ffb4ab;
-    --color-on-error: #690005;
-    --color-error-container: #93000a;
-    --color-on-error-container: #ffdad6;
-    --color-background: #0f131f;
-    --color-on-background: #dfe2f3;
-    --color-surface-variant: #313442;
+    --color-surface: #fcf9f8;
+    --color-surface-dim: #dcd9d9;
+    --color-surface-bright: #fcf9f8;
+    --color-surface-container-lowest: #ffffff;
+    --color-surface-container-low: #f6f3f2;
+    --color-surface-container: #f0edec;
+    --color-surface-container-high: #ebe7e7;
+    --color-surface-container-highest: #e5e2e1;
+    --color-on-surface: #1c1b1b;
+    --color-on-surface-variant: #3d484e;
+    --color-inverse-surface: #313030;
+    --color-inverse-on-surface: #f3f0ef;
+    --color-outline: #6d797f;
+    --color-outline-variant: #bcc8cf;
+    --color-surface-tint: #006684;
+    --color-primary: #006684;
+    --color-on-primary: #ffffff;
+    --color-primary-container: #00b2e3;
+    --color-on-primary-container: #004054;
+    --color-inverse-primary: #68d3ff;
+    --color-secondary: #006d33;
+    --color-on-secondary: #ffffff;
+    --color-secondary-container: #75f999;
+    --color-on-secondary-container: #007236;
+    --color-tertiary: #bd0049;
+    --color-on-tertiary: #ffffff;
+    --color-tertiary-container: #ff7a93;
+    --color-on-tertiary-container: #79002c;
+    --color-error: #ba1a1a;
+    --color-on-error: #ffffff;
+    --color-error-container: #ffdad6;
+    --color-on-error-container: #93000a;
+    --color-background: #fcf9f8;
+    --color-on-background: #1c1b1b;
+    --color-surface-variant: #e5e2e1;
 
-    /* Spacing */
     --space-xs: 4px;
     --space-sm: 8px;
     --space-md: 16px;
     --space-lg: 24px;
-    --space-xl: 40px;
+    --space-xl: 48px;
     --space-gutter: 16px;
     --space-margin-mobile: 16px;
     --space-margin-desktop: 64px;
 }
-
-/* =========================================================
-   Tailwind config shared across pages.
-   Include via: <script>tailwind.config = window.WC26_TAILWIND_CONFIG;</script>
-   ========================================================= */
 
 html, body {
     background-color: var(--color-background);
@@ -71,26 +64,24 @@ html, body {
 
 .no-scrollbar::-webkit-scrollbar { display: none; }
 .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+.hide-scrollbar::-webkit-scrollbar { display: none; }
+.hide-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
 
-/* Live glow / pulse, consistent across pages */
-.glow-live {
-    box-shadow: 0 0 15px rgba(67, 252, 118, 0.4);
-}
-.pulse-live {
-    animation: pulse-ring 2s cubic-bezier(0.215, 0.61, 0.355, 1) infinite;
-}
-@keyframes pulse-ring {
-    0% { box-shadow: 0 0 0 0 rgba(67, 252, 118, 0.7); }
-    70% { box-shadow: 0 0 0 10px rgba(67, 252, 118, 0); }
-    100% { box-shadow: 0 0 0 0 rgba(67, 252, 118, 0); }
-}
-@keyframes pulse {
-    0% { transform: scale(0.95); opacity: 0.5; }
-    50% { transform: scale(1.05); opacity: 1; }
-    100% { transform: scale(0.95); opacity: 0.5; }
+.stadium-bg {
+    background-image: radial-gradient(circle at top right, rgba(0, 178, 227, 0.05) 0%, transparent 40%),
+                       radial-gradient(circle at bottom left, rgba(117, 249, 153, 0.05) 0%, transparent 40%);
 }
 
-/* Skeleton loading shimmer (used while fetch resolves) */
+.glass-panel {
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.group-card:hover { transform: translateY(-2px); box-shadow: 0 10px 20px rgba(0,0,0,0.04); }
+
+/* Skeleton loading shimmer */
 .skeleton {
     background: linear-gradient(90deg, var(--color-surface-container) 25%, var(--color-surface-container-high) 37%, var(--color-surface-container) 63%);
     background-size: 400% 100%;
@@ -102,12 +93,11 @@ html, body {
     100% { background-position: 0 50%; }
 }
 
-/* Broadcast chips (VIX / TUDN / Azteca) */
+/* Broadcast chips */
 .chip-broadcast {
     display: inline-flex;
     align-items: center;
     gap: 4px;
-    background: #ffffff;
     font-family: 'Hanken Grotesk', sans-serif;
     font-size: 10px;
     font-weight: 700;
@@ -115,27 +105,70 @@ html, body {
     text-transform: uppercase;
     padding: 4px 8px;
     border-radius: 0.125rem;
+    background: var(--color-surface-container-high);
+    color: var(--color-on-surface-variant);
 }
-.chip-vix { color: #FF0000; }
-.chip-tudn { color: #FF0000; }
-.chip-azteca7 { color: #00A5E0; }
+.chip-vix { color: #BD0049; }
+.chip-tudn { color: #006684; }
+.chip-azteca7 { color: #00729E; }
 
 /* Status badges */
 .badge-live {
-    background: var(--color-tertiary-container);
-    color: var(--color-on-tertiary-container);
+    background: var(--color-secondary);
+    color: var(--color-on-secondary);
 }
 .badge-finished {
-    background: var(--color-surface-container-highest);
+    background: var(--color-surface-container-high);
     color: var(--color-on-surface-variant);
 }
 .badge-scheduled {
-    background: var(--color-surface-container-highest);
+    background: var(--color-surface-container-high);
     color: var(--color-on-surface);
 }
 
 /* Active bottom-nav tab */
 .nav-active {
-    background: var(--color-secondary-container);
-    color: var(--color-on-secondary-container);
+    color: var(--color-primary);
+    background: var(--color-primary-container);
+    color: var(--color-on-primary);
 }
+
+/* Skull overlay for eliminated quiniela cards */
+.skull-overlay {
+    background: linear-gradient(135deg, rgba(255,255,255,0.9) 0%, rgba(252,249,248,0.95) 100%);
+}
+
+/* Bracket connectors */
+.connector-right::after {
+    content: '';
+    position: absolute;
+    right: -24px;
+    top: 50%;
+    width: 24px;
+    height: 1px;
+    background-color: #bcc8cf;
+}
+.connector-up-down::after {
+    content: '';
+    position: absolute;
+    right: -24px;
+    width: 1px;
+    background-color: #bcc8cf;
+}
+.connector-up::after {
+    top: 50%;
+    height: calc(100% + 12px);
+}
+.connector-down::after {
+    bottom: 50%;
+    height: calc(100% + 12px);
+}
+.connector-active::after {
+    background-color: #00b2e3;
+    z-index: 10;
+}
+
+.bracket-scroll::-webkit-scrollbar { height: 8px; }
+.bracket-scroll::-webkit-scrollbar-track { background: #f6f3f2; border-radius: 4px; }
+.bracket-scroll::-webkit-scrollbar-thumb { background: #bcc8cf; border-radius: 4px; }
+.bracket-scroll::-webkit-scrollbar-thumb:hover { background: #6d797f; }

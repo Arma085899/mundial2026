@@ -1,77 +1,111 @@
 <!DOCTYPE html>
-<html class="dark" lang="es-MX">
+<html class="light" lang="es">
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>MEXICO 2026 - Eliminatorias</title>
+<title>Cuadro - FIFA World Cup 2026</title>
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<link href="https://fonts.googleapis.com/css2?family=Anybody:wght@400;700;800&family=Hanken+Grotesk:wght@400;500;700&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Hanken+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
 <link href="./assets/css/theme.css" rel="stylesheet"/>
 <script src="./assets/js/data.js"></script>
 <script>tailwind.config = window.WC26_TAILWIND_CONFIG;</script>
-<style>
-    .bracket-scroll { overflow-x: auto; }
-    .bracket-track { display: flex; gap: 24px; min-width: max-content; padding-bottom: 8px; }
-    .bracket-col { display: flex; flex-direction: column; justify-content: center; gap: 16px; min-width: 240px; }
-</style>
 </head>
-<body class="bg-background text-on-surface font-body-md min-h-screen pb-24 md:pb-0">
+<body class="bg-background text-on-background min-h-screen flex flex-col font-body-md antialiased">
 
-<header id="wc26-topnav" class="hidden md:flex w-full top-0 sticky bg-surface-container-high z-50"></header>
+<header id="wc26-topnav"></header>
 
-<header class="md:hidden w-full top-0 sticky z-50 bg-surface-dim/90 backdrop-blur-md border-b border-surface-container py-md px-margin-mobile flex justify-between items-center">
-    <span class="font-headline-lg-mobile text-headline-lg-mobile text-secondary tracking-tight">MEXICO 2026</span>
-</header>
-
-<main class="max-w-screen-2xl mx-auto px-margin-mobile md:px-margin-desktop py-lg md:py-xl">
-    <div class="mb-xl">
-        <h1 class="font-headline-xl text-headline-xl hidden md:block">Eliminatorias</h1>
-        <h1 class="font-headline-lg-mobile text-headline-lg-mobile md:hidden">Eliminatorias</h1>
-        <p class="font-body-lg text-body-lg text-on-surface-variant">El camino al título, ronda por ronda.</p>
+<main class="flex-grow w-full px-margin-mobile md:px-margin-desktop max-w-[1440px] mx-auto py-xl">
+    <div class="mb-xl text-center md:text-left">
+        <h1 class="font-display-lg text-display-lg text-primary mb-sm">Fase Eliminatoria</h1>
+        <p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl">El camino hacia la gloria. Sigue el progreso de las selecciones desde la Ronda de 32 hasta la final.</p>
     </div>
 
-    <div id="bracket-container" class="bracket-scroll no-scrollbar">
-        <div class="bracket-track">
-            <div class="skeleton h-96 w-60 rounded-lg"></div>
-            <div class="skeleton h-96 w-60 rounded-lg"></div>
-            <div class="skeleton h-96 w-60 rounded-lg"></div>
+    <!-- Stage filter chips -->
+    <div id="stage-filters" class="flex flex-wrap gap-sm mb-lg">
+        <div class="skeleton h-9 w-24 rounded-full"></div>
+        <div class="skeleton h-9 w-24 rounded-full"></div>
+        <div class="skeleton h-9 w-24 rounded-full"></div>
+    </div>
+
+    <div id="bracket-container" class="bracket-scroll overflow-x-auto pb-lg relative w-full border border-outline-variant rounded-lg bg-surface-bright">
+        <div class="min-w-[1200px] p-lg flex justify-between gap-xl relative">
+            <div class="skeleton h-96 w-64 rounded-lg"></div>
+            <div class="skeleton h-96 w-64 rounded-lg"></div>
+            <div class="skeleton h-96 w-64 rounded-lg"></div>
         </div>
     </div>
 </main>
 
-<nav id="wc26-bottomnav"></nav>
+<footer id="wc26-footer"></footer>
 
 <script src="./assets/js/nav.js" data-active="bracket"></script>
 <script>
 (async function () {
     const data = await WC26.getBracket();
     const container = document.getElementById("bracket-container");
+    const filtersEl = document.getElementById("stage-filters");
 
     if (!data || !data.stages || !data.stages.length) {
-        container.innerHTML = `<div class="bg-surface-container rounded-lg p-lg text-center text-on-surface-variant">
+        filtersEl.innerHTML = "";
+        container.innerHTML = `<div class="p-lg text-center text-on-surface-variant font-body-md text-body-md">
             Bracket de eliminatorias no disponible aún.
         </div>`;
         return;
     }
 
-    // Filter out empty stages (not yet populated)
-    const stages = data.stages.filter(s => s.matches && s.matches.length);
+    const allStages = data.stages;
+    const stagesWithMatches = allStages.filter(s => s.matches && s.matches.length);
 
-    if (!stages.length) {
-        container.innerHTML = `<div class="bg-surface-container rounded-lg p-lg text-center text-on-surface-variant">
-            El bracket se irá llenando conforme avance la fase de grupos.
+    if (!stagesWithMatches.length) {
+        filtersEl.innerHTML = "";
+        container.innerHTML = `<div class="p-lg text-center text-on-surface-variant font-body-md text-body-md">
+            El cuadro se irá llenando conforme avance la fase de grupos.
         </div>`;
         return;
     }
 
-    container.innerHTML = `<div class="bracket-track">${stages.map(renderStage).join("")}</div>`;
+    let activeStage = "ALL";
 
-    function renderStage(stage) {
+    renderFilters();
+    render();
+
+    function renderFilters() {
+        const chips = [{ key: "ALL", label: "Ver Todo" }, ...stagesWithMatches.map(s => ({ key: s.stage, label: s.label }))];
+        filtersEl.innerHTML = chips.map(c => {
+            const isActive = c.key === activeStage;
+            const cls = isActive
+                ? "bg-tertiary text-on-tertiary font-label-lg text-label-lg px-md py-sm rounded-full border border-tertiary shadow-sm"
+                : "bg-surface text-on-surface font-label-lg text-label-lg px-md py-sm rounded-full border border-outline-variant hover:bg-surface-variant transition-colors";
+            return `<button class="${cls}" data-stage="${c.key}">${c.label}</button>`;
+        }).join("");
+
+        filtersEl.querySelectorAll("button[data-stage]").forEach(btn => {
+            btn.addEventListener("click", () => {
+                activeStage = btn.dataset.stage;
+                renderFilters();
+                render();
+            });
+        });
+    }
+
+    function render() {
+        const stagesToShow = activeStage === "ALL"
+            ? stagesWithMatches
+            : stagesWithMatches.filter(s => s.stage === activeStage);
+
+        container.innerHTML = `
+        <div class="min-w-[1200px] p-lg flex justify-between gap-xl relative">
+            ${stagesToShow.map((stage, idx) => renderStageColumn(stage, idx, stagesToShow.length)).join("")}
+        </div>`;
+    }
+
+    function renderStageColumn(stage, idx, total) {
+        const paddingTop = total > 1 ? `pt-${Math.min(idx * 16, 48)}` : "";
         return `
-        <div class="bracket-col">
-            <h2 class="font-headline-lg-mobile text-headline-lg-mobile md:font-headline-lg md:text-headline-lg text-center mb-sm">${stage.label}</h2>
-            ${stage.matches.map(renderMatch).join("")}
+        <div class="flex flex-col justify-around gap-lg w-64 relative z-10 ${paddingTop}">
+            <h2 class="font-headline-md text-headline-md text-on-surface-variant text-center mb-md border-b border-outline-variant pb-xs">${stage.label}</h2>
+            ${stage.matches.map(m => renderMatchCard(m, stage.stage)).join("")}
         </div>`;
     }
 
@@ -80,51 +114,62 @@
         return side.placeholder || "Por definir";
     }
 
-    function teamSideCrest(side) {
-        if (side.team && side.team.crest) {
-            return WC26.crestImg(side.team, "w-8 h-8");
-        }
-        return `<div class="w-8 h-8 rounded-full bg-surface-variant border border-outline-variant border-dashed flex items-center justify-center font-label-sm text-label-sm text-on-surface-variant">${side.team ? WC26.teamShort(side.team) : "?"}</div>`;
-    }
-
-    function renderMatch(match) {
-        const info = WC26.statusInfo({ status: match.status, utc_date: match.utc_date, minute: match.minute });
-        const live = match.status === "IN_PLAY" || match.status === "PAUSED";
-        const venueLabel = [match.venue, match.city].filter(Boolean).join(", ");
+    function renderMatchCard(match, stage) {
+        const isFinal = stage === "FINAL";
         const homeDefined = !!match.home.team;
         const awayDefined = !!match.away.team;
+        const homeScore = match.score.home;
+        const awayScore = match.score.away;
+        const hasScore = homeScore != null && awayScore != null;
+        const homeWon = hasScore && homeScore > awayScore;
+        const awayWon = hasScore && awayScore > homeScore;
 
-        const score = (match.score.home != null && match.score.away != null)
-            ? `${match.score.home} - ${match.score.away}`
-            : null;
+        const live = match.status === "IN_PLAY" || match.status === "PAUSED";
+        const liveTag = live
+            ? `<div class="bg-tertiary text-on-tertiary px-xs py-[2px] text-center font-label-md text-label-md uppercase tracking-wider">En Vivo</div>`
+            : "";
 
-        const cardCls = live ? "border-secondary/40 glow-live" : "border-outline-variant/30";
-        const linkOpen = (match.status !== "SCHEDULED" || homeDefined) ? `<a href="partido.html?id=${match.id}" class="block">` : `<div>`;
-        const linkClose = (match.status !== "SCHEDULED" || homeDefined) ? `</a>` : `</div>`;
+        const venueLabel = [match.venue, match.city].filter(Boolean).join(", ");
+
+        const teamRow = (side, score, won, isLast) => {
+            const nameCls = won ? "font-bold" : (side.team ? "" : "text-on-surface-variant");
+            const scoreCls = won ? "text-primary" : "text-on-surface-variant";
+            const borderCls = isLast ? "" : "border-b border-outline-variant";
+            return `
+            <div class="flex items-center justify-between p-xs ${borderCls} bg-surface-container-lowest">
+                <div class="flex items-center gap-xs">
+                    ${side.team ? WC26.crestImg(side.team, "w-5 h-5") : `<div class="w-5 h-4 bg-surface-dim border border-outline-variant"></div>`}
+                    <span class="font-label-lg text-label-lg text-on-surface ${nameCls}">${teamSideLabel(side)}</span>
+                </div>
+                <span class="font-headline-md text-headline-md ${scoreCls}">${score ?? ""}</span>
+            </div>`;
+        };
+
+        const cardCls = isFinal
+            ? "bg-surface border-2 border-primary rounded-lg overflow-hidden relative shadow-lg"
+            : "bg-surface border border-outline-variant rounded-DEFAULT overflow-hidden relative";
+
+        const linkAttrs = (match.status !== "SCHEDULED" || homeDefined)
+            ? `onclick="location.href='partido.html?id=${match.id}'" style="cursor:pointer"`
+            : "";
+
+        if (isFinal) {
+            return `
+            <div class="${cardCls}" ${linkAttrs}>
+                <div class="bg-primary text-on-primary px-xs py-sm text-center font-headline-md text-headline-md tracking-wider">
+                    ${venueLabel || "Final"}
+                </div>
+                ${teamRow(match.home, homeScore, homeWon, false)}
+                ${teamRow(match.away, awayScore, awayWon, true)}
+            </div>`;
+        }
 
         return `
-        ${linkOpen}
-        <div class="bg-surface-container rounded-lg p-md border ${cardCls} transition-colors hover:border-outline-variant flex flex-col gap-xs">
-            <div class="flex justify-between items-center mb-xs">
-                <span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-widest">${venueLabel || ""}</span>
-                <span class="px-2 py-0.5 rounded-sm uppercase tracking-wider font-label-bold text-[10px] ${info.badge}">${info.label}</span>
-            </div>
-            <div class="flex items-center justify-between gap-sm">
-                <div class="flex items-center gap-xs flex-1 ${homeDefined ? '' : 'text-on-surface-variant'}">
-                    ${teamSideCrest(match.home)}
-                    <span class="font-label-bold text-label-bold truncate">${teamSideLabel(match.home)}</span>
-                </div>
-                <span class="font-headline-lg-mobile text-headline-lg-mobile font-bold">${score ?? (homeDefined && awayDefined ? "VS" : "")}</span>
-            </div>
-            <div class="flex items-center justify-between gap-sm">
-                <div class="flex items-center gap-xs flex-1 ${awayDefined ? '' : 'text-on-surface-variant'}">
-                    ${teamSideCrest(match.away)}
-                    <span class="font-label-bold text-label-bold truncate">${teamSideLabel(match.away)}</span>
-                </div>
-            </div>
-            ${match.broadcast_mx && match.broadcast_mx.length ? `<div class="flex gap-xs flex-wrap pt-xs border-t border-outline-variant/30 mt-xs">${WC26.broadcastChips(match.broadcast_mx)}</div>` : ""}
-        </div>
-        ${linkClose}`;
+        <div class="${cardCls}" ${linkAttrs}>
+            ${liveTag}
+            ${teamRow(match.home, homeScore, homeWon, false)}
+            ${teamRow(match.away, awayScore, awayWon, true)}
+        </div>`;
     }
 })();
 </script>

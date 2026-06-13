@@ -1,106 +1,147 @@
 <!DOCTYPE html>
-<html class="dark" lang="es-MX">
+<html class="light" lang="es">
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>MEXICO 2026 - Calendario</title>
+<title>Calendario - FIFA World Cup 2026</title>
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<link href="https://fonts.googleapis.com/css2?family=Anybody:wght@400;700;800&family=Hanken+Grotesk:wght@400;500;700&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Hanken+Grotesk:wght@400;600;700&display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
 <link href="./assets/css/theme.css" rel="stylesheet"/>
 <script src="./assets/js/data.js"></script>
 <script>tailwind.config = window.WC26_TAILWIND_CONFIG;</script>
 </head>
-<body class="bg-surface-dim text-on-surface font-body-md min-h-screen selection:bg-secondary selection:text-on-secondary pb-24 md:pb-0">
+<body class="bg-background text-on-background min-h-screen flex flex-col">
 
-<header id="wc26-topnav" class="hidden md:flex w-full top-0 sticky bg-surface-container-high z-50"></header>
+<header id="wc26-topnav"></header>
 
-<header class="md:hidden w-full top-0 sticky z-50 bg-surface-dim/90 backdrop-blur-md border-b border-surface-container py-md px-margin-mobile flex justify-between items-center">
-    <span class="font-headline-lg-mobile text-headline-lg-mobile text-secondary tracking-tight">MEXICO 2026</span>
-</header>
+<main class="flex-grow flex flex-col w-full max-w-[1280px] mx-auto px-margin-mobile md:px-margin-desktop py-xl gap-xl">
 
-<main class="max-w-screen-xl mx-auto px-margin-mobile md:px-margin-desktop pt-lg pb-xl">
-
-    <div class="flex flex-col md:flex-row md:items-end justify-between gap-md mb-xl">
-        <div>
-            <h1 class="font-headline-xl text-headline-xl hidden md:block">Calendario del Torneo</h1>
-            <h1 class="font-headline-lg-mobile text-headline-lg-mobile md:hidden">Calendario del Torneo</h1>
-            <p class="font-body-md text-body-md text-on-surface-variant mt-xs">Todos los partidos, horarios e información de transmisión.</p>
+    <section class="flex flex-col gap-md">
+        <h1 class="font-display-lg text-display-lg text-on-surface">Calendario de Partidos</h1>
+        <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-md">
+            <!-- Date Ribbon -->
+            <div id="date-ribbon" class="flex gap-sm overflow-x-auto hide-scrollbar w-full md:w-auto pb-2">
+                <div class="skeleton h-[72px] w-[72px] rounded-lg flex-shrink-0"></div>
+                <div class="skeleton h-[72px] w-[72px] rounded-lg flex-shrink-0"></div>
+                <div class="skeleton h-[72px] w-[72px] rounded-lg flex-shrink-0"></div>
+            </div>
+            <!-- Group filter -->
+            <div class="flex gap-sm w-full md:w-auto">
+                <div class="relative w-full md:w-48">
+                    <select id="group-filter" class="w-full appearance-none bg-surface border-b border-outline-variant text-on-surface font-body-md text-body-md py-sm pl-sm pr-lg focus:outline-none focus:border-primary focus:ring-0 transition-colors">
+                        <option value="">Todos los grupos</option>
+                    </select>
+                    <span class="material-symbols-outlined absolute right-2 top-1/2 -translate-y-1/2 text-on-surface-variant pointer-events-none">expand_more</span>
+                </div>
+            </div>
         </div>
-        <div class="flex items-center gap-sm">
-            <select id="group-filter" class="bg-surface-container-high border border-outline-variant rounded-full px-md py-xs font-label-bold text-label-bold text-on-surface focus:outline-none focus:ring-2 focus:ring-secondary">
-                <option value="">Todos los grupos</option>
-            </select>
-        </div>
-    </div>
+    </section>
 
-    <div id="schedule-list" class="space-y-xl">
-        <div class="skeleton h-32 rounded-lg"></div>
-        <div class="skeleton h-32 rounded-lg"></div>
-        <div class="skeleton h-32 rounded-lg"></div>
-    </div>
+    <section id="schedule-list" class="flex flex-col gap-xl">
+        <div class="skeleton h-40 rounded-lg"></div>
+        <div class="skeleton h-40 rounded-lg"></div>
+    </section>
 </main>
 
-<nav id="wc26-bottomnav"></nav>
+<footer id="wc26-footer"></footer>
 
 <script src="./assets/js/nav.js" data-active="calendario"></script>
 <script>
 (async function () {
     const data = await WC26.getMatches();
     const listEl = document.getElementById("schedule-list");
+    const ribbonEl = document.getElementById("date-ribbon");
     const groupFilter = document.getElementById("group-filter");
 
     if (!data || !data.matches || !data.matches.length) {
-        listEl.innerHTML = `<div class="bg-surface-container rounded-lg p-lg text-center text-on-surface-variant">
+        ribbonEl.innerHTML = "";
+        listEl.innerHTML = `<div class="bg-surface border border-outline-variant rounded-lg p-lg text-center text-on-surface-variant font-body-md text-body-md">
             Calendario no disponible aún.
         </div>`;
         return;
     }
 
     const allMatches = data.matches;
+    const grouped = WC26.groupByDate(allMatches);
+    const allDateKeys = Object.keys(grouped).sort();
 
-    // Populate group filter
+    // Group filter options
     const groups = [...new Set(allMatches.map(m => m.group).filter(Boolean))].sort();
     groupFilter.innerHTML += groups.map(g => `<option value="${g}">${g.replace("Group ", "Grupo ")}</option>`).join("");
 
+    // Date ribbon
+    const todayKey = new Date().toLocaleDateString("en-CA", { timeZone: "America/Mexico_City" });
+    let selectedDate = allDateKeys.includes(todayKey) ? todayKey : allDateKeys[0];
+
+    renderRibbon();
     groupFilter.addEventListener("change", render);
     render();
 
+    function renderRibbon() {
+        ribbonEl.innerHTML = allDateKeys.map(dateKey => {
+            const d = new Date(dateKey + "T12:00:00");
+            const month = d.toLocaleDateString("es-MX", { month: "short", timeZone: "America/Mexico_City" }).replace(".", "");
+            const day = d.toLocaleDateString("es-MX", { day: "numeric", timeZone: "America/Mexico_City" });
+            const isSelected = dateKey === selectedDate;
+            const hasLive = (grouped[dateKey] || []).some(m => WC26.isLive(m));
+            const cls = isSelected
+                ? "flex flex-col items-center justify-center min-w-[72px] h-[72px] rounded-lg border-2 border-primary bg-primary-container/10 transition-colors flex-shrink-0"
+                : "flex flex-col items-center justify-center min-w-[72px] h-[72px] rounded-lg border border-outline-variant bg-surface hover:bg-surface-container-high transition-colors flex-shrink-0";
+            const textCls = isSelected ? "text-primary" : "text-on-surface";
+            return `
+            <button class="${cls}" data-date="${dateKey}">
+                <span class="font-label-md text-label-md ${isSelected ? 'text-primary' : 'text-on-surface-variant'} uppercase">${month}</span>
+                <span class="font-headline-lg text-headline-lg ${textCls}">${day}</span>
+                ${hasLive ? '<div class="w-1.5 h-1.5 rounded-full bg-tertiary-container mt-1"></div>' : ''}
+            </button>`;
+        }).join("");
+
+        ribbonEl.querySelectorAll("button[data-date]").forEach(btn => {
+            btn.addEventListener("click", () => {
+                selectedDate = btn.dataset.date;
+                renderRibbon();
+                render();
+            });
+        });
+    }
+
     function render() {
         const selectedGroup = groupFilter.value;
-        const matches = selectedGroup
-            ? allMatches.filter(m => m.group === selectedGroup)
-            : allMatches;
+        let matches = grouped[selectedDate] || [];
+
+        if (selectedGroup) {
+            matches = matches.filter(m => m.group === selectedGroup);
+        }
+
+        const heading = WC26.formatDateHeading(selectedDate);
 
         if (!matches.length) {
-            listEl.innerHTML = `<div class="bg-surface-container rounded-lg p-lg text-center text-on-surface-variant">
-                No hay partidos para este filtro.
+            listEl.innerHTML = `
+            <div class="flex flex-col gap-md">
+                <div class="flex items-center gap-sm">
+                    <h2 class="font-headline-md text-headline-md text-on-surface">${heading}</h2>
+                    <div class="h-[1px] flex-grow bg-outline-variant"></div>
+                </div>
+                <div class="bg-surface border border-outline-variant rounded-lg p-lg text-center text-on-surface-variant font-body-md text-body-md">
+                    No hay partidos para este filtro en esta fecha.
+                </div>
             </div>`;
             return;
         }
 
-        const grouped = WC26.groupByDate(matches);
-        const dateKeys = Object.keys(grouped).sort();
-
-        listEl.innerHTML = dateKeys.map(dateKey => renderDateSection(dateKey, grouped[dateKey])).join("");
-    }
-
-    function renderDateSection(dateKey, matches) {
         const sorted = [...matches].sort((a, b) => new Date(a.utc_date) - new Date(b.utc_date));
-        const heading = WC26.formatDateHeading(dateKey);
-        const matchday = sorted[0].matchday;
 
-        return `
-        <section>
-            <div class="sticky top-[80px] z-40 bg-surface-dim/90 backdrop-blur-md py-sm mb-sm border-b border-outline-variant flex items-center justify-between">
-                <h2 class="font-headline-lg text-headline-lg hidden md:block text-primary">${heading}</h2>
-                <h2 class="font-headline-lg-mobile text-headline-lg-mobile md:hidden text-primary">${heading}</h2>
-                ${matchday ? `<span class="font-label-bold text-label-bold text-on-surface-variant">Jornada ${matchday}</span>` : ""}
+        listEl.innerHTML = `
+        <div class="flex flex-col gap-md">
+            <div class="flex items-center gap-sm">
+                <h2 class="font-headline-md text-headline-md text-on-surface">${heading}</h2>
+                <div class="h-[1px] flex-grow bg-outline-variant"></div>
             </div>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-sm">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-md">
                 ${sorted.map(renderCard).join("")}
             </div>
-        </section>`;
+        </div>`;
     }
 
     function renderCard(match) {
@@ -108,60 +149,54 @@
         const live = WC26.isLive(match);
         const home = match.home_team;
         const away = match.away_team;
-        const groupLabel = (match.group || "").replace("Group ", "Grupo ");
+        const groupLabel = (match.group || "").replace("Group ", "Grupo ") || (match.stage || "").replace(/_/g, " ");
         const venueLabel = [match.venue, match.city].filter(Boolean).join(", ");
 
-        const liveStripe = live
-            ? `<div class="absolute top-0 left-0 w-1 h-full bg-secondary shadow-[0_0_8px_rgba(67,252,118,0.5)]"></div>`
-            : "";
+        const stripeCls = live ? "bg-tertiary-container" : (match.status === "FINISHED" ? "bg-outline-variant" : "bg-primary-container");
+        const opacityCls = (live || match.status === "FINISHED") ? "" : "opacity-90";
 
-        const inauguralBadge = match.is_inaugural
-            ? `<div class="absolute top-sm right-sm bg-tertiary-container text-on-tertiary-container font-label-sm text-label-sm px-2 py-0.5 rounded-sm uppercase tracking-wider hidden md:block">PARTIDO INAUGURAL</div>`
-            : "";
+        const topRow = live
+            ? `<div class="flex items-center gap-xs">
+                 <span class="material-symbols-outlined text-[16px] text-tertiary-container">sensors</span>
+                 <span class="font-label-lg text-label-lg text-tertiary-container uppercase tracking-wider">${info.label}</span>
+               </div>`
+            : `<div class="flex items-center gap-xs">
+                 <span class="font-label-lg text-label-lg text-on-surface-variant uppercase tracking-wider">${info.label}</span>
+               </div>`;
 
-        const scoreOrTime = (match.status === "FINISHED" || live)
-            ? `<span class="font-headline-lg text-headline-lg ${live ? 'text-secondary' : 'text-on-surface'} opacity-90">${WC26.formatScore(match)}</span>`
-            : `<span class="font-headline-lg text-headline-lg text-on-surface opacity-90">${info.label}</span>`;
-
-        const teamRow = (team, align) => {
-            const dashed = team && team.id ? "" : "border-dashed";
-            const textCls = team && team.id ? "" : "text-on-surface-variant";
-            return `
-            <div class="flex items-center gap-md">
-                <div class="w-10 h-10 rounded-full bg-surface-variant border border-outline-variant ${dashed} flex items-center justify-center overflow-hidden">
-                    ${team && team.crest
-                        ? `<img alt="${team.name}" class="w-full h-full object-cover" src="${team.crest}" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"/><span class="font-label-bold text-label-bold ${textCls}" style="display:none;">${WC26.teamShort(team)}</span>`
-                        : `<span class="font-label-bold text-label-bold ${textCls}">${WC26.teamShort(team)}</span>`}
-                </div>
-                <span class="font-label-bold text-label-bold text-lg ${textCls}">${WC26.teamLabel(team)}</span>
-            </div>`;
-        };
+        const broadcastLabel = (match.broadcast_mx || []).length
+            ? match.broadcast_mx.join(", ")
+            : "Por confirmar";
 
         return `
-        <a href="partido.html?id=${match.id}" class="bg-surface-container-high rounded-lg p-md flex flex-col gap-sm relative border border-transparent hover:border-outline-variant transition-colors">
-            ${liveStripe}
-            ${inauguralBadge}
-            <div class="flex justify-between items-start">
-                <div class="flex items-center gap-xs bg-surface-variant px-2 py-1 rounded-sm">
-                    <span class="font-label-sm text-label-sm text-on-surface-variant">${groupLabel || (match.stage || "").replace(/_/g, " ")}</span>
+        <a href="partido.html?id=${match.id}" class="bg-surface border border-outline-variant rounded-lg p-3 flex flex-col gap-md ${live ? 'shadow-[0px_10px_20px_rgba(0,0,0,0.04)]' : ''} relative overflow-hidden group hover:border-primary transition-colors cursor-pointer ${opacityCls}">
+            <div class="absolute top-0 left-0 w-1 h-full ${stripeCls}"></div>
+            <div class="flex justify-between items-center pl-sm">
+                ${topRow}
+                <span class="font-label-md text-label-md text-on-surface-variant bg-surface-container-high px-2 py-1 rounded-DEFAULT">${groupLabel}</span>
+            </div>
+            <div class="flex items-center justify-between px-sm py-xs">
+                <div class="flex items-center gap-sm flex-1">
+                    ${WC26.crestImg(home, "w-10 h-10")}
+                    <span class="font-headline-lg text-headline-lg text-on-surface">${WC26.teamShort(home)}</span>
                 </div>
-                ${venueLabel ? `<div class="flex items-center gap-xs text-on-surface-variant">
-                    <span class="material-symbols-outlined text-[14px]">stadium</span>
-                    <span class="font-body-md text-body-md text-[12px]">${venueLabel}</span>
-                </div>` : ""}
-            </div>
-            <div class="flex justify-between items-center my-xs">
-                ${teamRow(home)}
-                ${scoreOrTime}
-            </div>
-            <div class="flex justify-between items-center my-xs">
-                ${teamRow(away)}
-            </div>
-            <div class="mt-sm pt-sm border-t border-outline-variant flex justify-between items-center">
-                <div class="flex gap-xs flex-wrap">
-                    ${WC26.broadcastChips(match.broadcast_mx)}
+                <div class="flex flex-col items-center justify-center px-lg bg-surface-container-lowest rounded-lg py-1 border border-outline-variant">
+                    <span class="font-display-md text-display-md text-on-surface leading-none">${WC26.formatScore(match)}</span>
                 </div>
-                <span class="text-primary font-label-bold text-label-bold hover:text-secondary transition-colors text-sm">Centro de Partido</span>
+                <div class="flex items-center gap-sm flex-1 justify-end">
+                    <span class="font-headline-lg text-headline-lg text-on-surface">${WC26.teamShort(away)}</span>
+                    ${WC26.crestImg(away, "w-10 h-10")}
+                </div>
+            </div>
+            <div class="flex justify-between items-center pl-sm border-t border-outline-variant pt-2 mt-1">
+                <div class="flex items-center gap-sm text-on-surface-variant">
+                    <span class="material-symbols-outlined text-[16px]">stadium</span>
+                    <span class="font-body-md text-body-md">${venueLabel || "Sede por confirmar"}</span>
+                </div>
+                <div class="flex items-center gap-xs text-on-surface-variant">
+                    <span class="material-symbols-outlined text-[16px]">tv</span>
+                    <span class="font-body-md text-body-md">${broadcastLabel}</span>
+                </div>
             </div>
         </a>`;
     }

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html class="light" lang="es">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Quiniela Social - FIFA World Cup 2026</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Hanken+Grotesk:wght@400;600;700&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="./assets/css/theme.css" rel="stylesheet"/>
+<script src="./assets/js/data.js"></script>
+<script>tailwind.config = window.WC26_TAILWIND_CONFIG;</script>
+</head>
+<body class="bg-background text-on-background font-body-md min-h-screen flex flex-col">
+
+<header id="wc26-topnav"></header>
+
+<main class="flex-grow w-full px-margin-mobile md:px-margin-desktop max-w-[1280px] mx-auto py-xl">
+    <div class="mb-xl text-center md:text-left">
+        <h1 class="font-display-lg text-display-lg text-primary mb-2 uppercase">Quiniela Social</h1>
+        <p class="font-body-lg text-body-lg text-on-surface-variant">El verdadero campeonato se juega en la oficina. ¿Quién pagará los tacos?</p>
+    </div>
+
+    <div id="quiniela-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-lg">
+        <div class="skeleton h-56 rounded-xl"></div>
+        <div class="skeleton h-56 rounded-xl"></div>
+        <div class="skeleton h-56 rounded-xl"></div>
+    </div>
+</main>
+
+<footer id="wc26-footer"></footer>
+
+<script src="./assets/js/nav.js" data-active="quiniela"></script>
+<script>
+(async function () {
+    const data = await WC26.getQuiniela();
+    const gridEl = document.getElementById("quiniela-grid");
+
+    if (!data || !data.participants || !data.participants.length) {
+        gridEl.innerHTML = `<div class="md:col-span-2 lg:col-span-3 bg-surface-container-lowest border border-outline-variant rounded-xl p-lg text-center text-on-surface-variant font-body-md text-body-md">
+            La quiniela aún no tiene participantes registrados.
+        </div>`;
+        return;
+    }
+
+    gridEl.innerHTML = data.participants.map(renderParticipant).join("");
+
+    function renderParticipant(p) {
+        const allEliminated = p.teams.length > 0 && p.teams.every(t => t.status === "eliminated");
+
+        const teamRows = p.teams.map(t => {
+            if (t.status === "active") {
+                return `
+                <div class="flex items-center justify-between p-3 rounded-lg bg-secondary-container/30 border border-secondary/20">
+                    <span class="font-body-lg font-bold text-on-secondary-container flex items-center gap-2">
+                        <span class="w-2 h-2 rounded-full bg-secondary"></span> ${t.name}
+                    </span>
+                    <span class="material-symbols-outlined text-secondary text-sm">check_circle</span>
+                </div>`;
+            }
+            return `
+            <div class="flex items-center justify-between p-3 rounded-lg bg-surface-variant border border-outline-variant ${allEliminated ? '' : 'opacity-60'}">
+                <span class="font-body-lg text-on-surface-variant line-through flex items-center gap-2">
+                    <span class="w-2 h-2 rounded-full bg-outline-variant"></span> ${t.name}
+                </span>
+                <span class="material-symbols-outlined text-error text-sm">cancel</span>
+            </div>`;
+        }).join("");
+
+        if (allEliminated) {
+            return `
+            <div class="bg-surface-container-lowest border border-error/20 rounded-xl p-lg shadow-sm relative overflow-hidden group">
+                <div class="absolute inset-0 skull-overlay z-10 flex flex-col items-center justify-center text-center p-md">
+                    <span class="material-symbols-outlined text-6xl text-error mb-2 opacity-80" style="font-variation-settings: 'FILL' 1">skull</span>
+                    <span class="font-display-md text-headline-md text-error uppercase">Eliminado</span>
+                    ${p.quote ? `<p class="font-body-md text-on-error-container italic mt-2">"${p.quote}"</p>` : ""}
+                </div>
+                <div class="mb-lg grayscale opacity-40">
+                    <h3 class="font-title-lg text-title-lg text-on-surface">${p.name}</h3>
+                </div>
+                <div class="space-y-sm grayscale opacity-40">
+                    <p class="font-label-lg text-label-lg text-outline uppercase mb-2">Equipos Asignados</p>
+                    <div class="flex flex-col gap-2">${teamRows}</div>
+                </div>
+            </div>`;
+        }
+
+        return `
+        <div class="bg-surface-container-lowest border border-outline-variant rounded-xl p-lg shadow-sm hover:shadow-md transition-shadow relative overflow-hidden">
+            <div class="mb-lg">
+                <h3 class="font-title-lg text-title-lg text-on-surface">${p.name}</h3>
+            </div>
+            <div class="space-y-sm">
+                <p class="font-label-lg text-label-lg text-primary uppercase mb-2">Equipos Asignados</p>
+                <div class="flex flex-col gap-2">${teamRows}</div>
+            </div>
+        </div>`;
+    }
+})();
+</script>
+</body>
+</html>

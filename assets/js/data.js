@@ -1,60 +1,59 @@
 /* =========================================================
-   MEXICO 2026 — Shared config & data layer
+   UNITY ARENA — Shared config & data layer
    ========================================================= */
 
-// Tailwind config shared across all pages (matches DESIGN.md tokens)
 window.WC26_TAILWIND_CONFIG = {
     darkMode: "class",
     theme: {
         extend: {
             colors: {
-                "on-surface-variant": "#c3c5d9",
-                "secondary": "#43fc76",
-                "surface-bright": "#353946",
-                "tertiary": "#ffb3b3",
-                "surface-tint": "#b6c4ff",
-                "on-secondary": "#003912",
-                "on-background": "#dfe2f3",
-                "secondary-fixed": "#69ff87",
-                "primary-fixed-dim": "#b6c4ff",
-                "inverse-surface": "#dfe2f3",
-                "surface-variant": "#313442",
-                "on-error": "#690005",
-                "on-primary-container": "#e3e6ff",
-                "on-tertiary-fixed": "#400009",
-                "outline-variant": "#434656",
-                "on-tertiary": "#680014",
-                "tertiary-fixed": "#ffdad9",
-                "on-tertiary-container": "#ffe0df",
-                "tertiary-container": "#d00033",
-                "surface-container-high": "#262a37",
-                "on-primary-fixed-variant": "#0039b3",
-                "primary-fixed": "#dce1ff",
-                "outline": "#8d90a2",
-                "inverse-on-surface": "#2c303d",
-                "on-primary-fixed": "#001551",
-                "surface-container-highest": "#313442",
-                "primary": "#b6c4ff",
-                "on-surface": "#dfe2f3",
-                "secondary-container": "#00de5e",
-                "on-primary": "#002780",
-                "error-container": "#93000a",
-                "on-secondary-container": "#005c22",
-                "primary-container": "#0055ff",
-                "surface-dim": "#0f131f",
-                "surface-container-lowest": "#0a0e1a",
-                "on-secondary-fixed-variant": "#00531e",
-                "tertiary-fixed-dim": "#ffb3b3",
-                "inverse-primary": "#004dea",
-                "background": "#0f131f",
-                "surface-container": "#1b1f2c",
-                "error": "#ffb4ab",
-                "on-tertiary-fixed-variant": "#920021",
-                "surface-container-low": "#171b28",
-                "on-error-container": "#ffdad6",
-                "on-secondary-fixed": "#002108",
-                "secondary-fixed-dim": "#17e462",
-                "surface": "#0f131f"
+                "inverse-on-surface": "#f3f0ef",
+                "on-tertiary-fixed": "#400013",
+                "tertiary-container": "#ff7a93",
+                "on-secondary-fixed-variant": "#005225",
+                "surface-container-low": "#f6f3f2",
+                "primary-container": "#00b2e3",
+                "inverse-primary": "#68d3ff",
+                "surface-container": "#f0edec",
+                "on-surface": "#1c1b1b",
+                "on-secondary-fixed": "#00210b",
+                "primary-fixed": "#bde9ff",
+                "surface-container-high": "#ebe7e7",
+                "error-container": "#ffdad6",
+                "tertiary-fixed": "#ffd9dd",
+                "on-primary": "#ffffff",
+                "error": "#ba1a1a",
+                "outline": "#6d797f",
+                "tertiary-fixed-dim": "#ffb2bd",
+                "on-primary-container": "#004054",
+                "surface-dim": "#dcd9d9",
+                "surface-bright": "#fcf9f8",
+                "on-secondary": "#ffffff",
+                "on-primary-fixed": "#001f2a",
+                "secondary-fixed": "#78fc9c",
+                "on-secondary-container": "#007236",
+                "surface-container-lowest": "#ffffff",
+                "on-tertiary": "#ffffff",
+                "secondary-fixed-dim": "#5adf82",
+                "on-tertiary-container": "#79002c",
+                "surface-variant": "#e5e2e1",
+                "background": "#fcf9f8",
+                "on-tertiary-fixed-variant": "#900036",
+                "primary-fixed-dim": "#68d3ff",
+                "inverse-surface": "#313030",
+                "on-error-container": "#93000a",
+                "outline-variant": "#bcc8cf",
+                "surface-tint": "#006684",
+                "surface": "#fcf9f8",
+                "surface-container-highest": "#e5e2e1",
+                "on-error": "#ffffff",
+                "secondary": "#006d33",
+                "secondary-container": "#75f999",
+                "on-background": "#1c1b1b",
+                "on-surface-variant": "#3d484e",
+                "tertiary": "#bd0049",
+                "primary": "#006684",
+                "on-primary-fixed-variant": "#004d64"
             },
             borderRadius: {
                 "DEFAULT": "0.125rem",
@@ -63,37 +62,39 @@ window.WC26_TAILWIND_CONFIG = {
                 "full": "0.75rem"
             },
             spacing: {
-                "unit": "4px",
-                "xl": "40px",
-                "gutter": "16px",
+                "xl": "48px",
+                "base": "4px",
                 "margin-desktop": "64px",
+                "xs": "4px",
                 "sm": "8px",
                 "margin-mobile": "16px",
-                "lg": "24px",
                 "md": "16px",
-                "xs": "4px"
+                "gutter": "16px",
+                "lg": "24px"
             },
             fontFamily: {
-                "display-lg": ["Anybody"],
                 "body-md": ["Hanken Grotesk"],
-                "headline-lg": ["Anybody"],
-                "label-bold": ["Hanken Grotesk"],
-                "headline-xl": ["Anybody"],
-                "score-display": ["Anybody"],
+                "headline-md": ["Bebas Neue"],
+                "display-lg": ["Bebas Neue"],
+                "headline-lg-mobile": ["Bebas Neue"],
+                "label-lg": ["Hanken Grotesk"],
+                "headline-lg": ["Bebas Neue"],
+                "display-md": ["Bebas Neue"],
+                "label-md": ["Hanken Grotesk"],
                 "body-lg": ["Hanken Grotesk"],
-                "headline-lg-mobile": ["Anybody"],
-                "label-sm": ["Hanken Grotesk"]
+                "title-lg": ["Hanken Grotesk"]
             },
             fontSize: {
-                "display-lg": ["64px", { lineHeight: "1.1", letterSpacing: "-0.04em", fontWeight: "800" }],
-                "body-md": ["16px", { lineHeight: "1.5", fontWeight: "400" }],
-                "headline-lg": ["32px", { lineHeight: "1.2", fontWeight: "700" }],
-                "label-bold": ["14px", { lineHeight: "1.2", fontWeight: "700" }],
-                "headline-xl": ["48px", { lineHeight: "1.2", fontWeight: "700" }],
-                "score-display": ["40px", { lineHeight: "1", letterSpacing: "0.05em", fontWeight: "800" }],
-                "body-lg": ["18px", { lineHeight: "1.6", fontWeight: "400" }],
-                "headline-lg-mobile": ["24px", { lineHeight: "1.2", fontWeight: "700" }],
-                "label-sm": ["12px", { lineHeight: "1.2", fontWeight: "500" }]
+                "body-md": ["14px", { lineHeight: "20px", fontWeight: "400" }],
+                "headline-md": ["24px", { lineHeight: "24px", fontWeight: "400" }],
+                "display-lg": ["64px", { lineHeight: "64px", letterSpacing: "0.02em", fontWeight: "400" }],
+                "headline-lg-mobile": ["28px", { lineHeight: "28px", fontWeight: "400" }],
+                "label-lg": ["12px", { lineHeight: "16px", fontWeight: "700" }],
+                "headline-lg": ["32px", { lineHeight: "32px", letterSpacing: "0.03em", fontWeight: "400" }],
+                "display-md": ["48px", { lineHeight: "48px", letterSpacing: "0.02em", fontWeight: "400" }],
+                "label-md": ["10px", { lineHeight: "12px", fontWeight: "600" }],
+                "body-lg": ["16px", { lineHeight: "24px", fontWeight: "400" }],
+                "title-lg": ["20px", { lineHeight: "28px", fontWeight: "700" }]
             }
         }
     }
@@ -121,19 +122,19 @@ const WC26 = {
     getStandings() { return this.fetchJSON("standings"); },
     getBracket() { return this.fetchJSON("bracket"); },
     getConfig() { return this.fetchJSON("config"); },
+    getQuiniela() { return this.fetchJSON("quiniela"); },
 
     /* =====================================================
        Formatting helpers
        ===================================================== */
 
-    // Status -> { label, badgeClass }
     statusInfo(match) {
         switch (match.status) {
             case "IN_PLAY":
             case "PAUSED":
-                return { label: `EN VIVO ${match.minute != null ? match.minute + "'" : ""}`.trim(), badge: "badge-live pulse-live" };
+                return { label: `EN VIVO ${match.minute != null ? "- " + match.minute + "'" : ""}`.trim(), badge: "badge-live" };
             case "FINISHED":
-                return { label: "FT", badge: "badge-finished" };
+                return { label: "FINALIZADO", badge: "badge-finished" };
             case "POSTPONED":
                 return { label: "POSPUESTO", badge: "badge-finished" };
             case "SUSPENDED":
@@ -157,12 +158,11 @@ const WC26 = {
         return `${match.score.home} - ${match.score.away}`;
     },
 
-    // Group matches by their local calendar date (YYYY-MM-DD) using Mexico City TZ
     groupByDate(matches) {
         const groups = {};
         for (const m of matches) {
             const d = new Date(m.utc_date);
-            const key = d.toLocaleDateString("en-CA", { timeZone: "America/Mexico_City" }); // YYYY-MM-DD
+            const key = d.toLocaleDateString("en-CA", { timeZone: "America/Mexico_City" });
             (groups[key] = groups[key] || []).push(m);
         }
         return groups;
@@ -174,7 +174,6 @@ const WC26 = {
         return str.charAt(0).toUpperCase() + str.slice(1);
     },
 
-    // Render broadcast chips HTML
     broadcastChips(codes) {
         if (!codes || !codes.length) return "";
         const map = {
@@ -188,14 +187,13 @@ const WC26 = {
         }).join("");
     },
 
-    // Team crest with graceful fallback to TLA initials
     crestImg(team, sizeClasses = "w-8 h-8") {
         if (team && team.crest) {
-            return `<img alt="${team.name}" class="${sizeClasses} rounded-full object-cover bg-surface-bright" src="${team.crest}" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"/>
-                    <div class="${sizeClasses} rounded-full bg-surface-bright items-center justify-center font-label-sm text-label-sm" style="display:none;">${team.tla || team.short_name || "?"}</div>`;
+            return `<img alt="${team.name}" class="${sizeClasses} rounded-full object-cover bg-surface-container-high border border-outline-variant" src="${team.crest}" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"/>
+                    <div class="${sizeClasses} rounded-full bg-surface-container-high border border-outline-variant items-center justify-center font-label-md text-label-md" style="display:none;">${team.tla || team.short_name || "?"}</div>`;
         }
         const label = (team && (team.tla || team.short_name)) || "?";
-        return `<div class="${sizeClasses} rounded-full bg-surface-bright flex items-center justify-center font-label-sm text-label-sm">${label}</div>`;
+        return `<div class="${sizeClasses} rounded-full bg-surface-container-high border border-outline-variant flex items-center justify-center font-label-md text-label-md">${label}</div>`;
     },
 
     teamLabel(team) {

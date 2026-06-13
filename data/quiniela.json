@@ -1,0 +1,52 @@
+{
+  "_meta": {
+    "source": "manual",
+    "updated_at": "2026-06-12T00:00:00Z",
+    "note": "Este archivo se edita manualmente. 'status' de cada equipo: 'active' o 'eliminated'. Cuando todos los equipos de un participante estan 'eliminated', su tarjeta se muestra como ELIMINADO en la pagina de Quiniela."
+  },
+  "participants": [
+    {
+      "name": "Carlos",
+      "teams": [
+        { "tla": "MEX", "name": "México", "status": "active" },
+        { "tla": "BRA", "name": "Brasil", "status": "active" }
+      ]
+    },
+    {
+      "name": "Ana",
+      "teams": [
+        { "tla": "ARG", "name": "Argentina", "status": "active" },
+        { "tla": "ENG", "name": "Inglaterra", "status": "eliminated" }
+      ]
+    },
+    {
+      "name": "Roberto",
+      "teams": [
+        { "tla": "ITA", "name": "Italia", "status": "eliminated" },
+        { "tla": "BEL", "name": "Bélgica", "status": "eliminated" }
+      ],
+      "quote": "Pagaría los tacos"
+    },
+    {
+      "name": "Lucía",
+      "teams": [
+        { "tla": "ESP", "name": "España", "status": "active" },
+        { "tla": "GER", "name": "Alemania", "status": "active" }
+      ]
+    },
+    {
+      "name": "Francisco",
+      "teams": [
+        { "tla": "MEX", "name": "México", "status": "active" },
+        { "tla": "ARG", "name": "Argentina", "status": "active" }
+      ]
+    },
+    {
+      "name": "Marta",
+      "teams": [
+        { "tla": "SUI", "name": "Suiza", "status": "active" },
+        { "tla": "DEN", "name": "Dinamarca", "status": "eliminated" }
+      ]
+    }
+  ]
+}

@@ -1,16 +1,15 @@
 /* =========================================================
-   MEXICO 2026 — Shared navigation
+   UNITY ARENA — Shared navigation
    Usage: <script src="./assets/js/nav.js" data-active="inicio"></script>
-   Then call WC26_NAV.render() or it auto-renders on DOMContentLoaded
-   into elements with id="wc26-topnav" and id="wc26-bottomnav".
    ========================================================= */
 
 (function () {
     const NAV_ITEMS = [
-        { key: "inicio", label: "Inicio", href: "index.html", icon: "dashboard" },
-        { key: "grupos", label: "Grupos", href: "grupos.html", icon: "leaderboard" },
-        { key: "calendario", label: "Calendario", href: "calendario.html", icon: "calendar_month" },
-        { key: "bracket", label: "Eliminatorias", href: "bracket.html", icon: "account_tree" }
+        { key: "inicio", label: "Inicio", href: "index.html" },
+        { key: "grupos", label: "Grupos", href: "grupos.html" },
+        { key: "calendario", label: "Calendario", href: "calendario.html" },
+        { key: "bracket", label: "Cuadro", href: "bracket.html" },
+        { key: "quiniela", label: "Quiniela Social", href: "quiniela.html" }
     ];
 
     function currentScript() {
@@ -21,52 +20,68 @@
     function renderTop(active) {
         const el = document.getElementById("wc26-topnav");
         if (!el) return;
+
         const links = NAV_ITEMS.map(item => {
             const isActive = item.key === active;
             const cls = isActive
-                ? "text-secondary border-b-2 border-secondary font-label-bold text-label-bold opacity-80 scale-95 transition-all py-xs"
-                : "text-on-surface-variant font-label-bold text-label-bold hover:text-secondary-fixed transition-colors duration-200";
+                ? "text-primary border-b-2 border-primary font-bold pb-1 font-label-lg text-label-lg px-2 py-1"
+                : "text-on-surface-variant hover:text-primary transition-colors duration-200 font-label-lg text-label-lg px-2 py-1";
             return `<a class="${cls}" href="${item.href}">${item.label}</a>`;
         }).join("\n");
 
+        el.className = "bg-surface border-b border-outline-variant bg-surface/80 backdrop-blur-md docked full-width top-0 sticky z-50";
         el.innerHTML = `
-        <div class="flex justify-between items-center px-margin-desktop w-full py-md max-w-screen-2xl mx-auto">
-            <div class="flex items-center gap-xl">
-                <span class="font-display-lg text-display-lg text-secondary tracking-tight">MEXICO 2026</span>
-                <nav class="flex items-center gap-lg">${links}</nav>
-            </div>
-            <div class="flex items-center gap-md text-primary dark:text-primary">
-                <span id="wc26-live-indicator" class="hidden items-center gap-xs font-label-sm text-label-sm text-secondary uppercase tracking-widest">
-                    <span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span> En vivo
-                </span>
-            </div>
+        <div class="flex justify-between items-center w-full px-margin-mobile md:px-margin-desktop max-w-[1280px] mx-auto h-[72px]">
+            <a class="font-display-md text-display-md text-primary tracking-tight" href="index.html">FIFA World Cup 2026</a>
+            <nav class="hidden md:flex gap-lg items-center">${links}</nav>
+            <button class="md:hidden p-2 text-on-surface" id="wc26-mobile-menu-btn">
+                <span class="material-symbols-outlined">menu</span>
+            </button>
+        </div>
+        <div class="hidden flex-col gap-xs px-margin-mobile pb-md md:hidden" id="wc26-mobile-menu">
+            ${NAV_ITEMS.map(item => {
+                const isActive = item.key === active;
+                const cls = isActive
+                    ? "block px-3 py-2 rounded-DEFAULT bg-primary-container/10 text-primary font-bold font-label-lg text-label-lg"
+                    : "block px-3 py-2 rounded-DEFAULT text-on-surface-variant hover:bg-surface-container-high font-label-lg text-label-lg";
+                return `<a class="${cls}" href="${item.href}">${item.label}</a>`;
+            }).join("\n")}
         </div>`;
+
+        const btn = document.getElementById("wc26-mobile-menu-btn");
+        const menu = document.getElementById("wc26-mobile-menu");
+        if (btn && menu) {
+            btn.addEventListener("click", () => {
+                menu.classList.toggle("hidden");
+                menu.classList.toggle("flex");
+            });
+        }
     }
 
-    function renderBottom(active) {
-        const el = document.getElementById("wc26-bottomnav");
+    function renderFooter() {
+        const el = document.getElementById("wc26-footer");
         if (!el) return;
-        const links = NAV_ITEMS.map(item => {
-            const isActive = item.key === active;
-            const cls = isActive
-                ? "nav-active flex flex-col items-center justify-center rounded-full px-4 py-1 font-label-sm text-label-sm font-label-bold text-label-bold scale-95 transition-transform duration-150"
-                : "flex flex-col items-center justify-center text-on-surface-variant font-label-sm text-label-sm font-label-bold text-label-bold hover:bg-surface-variant p-2 rounded-lg transition-colors";
-            return `<a class="${cls}" href="${item.href}">
-                        <span class="material-symbols-outlined mb-1">${item.icon}</span>
-                        <span>${item.label}</span>
-                    </a>`;
-        }).join("\n");
-
-        el.className = "md:hidden fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-4 py-2 bg-surface-container-lowest border-t border-outline-variant shadow-sm";
-        el.innerHTML = links;
+        el.className = "bg-surface-container-highest w-full py-xl mt-xl border-t border-outline-variant";
+        el.innerHTML = `
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-gutter px-margin-mobile md:px-margin-desktop max-w-[1280px] mx-auto items-center">
+            <div class="font-headline-md text-headline-md text-on-surface text-center md:text-left">
+                © 2026 FIFA World Cup 2026 (México, Canadá &amp; USA)
+            </div>
+            <nav class="flex flex-wrap gap-md justify-center md:justify-end">
+                <a class="text-on-surface-variant hover:text-on-surface transition-colors font-label-md text-label-md" href="#">Privacidad</a>
+                <a class="text-on-surface-variant hover:text-on-surface transition-colors font-label-md text-label-md" href="#">Términos</a>
+                <a class="text-on-surface-variant hover:text-on-surface transition-colors font-label-md text-label-md" href="#">Contacto</a>
+                <a class="text-on-surface-variant hover:text-on-surface transition-colors font-label-md text-label-md" href="#">Redes Sociales</a>
+            </nav>
+        </div>`;
     }
 
     document.addEventListener("DOMContentLoaded", function () {
         const script = currentScript() || document.querySelector('script[data-active]');
         const active = (script && script.dataset.active) || "inicio";
         renderTop(active);
-        renderBottom(active);
+        renderFooter();
     });
 
-    window.WC26_NAV = { renderTop, renderBottom };
+    window.WC26_NAV = { renderTop, renderFooter };
 })();
