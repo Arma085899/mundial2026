@@ -1,7 +1,7 @@
 {
   "_meta": {
     "source": "football-data.org",
-    "updated_at": "2026-06-13T02:13:52.957Z"
+    "updated_at": "2026-06-13T06:19:05.625Z"
   },
   "groups": [
     {
@@ -267,8 +267,8 @@
           "won": 1,
           "draw": 0,
           "lost": 0,
-          "goals_for": 3,
-          "goals_against": 0,
+          "goals_for": 4,
+          "goals_against": 1,
           "goal_difference": 3,
           "points": 3,
           "qualified": true
@@ -324,8 +324,8 @@
           "won": 0,
           "draw": 0,
           "lost": 1,
-          "goals_for": 0,
-          "goals_against": 3,
+          "goals_for": 1,
+          "goals_against": 4,
           "goal_difference": -3,
           "points": 0,
           "qualified": false
