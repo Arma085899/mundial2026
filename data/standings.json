@@ -1,7 +1,7 @@
 {
   "_meta": {
     "source": "football-data.org+openfootball/worldcup.json",
-    "updated_at": "2026-06-14T06:55:41.880Z"
+    "updated_at": "2026-06-14T10:26:50.233Z"
   },
   "groups": [
     {
@@ -93,11 +93,11 @@
         {
           "position": 1,
           "team": {
-            "id": 1060,
-            "name": "Bosnia-Herzegovina",
-            "short_name": "Bosnia-H.",
-            "tla": "BIH",
-            "crest": "https://crests.football-data.org/bosnia.svg"
+            "id": 788,
+            "name": "Switzerland",
+            "short_name": "Switzerland",
+            "tla": "SUI",
+            "crest": "https://crests.football-data.org/788.svg"
           },
           "played": 1,
           "won": 0,
@@ -150,11 +150,11 @@
         {
           "position": 4,
           "team": {
-            "id": 788,
-            "name": "Switzerland",
-            "short_name": "Switzerland",
-            "tla": "SUI",
-            "crest": "https://crests.football-data.org/788.svg"
+            "id": 1060,
+            "name": "Bosnia-Herzegovina",
+            "short_name": "Bosnia-H.",
+            "tla": "BIH",
+            "crest": "https://crests.football-data.org/bosnia.svg"
           },
           "played": 1,
           "won": 0,
@@ -194,11 +194,11 @@
         {
           "position": 2,
           "team": {
-            "id": 764,
-            "name": "Brazil",
-            "short_name": "Brazil",
-            "tla": "BRA",
-            "crest": "https://crests.football-data.org/764.svg"
+            "id": 815,
+            "name": "Morocco",
+            "short_name": "Morocco",
+            "tla": "MAR",
+            "crest": "https://crests.football-data.org/morocco.svg"
           },
           "played": 1,
           "won": 0,
@@ -213,11 +213,11 @@
         {
           "position": 3,
           "team": {
-            "id": 815,
-            "name": "Morocco",
-            "short_name": "Morocco",
-            "tla": "MAR",
-            "crest": "https://crests.football-data.org/morocco.svg"
+            "id": 764,
+            "name": "Brazil",
+            "short_name": "Brazil",
+            "tla": "BRA",
+            "crest": "https://crests.football-data.org/764.svg"
           },
           "played": 1,
           "won": 0,
