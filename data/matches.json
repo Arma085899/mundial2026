@@ -1,7 +1,7 @@
 {
   "_meta": {
     "source": "football-data.org+openfootball/worldcup.json",
-    "updated_at": "2026-06-14T17:53:01.598Z"
+    "updated_at": "2026-06-14T19:39:03.631Z"
   },
   "matches": [
     {
@@ -106,10 +106,10 @@
         "crest": "https://crests.football-data.org/bosnia.svg"
       },
       "score": {
-        "home": null,
-        "away": null,
-        "halftime_home": null,
-        "halftime_away": null
+        "home": 1,
+        "away": 1,
+        "halftime_home": 0,
+        "halftime_away": 1
       },
       "scorers": [],
       "broadcast_mx": [
@@ -311,7 +311,7 @@
       "matchday": 1,
       "stage": "GROUP_STAGE",
       "group": "GROUP_E",
-      "status": "IN_PLAY",
+      "status": "FINISHED",
       "utc_date": "2026-06-14T17:00:00Z",
       "local_date": null,
       "minute": null,
@@ -332,10 +332,10 @@
         "crest": "https://crests.football-data.org/curacao.svg"
       },
       "score": {
-        "home": 2,
+        "home": 7,
         "away": 1,
-        "halftime_home": null,
-        "halftime_away": null
+        "halftime_home": 3,
+        "halftime_away": 1
       },
       "scorers": [],
       "broadcast_mx": [
