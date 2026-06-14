@@ -201,6 +201,17 @@ const WC26 = {
         return team.name || team.tla || team.short_name || "Por definir";
     },
 
+    groupLabel(group) {
+        if (!group) return "";
+        // Maneja formatos: "Group B", "GROUP_B", "group_b", etc.
+        const match = String(group).match(/([A-Za-z]+)[_\s]*([A-Za-z0-9]+)$/);
+        if (match) {
+            const letter = match[2].toUpperCase();
+            return `Grupo ${letter}`;
+        }
+        return group;
+    },
+
     teamShort(team) {
         if (!team) return "—";
         return team.tla || team.short_name || "???";

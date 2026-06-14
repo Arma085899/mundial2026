@@ -68,7 +68,7 @@
 
     // Group filter options
     const groups = [...new Set(allMatches.map(m => m.group).filter(Boolean))].sort();
-    groupFilter.innerHTML += groups.map(g => `<option value="${g}">${g.replace("Group ", "Grupo ")}</option>`).join("");
+    groupFilter.innerHTML += groups.map(g => `<option value="${g}">${WC26.groupLabel(g)}</option>`).join("");
 
     // Date ribbon
     const todayKey = new Date().toLocaleDateString("en-CA", { timeZone: "America/Mexico_City" });
@@ -149,7 +149,7 @@
         const live = WC26.isLive(match);
         const home = match.home_team;
         const away = match.away_team;
-        const groupLabel = (match.group || "").replace("Group ", "Grupo ") || (match.stage || "").replace(/_/g, " ");
+        const groupLabel = WC26.groupLabel(match.group) || (match.stage || "").replace(/_/g, " ");
         const venueLabel = [match.venue, match.city].filter(Boolean).join(", ");
 
         const stripeCls = live ? "bg-tertiary-container" : (match.status === "FINISHED" ? "bg-outline-variant" : "bg-primary-container");

@@ -99,7 +99,7 @@
             const home = featured.home_team;
             const away = featured.away_team;
             const isLive = WC26.isLive(featured);
-            const groupLabel = (featured.group || "").replace("Group ", "Grupo ");
+            const groupLabel = WC26.groupLabel(featured.group);
             const venueLabel = [featured.venue, featured.city].filter(Boolean).join(", ");
             const badgeLabel = isLive ? "En Vivo" : "Partido del Día";
             const badgeDot = `<span class="w-2 h-2 rounded-full bg-secondary mr-1 ${isLive ? 'animate-pulse' : ''}"></span>`;
@@ -163,7 +163,7 @@
     function renderLiveCard(match) {
         const info = WC26.statusInfo(match);
         const live = WC26.isLive(match);
-        const groupLabel = (match.group || "").replace("Group ", "Grupo ");
+        const groupLabel = WC26.groupLabel(match.group);
         const stripeColor = live ? "bg-secondary-container" : (match.status === "FINISHED" ? "bg-outline-variant" : "bg-primary-container");
         const statusLabel = live
             ? `<span class="font-label-md text-label-md text-secondary uppercase flex items-center gap-1">

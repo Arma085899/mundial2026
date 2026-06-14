@@ -1,3 +1,14 @@
 {
-  "_comment": "Mapeo manual de match_id (numero de football-data.org) a canales de TV en Mexico. Edita este archivo conforme se confirmen transmisiones. Codigos validos: VIX, TUDN, AZTECA7. Ejemplo: \"537851\": [\"VIX\", \"TUDN\"]"
+  "_comment": "Mapeo manual de match_id (football-data.org) a canales TV abierta MX adicionales a VIX. VIX se agrega automaticamente a TODOS los partidos (104) por el script. Aqui solo se agregan los canales de TV ABIERTA confirmados (TUDN, AZTECA7). Formato simple: \"match_id\": [\"TUDN\",\"AZTECA7\"].",
+
+  "537327": ["TUDN", "AZTECA7"],
+  "537345": ["TUDN", "AZTECA7"],
+  "537339": ["TUDN", "AZTECA7"],
+  "537357": ["TUDN", "AZTECA7"],
+  "537397": ["TUDN", "AZTECA7"],
+  "537409": ["TUDN", "AZTECA7"],
+  "537330": ["TUDN", "AZTECA7"],
+  "537341": ["TUDN", "AZTECA7"],
+  "537359": ["TUDN", "AZTECA7"],
+  "537407": ["TUDN", "AZTECA7"]
 }

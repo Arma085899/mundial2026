@@ -48,7 +48,7 @@
     gridEl.innerHTML = groups.map(renderGroup).join("");
 
     function renderGroup(group) {
-        const groupLabel = group.group.replace("Group ", "Grupo ");
+        const groupLabel = WC26.groupLabel(group.group);
 
         const rows = group.standings.map(s => {
             const rowCls = s.qualified ? "border-b border-outline-variant/50 bg-secondary-container/10" : "border-b border-outline-variant/50";

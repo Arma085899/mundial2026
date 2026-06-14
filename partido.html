@@ -55,7 +55,7 @@
     const homeScorers = (match.scorers || []).filter(s => s.team === "home");
     const awayScorers = (match.scorers || []).filter(s => s.team === "away");
 
-    const groupLabel = (match.group || "").replace("Group ", "Grupo ");
+    const groupLabel = WC26.groupLabel(match.group);
     const stageLabel = match.stage === "GROUP_STAGE"
         ? `${groupLabel}${match.matchday ? ` • Jornada ${match.matchday}` : ""}`
         : (match.stage || "").replace(/_/g, " ");

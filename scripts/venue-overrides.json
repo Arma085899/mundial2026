@@ -1,0 +1,3 @@
+{
+  "_comment": "Override manual de sede por match_id, para casos donde el merge automatico con openfootball/worldcup.json no encuentre coincidencia (ej. eliminatorias con equipos aun sin definir). Formato: \"match_id\": { \"venue\": \"Nombre del Estadio\", \"city\": \"Ciudad, Estado\" }"
+}

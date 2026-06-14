@@ -21,6 +21,21 @@
         <p class="font-body-lg text-body-lg text-on-surface-variant">El verdadero campeonato se juega en la oficina. ¿Quién pagará los tacos?</p>
     </div>
 
+    <div class="flex flex-col md:flex-row gap-md mb-lg">
+        <div class="relative flex-1">
+            <span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-on-surface-variant pointer-events-none">search</span>
+            <input id="quiniela-search" type="text" placeholder="Buscar participante o equipo..." class="w-full bg-surface-container-lowest border border-outline-variant rounded-DEFAULT pl-10 pr-md py-sm font-body-md text-body-md text-on-surface focus:outline-none focus:border-primary transition-colors"/>
+        </div>
+        <div class="relative w-full md:w-56">
+            <select id="quiniela-status-filter" class="w-full appearance-none bg-surface-container-lowest border border-outline-variant rounded-DEFAULT pl-md pr-lg py-sm font-body-md text-body-md text-on-surface focus:outline-none focus:border-primary transition-colors">
+                <option value="">Todos los participantes</option>
+                <option value="active">Con equipos activos</option>
+                <option value="eliminated">Eliminados</option>
+            </select>
+            <span class="material-symbols-outlined absolute right-2 top-1/2 -translate-y-1/2 text-on-surface-variant pointer-events-none">expand_more</span>
+        </div>
+    </div>
+
     <div id="quiniela-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-lg">
         <div class="skeleton h-56 rounded-xl"></div>
         <div class="skeleton h-56 rounded-xl"></div>
@@ -35,6 +50,8 @@
 (async function () {
     const data = await WC26.getQuiniela();
     const gridEl = document.getElementById("quiniela-grid");
+    const searchInput = document.getElementById("quiniela-search");
+    const statusFilter = document.getElementById("quiniela-status-filter");
 
     if (!data || !data.participants || !data.participants.length) {
         gridEl.innerHTML = `<div class="md:col-span-2 lg:col-span-3 bg-surface-container-lowest border border-outline-variant rounded-xl p-lg text-center text-on-surface-variant font-body-md text-body-md">
@@ -43,7 +60,42 @@
         return;
     }
 
-    gridEl.innerHTML = data.participants.map(renderParticipant).join("");
+    const allParticipants = data.participants;
+
+    searchInput.addEventListener("input", render);
+    statusFilter.addEventListener("change", render);
+    render();
+
+    function render() {
+        const query = searchInput.value.trim().toLowerCase();
+        const statusVal = statusFilter.value;
+
+        let filtered = allParticipants.filter(p => {
+            const allEliminated = p.teams.length > 0 && p.teams.every(t => t.status === "eliminated");
+
+            if (statusVal === "eliminated" && !allEliminated) return false;
+            if (statusVal === "active" && allEliminated) return false;
+
+            if (query) {
+                const nameMatch = p.name.toLowerCase().includes(query);
+                const teamMatch = p.teams.some(t =>
+                    t.name.toLowerCase().includes(query) || t.tla.toLowerCase().includes(query)
+                );
+                if (!nameMatch && !teamMatch) return false;
+            }
+
+            return true;
+        });
+
+        if (!filtered.length) {
+            gridEl.innerHTML = `<div class="md:col-span-2 lg:col-span-3 bg-surface-container-lowest border border-outline-variant rounded-xl p-lg text-center text-on-surface-variant font-body-md text-body-md">
+                No se encontraron participantes con ese criterio.
+            </div>`;
+            return;
+        }
+
+        gridEl.innerHTML = filtered.map(renderParticipant).join("");
+    }
 
     function renderParticipant(p) {
         const allEliminated = p.teams.length > 0 && p.teams.every(t => t.status === "eliminated");

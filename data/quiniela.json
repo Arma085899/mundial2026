@@ -65,9 +65,9 @@
       "name": "Mariana",
       "teams": [
         { "tla": "CZE", "name": "República Checa", "status": "active" },
-        { "tla": "ENG", "name": "Inglaterra", "status": "active" }
+        { "tla": "GHA", "name": "Ghana", "status": "active" }
       ],
-      "quote": "Inglaterra y yo tenemos algo en común: prometemos mucho y tronamos en penales."
+      "quote": "Ghana me dio una lección de humildad que no pedí."
     },
     {
       "name": "Mimo",
@@ -97,7 +97,7 @@
       "name": "Eloy",
       "teams": [
         { "tla": "ECU", "name": "Ecuador", "status": "active" },
-        { "tla": "DEN", "name": "Dinamarca", "status": "active" }
+        { "tla": "CRO", "name": "Croacia", "status": "active" }
       ],
       "quote": "Me fui del torneo igual de rápido que se va el saldo del celular."
     },
