@@ -1,7 +1,7 @@
 {
   "_meta": {
     "source": "football-data.org+openfootball/worldcup.json",
-    "updated_at": "2026-06-14T19:39:03.631Z"
+    "updated_at": "2026-06-14T20:51:09.341Z"
   },
   "groups": [
     {
@@ -427,14 +427,14 @@
             "tla": "JPN",
             "crest": "https://crests.football-data.org/766.svg"
           },
-          "played": 0,
+          "played": 1,
           "won": 0,
-          "draw": 0,
+          "draw": 1,
           "lost": 0,
           "goals_for": 0,
           "goals_against": 0,
           "goal_difference": 0,
-          "points": 0,
+          "points": 1,
           "qualified": true
         },
         {
@@ -446,14 +446,14 @@
             "tla": "NED",
             "crest": "https://crests.football-data.org/8601.svg"
           },
-          "played": 0,
+          "played": 1,
           "won": 0,
-          "draw": 0,
+          "draw": 1,
           "lost": 0,
           "goals_for": 0,
           "goals_against": 0,
           "goal_difference": 0,
-          "points": 0,
+          "points": 1,
           "qualified": true
         },
         {
