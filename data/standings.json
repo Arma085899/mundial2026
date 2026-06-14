@@ -1,7 +1,7 @@
 {
   "_meta": {
     "source": "football-data.org+openfootball/worldcup.json",
-    "updated_at": "2026-06-14T16:13:59.078Z"
+    "updated_at": "2026-06-14T17:53:01.598Z"
   },
   "groups": [
     {
@@ -345,14 +345,14 @@
             "tla": "CUW",
             "crest": "https://crests.football-data.org/curacao.svg"
           },
-          "played": 0,
+          "played": 1,
           "won": 0,
-          "draw": 0,
+          "draw": 1,
           "lost": 0,
-          "goals_for": 0,
-          "goals_against": 0,
+          "goals_for": 1,
+          "goals_against": 1,
           "goal_difference": 0,
-          "points": 0,
+          "points": 1,
           "qualified": true
         },
         {
@@ -364,14 +364,14 @@
             "tla": "GER",
             "crest": "https://crests.football-data.org/759.svg"
           },
-          "played": 0,
+          "played": 1,
           "won": 0,
-          "draw": 0,
+          "draw": 1,
           "lost": 0,
-          "goals_for": 0,
-          "goals_against": 0,
+          "goals_for": 1,
+          "goals_against": 1,
           "goal_difference": 0,
-          "points": 0,
+          "points": 1,
           "qualified": true
         },
         {
