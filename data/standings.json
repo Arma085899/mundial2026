@@ -1,7 +1,7 @@
 {
   "_meta": {
     "source": "football-data.org+openfootball/worldcup.json",
-    "updated_at": "2026-06-14T20:51:09.341Z"
+    "updated_at": "2026-06-14T22:12:43.414Z"
   },
   "groups": [
     {
@@ -431,8 +431,8 @@
           "won": 0,
           "draw": 1,
           "lost": 0,
-          "goals_for": 0,
-          "goals_against": 0,
+          "goals_for": 2,
+          "goals_against": 2,
           "goal_difference": 0,
           "points": 1,
           "qualified": true
@@ -450,8 +450,8 @@
           "won": 0,
           "draw": 1,
           "lost": 0,
-          "goals_for": 0,
-          "goals_against": 0,
+          "goals_for": 2,
+          "goals_against": 2,
           "goal_difference": 0,
           "points": 1,
           "qualified": true
