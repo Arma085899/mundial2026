@@ -1,76 +1,792 @@
 {
   "_meta": {
-    "source": "football-data.org v4 /competitions/WC/matches?stage=...",
-    "updated_at": "2026-06-11T18:00:00Z",
-    "note": "Round of 32 puede venir con placeholders (ej. '1A' = primero de Grupo A) hasta que se definan los cruces reales."
+    "source": "matches.json (derivado)",
+    "updated_at": "2026-06-15T14:50:19.897Z"
   },
   "stages": [
     {
-      "stage": "ROUND_OF_32",
+      "stage": "LAST_32",
       "label": "Ronda de 32",
       "matches": [
         {
-          "id": 537901,
-          "slot": "R32-1",
-          "utc_date": "2026-06-29T18:00:00Z",
+          "id": 537417,
+          "slot": "LAST_32-537417",
+          "utc_date": "2026-06-28T19:00:00Z",
+          "venue": "SoFi Stadium",
+          "city": "Inglewood, California",
+          "status": "TIMED",
+          "home": {
+            "placeholder": "Por definir",
+            "team": null
+          },
+          "away": {
+            "placeholder": "Por definir",
+            "team": null
+          },
+          "score": {
+            "home": null,
+            "away": null
+          },
+          "broadcast_mx": [
+            "VIX",
+            "TUDN"
+          ]
+        },
+        {
+          "id": 537423,
+          "slot": "LAST_32-537423",
+          "utc_date": "2026-06-29T17:00:00Z",
+          "venue": "NRG Stadium",
+          "city": "Houston",
+          "status": "TIMED",
+          "home": {
+            "placeholder": "Por definir",
+            "team": null
+          },
+          "away": {
+            "placeholder": "Por definir",
+            "team": null
+          },
+          "score": {
+            "home": null,
+            "away": null
+          },
+          "broadcast_mx": [
+            "VIX"
+          ]
+        },
+        {
+          "id": 537415,
+          "slot": "LAST_32-537415",
+          "utc_date": "2026-06-29T20:30:00Z",
+          "venue": "Gillette Stadium",
+          "city": "Foxborough, Massachusetts",
+          "status": "TIMED",
+          "home": {
+            "placeholder": "Por definir",
+            "team": null
+          },
+          "away": {
+            "placeholder": "Por definir",
+            "team": null
+          },
+          "score": {
+            "home": null,
+            "away": null
+          },
+          "broadcast_mx": [
+            "VIX",
+            "TUDN"
+          ]
+        },
+        {
+          "id": 537418,
+          "slot": "LAST_32-537418",
+          "utc_date": "2026-06-30T01:00:00Z",
+          "venue": "Estadio BBVA",
+          "city": "Guadalupe, Nuevo León",
+          "status": "TIMED",
+          "home": {
+            "placeholder": "Por definir",
+            "team": null
+          },
+          "away": {
+            "placeholder": "Por definir",
+            "team": null
+          },
+          "score": {
+            "home": null,
+            "away": null
+          },
+          "broadcast_mx": [
+            "VIX"
+          ]
+        },
+        {
+          "id": 537424,
+          "slot": "LAST_32-537424",
+          "utc_date": "2026-06-30T17:00:00Z",
+          "venue": "AT&T Stadium",
+          "city": "Arlington, Texas",
+          "status": "TIMED",
+          "home": {
+            "placeholder": "Por definir",
+            "team": null
+          },
+          "away": {
+            "placeholder": "Por definir",
+            "team": null
+          },
+          "score": {
+            "home": null,
+            "away": null
+          },
+          "broadcast_mx": [
+            "VIX"
+          ]
+        },
+        {
+          "id": 537416,
+          "slot": "LAST_32-537416",
+          "utc_date": "2026-06-30T21:00:00Z",
+          "venue": "MetLife Stadium",
+          "city": "East Rutherford, New Jersey",
+          "status": "TIMED",
+          "home": {
+            "placeholder": "Por definir",
+            "team": null
+          },
+          "away": {
+            "placeholder": "Por definir",
+            "team": null
+          },
+          "score": {
+            "home": null,
+            "away": null
+          },
+          "broadcast_mx": [
+            "VIX"
+          ]
+        },
+        {
+          "id": 537425,
+          "slot": "LAST_32-537425",
+          "utc_date": "2026-07-01T01:00:00Z",
           "venue": "Estadio Azteca",
-          "city": "CDMX",
-          "status": "SCHEDULED",
-          "home": { "placeholder": "1A", "team": null },
-          "away": { "placeholder": "2C", "team": null },
-          "score": { "home": null, "away": null },
-          "broadcast_mx": ["VIX"]
+          "city": "Ciudad de México",
+          "status": "TIMED",
+          "home": {
+            "placeholder": "Por definir",
+            "team": null
+          },
+          "away": {
+            "placeholder": "Por definir",
+            "team": null
+          },
+          "score": {
+            "home": null,
+            "away": null
+          },
+          "broadcast_mx": [
+            "VIX",
+            "TUDN"
+          ]
+        },
+        {
+          "id": 537426,
+          "slot": "LAST_32-537426",
+          "utc_date": "2026-07-01T16:00:00Z",
+          "venue": "Mercedes-Benz Stadium",
+          "city": "Atlanta",
+          "status": "TIMED",
+          "home": {
+            "placeholder": "Por definir",
+            "team": null
+          },
+          "away": {
+            "placeholder": "Por definir",
+            "team": null
+          },
+          "score": {
+            "home": null,
+            "away": null
+          },
+          "broadcast_mx": [
+            "VIX"
+          ]
+        },
+        {
+          "id": 537422,
+          "slot": "LAST_32-537422",
+          "utc_date": "2026-07-01T20:00:00Z",
+          "venue": "Lumen Field",
+          "city": "Seattle",
+          "status": "TIMED",
+          "home": {
+            "placeholder": "Por definir",
+            "team": null
+          },
+          "away": {
+            "placeholder": "Por definir",
+            "team": null
+          },
+          "score": {
+            "home": null,
+            "away": null
+          },
+          "broadcast_mx": [
+            "VIX",
+            "TUDN"
+          ]
+        },
+        {
+          "id": 537421,
+          "slot": "LAST_32-537421",
+          "utc_date": "2026-07-02T00:00:00Z",
+          "venue": "Levi's Stadium",
+          "city": "Santa Clara, California",
+          "status": "TIMED",
+          "home": {
+            "placeholder": "Por definir",
+            "team": null
+          },
+          "away": {
+            "placeholder": "Por definir",
+            "team": null
+          },
+          "score": {
+            "home": null,
+            "away": null
+          },
+          "broadcast_mx": [
+            "VIX"
+          ]
+        },
+        {
+          "id": 537420,
+          "slot": "LAST_32-537420",
+          "utc_date": "2026-07-02T19:00:00Z",
+          "venue": "SoFi Stadium",
+          "city": "Inglewood, California",
+          "status": "TIMED",
+          "home": {
+            "placeholder": "Por definir",
+            "team": null
+          },
+          "away": {
+            "placeholder": "Por definir",
+            "team": null
+          },
+          "score": {
+            "home": null,
+            "away": null
+          },
+          "broadcast_mx": [
+            "VIX",
+            "TUDN"
+          ]
+        },
+        {
+          "id": 537419,
+          "slot": "LAST_32-537419",
+          "utc_date": "2026-07-02T23:00:00Z",
+          "venue": "BMO Field",
+          "city": "Toronto",
+          "status": "TIMED",
+          "home": {
+            "placeholder": "Por definir",
+            "team": null
+          },
+          "away": {
+            "placeholder": "Por definir",
+            "team": null
+          },
+          "score": {
+            "home": null,
+            "away": null
+          },
+          "broadcast_mx": [
+            "VIX"
+          ]
+        },
+        {
+          "id": 537429,
+          "slot": "LAST_32-537429",
+          "utc_date": "2026-07-03T03:00:00Z",
+          "venue": "BC Place",
+          "city": "Vancouver",
+          "status": "TIMED",
+          "home": {
+            "placeholder": "Por definir",
+            "team": null
+          },
+          "away": {
+            "placeholder": "Por definir",
+            "team": null
+          },
+          "score": {
+            "home": null,
+            "away": null
+          },
+          "broadcast_mx": [
+            "VIX"
+          ]
+        },
+        {
+          "id": 537428,
+          "slot": "LAST_32-537428",
+          "utc_date": "2026-07-03T18:00:00Z",
+          "venue": "AT&T Stadium",
+          "city": "Arlington, Texas",
+          "status": "TIMED",
+          "home": {
+            "placeholder": "Por definir",
+            "team": null
+          },
+          "away": {
+            "placeholder": "Por definir",
+            "team": null
+          },
+          "score": {
+            "home": null,
+            "away": null
+          },
+          "broadcast_mx": [
+            "VIX"
+          ]
+        },
+        {
+          "id": 537427,
+          "slot": "LAST_32-537427",
+          "utc_date": "2026-07-03T22:00:00Z",
+          "venue": "Hard Rock Stadium",
+          "city": "Miami Gardens, Florida",
+          "status": "TIMED",
+          "home": {
+            "placeholder": "Por definir",
+            "team": null
+          },
+          "away": {
+            "placeholder": "Por definir",
+            "team": null
+          },
+          "score": {
+            "home": null,
+            "away": null
+          },
+          "broadcast_mx": [
+            "VIX",
+            "TUDN"
+          ]
+        },
+        {
+          "id": 537430,
+          "slot": "LAST_32-537430",
+          "utc_date": "2026-07-04T01:30:00Z",
+          "venue": "Arrowhead Stadium",
+          "city": "Kansas City",
+          "status": "TIMED",
+          "home": {
+            "placeholder": "Por definir",
+            "team": null
+          },
+          "away": {
+            "placeholder": "Por definir",
+            "team": null
+          },
+          "score": {
+            "home": null,
+            "away": null
+          },
+          "broadcast_mx": [
+            "VIX"
+          ]
         }
       ]
     },
     {
-      "stage": "ROUND_OF_16",
+      "stage": "LAST_16",
       "label": "Octavos de Final",
       "matches": [
         {
-          "id": 537933,
-          "slot": "R16-1",
-          "utc_date": "2026-07-04T18:00:00Z",
-          "venue": "SoFi Stadium",
-          "city": "Los Angeles",
-          "status": "SCHEDULED",
-          "home": { "placeholder": "Ganador R32-1", "team": null },
-          "away": { "placeholder": "Ganador R32-2", "team": null },
-          "score": { "home": null, "away": null },
-          "broadcast_mx": ["VIX"]
+          "id": 537376,
+          "slot": "LAST_16-537376",
+          "utc_date": "2026-07-04T17:00:00Z",
+          "venue": "NRG Stadium",
+          "city": "Houston",
+          "status": "TIMED",
+          "home": {
+            "placeholder": "Por definir",
+            "team": null
+          },
+          "away": {
+            "placeholder": "Por definir",
+            "team": null
+          },
+          "score": {
+            "home": null,
+            "away": null
+          },
+          "broadcast_mx": [
+            "VIX",
+            "TUDN"
+          ]
+        },
+        {
+          "id": 537375,
+          "slot": "LAST_16-537375",
+          "utc_date": "2026-07-04T21:00:00Z",
+          "venue": "Lincoln Financial Field",
+          "city": "Philadelphia",
+          "status": "TIMED",
+          "home": {
+            "placeholder": "Por definir",
+            "team": null
+          },
+          "away": {
+            "placeholder": "Por definir",
+            "team": null
+          },
+          "score": {
+            "home": null,
+            "away": null
+          },
+          "broadcast_mx": [
+            "VIX"
+          ]
+        },
+        {
+          "id": 537377,
+          "slot": "LAST_16-537377",
+          "utc_date": "2026-07-05T20:00:00Z",
+          "venue": "MetLife Stadium",
+          "city": "East Rutherford, New Jersey",
+          "status": "TIMED",
+          "home": {
+            "placeholder": "Por definir",
+            "team": null
+          },
+          "away": {
+            "placeholder": "Por definir",
+            "team": null
+          },
+          "score": {
+            "home": null,
+            "away": null
+          },
+          "broadcast_mx": [
+            "VIX"
+          ]
+        },
+        {
+          "id": 537378,
+          "slot": "LAST_16-537378",
+          "utc_date": "2026-07-06T00:00:00Z",
+          "venue": "Estadio Azteca",
+          "city": "Ciudad de México",
+          "status": "TIMED",
+          "home": {
+            "placeholder": "Por definir",
+            "team": null
+          },
+          "away": {
+            "placeholder": "Por definir",
+            "team": null
+          },
+          "score": {
+            "home": null,
+            "away": null
+          },
+          "broadcast_mx": [
+            "VIX",
+            "TUDN"
+          ]
+        },
+        {
+          "id": 537379,
+          "slot": "LAST_16-537379",
+          "utc_date": "2026-07-06T19:00:00Z",
+          "venue": "AT&T Stadium",
+          "city": "Arlington, Texas",
+          "status": "TIMED",
+          "home": {
+            "placeholder": "Por definir",
+            "team": null
+          },
+          "away": {
+            "placeholder": "Por definir",
+            "team": null
+          },
+          "score": {
+            "home": null,
+            "away": null
+          },
+          "broadcast_mx": [
+            "VIX"
+          ]
+        },
+        {
+          "id": 537380,
+          "slot": "LAST_16-537380",
+          "utc_date": "2026-07-07T00:00:00Z",
+          "venue": "Lumen Field",
+          "city": "Seattle",
+          "status": "TIMED",
+          "home": {
+            "placeholder": "Por definir",
+            "team": null
+          },
+          "away": {
+            "placeholder": "Por definir",
+            "team": null
+          },
+          "score": {
+            "home": null,
+            "away": null
+          },
+          "broadcast_mx": [
+            "VIX",
+            "TUDN"
+          ]
+        },
+        {
+          "id": 537381,
+          "slot": "LAST_16-537381",
+          "utc_date": "2026-07-07T16:00:00Z",
+          "venue": "Mercedes-Benz Stadium",
+          "city": "Atlanta",
+          "status": "TIMED",
+          "home": {
+            "placeholder": "Por definir",
+            "team": null
+          },
+          "away": {
+            "placeholder": "Por definir",
+            "team": null
+          },
+          "score": {
+            "home": null,
+            "away": null
+          },
+          "broadcast_mx": [
+            "VIX",
+            "TUDN"
+          ]
+        },
+        {
+          "id": 537382,
+          "slot": "LAST_16-537382",
+          "utc_date": "2026-07-07T20:00:00Z",
+          "venue": "BC Place",
+          "city": "Vancouver",
+          "status": "TIMED",
+          "home": {
+            "placeholder": "Por definir",
+            "team": null
+          },
+          "away": {
+            "placeholder": "Por definir",
+            "team": null
+          },
+          "score": {
+            "home": null,
+            "away": null
+          },
+          "broadcast_mx": [
+            "VIX"
+          ]
         }
       ]
     },
     {
       "stage": "QUARTER_FINALS",
       "label": "Cuartos de Final",
-      "matches": []
+      "matches": [
+        {
+          "id": 537383,
+          "slot": "QUARTER_FINALS-537383",
+          "utc_date": "2026-07-09T20:00:00Z",
+          "venue": "Gillette Stadium",
+          "city": "Foxborough, Massachusetts",
+          "status": "TIMED",
+          "home": {
+            "placeholder": "Por definir",
+            "team": null
+          },
+          "away": {
+            "placeholder": "Por definir",
+            "team": null
+          },
+          "score": {
+            "home": null,
+            "away": null
+          },
+          "broadcast_mx": [
+            "VIX",
+            "TUDN"
+          ]
+        },
+        {
+          "id": 537384,
+          "slot": "QUARTER_FINALS-537384",
+          "utc_date": "2026-07-10T19:00:00Z",
+          "venue": "SoFi Stadium",
+          "city": "Inglewood, California",
+          "status": "TIMED",
+          "home": {
+            "placeholder": "Por definir",
+            "team": null
+          },
+          "away": {
+            "placeholder": "Por definir",
+            "team": null
+          },
+          "score": {
+            "home": null,
+            "away": null
+          },
+          "broadcast_mx": [
+            "VIX"
+          ]
+        },
+        {
+          "id": 537385,
+          "slot": "QUARTER_FINALS-537385",
+          "utc_date": "2026-07-11T21:00:00Z",
+          "venue": "Hard Rock Stadium",
+          "city": "Miami Gardens, Florida",
+          "status": "TIMED",
+          "home": {
+            "placeholder": "Por definir",
+            "team": null
+          },
+          "away": {
+            "placeholder": "Por definir",
+            "team": null
+          },
+          "score": {
+            "home": null,
+            "away": null
+          },
+          "broadcast_mx": [
+            "VIX"
+          ]
+        },
+        {
+          "id": 537386,
+          "slot": "QUARTER_FINALS-537386",
+          "utc_date": "2026-07-12T01:00:00Z",
+          "venue": "Arrowhead Stadium",
+          "city": "Kansas City",
+          "status": "TIMED",
+          "home": {
+            "placeholder": "Por definir",
+            "team": null
+          },
+          "away": {
+            "placeholder": "Por definir",
+            "team": null
+          },
+          "score": {
+            "home": null,
+            "away": null
+          },
+          "broadcast_mx": [
+            "VIX"
+          ]
+        }
+      ]
     },
     {
       "stage": "SEMI_FINALS",
       "label": "Semifinales",
-      "matches": []
+      "matches": [
+        {
+          "id": 537387,
+          "slot": "SEMI_FINALS-537387",
+          "utc_date": "2026-07-14T19:00:00Z",
+          "venue": "AT&T Stadium",
+          "city": "Arlington, Texas",
+          "status": "TIMED",
+          "home": {
+            "placeholder": "Por definir",
+            "team": null
+          },
+          "away": {
+            "placeholder": "Por definir",
+            "team": null
+          },
+          "score": {
+            "home": null,
+            "away": null
+          },
+          "broadcast_mx": [
+            "VIX",
+            "TUDN"
+          ]
+        },
+        {
+          "id": 537388,
+          "slot": "SEMI_FINALS-537388",
+          "utc_date": "2026-07-15T19:00:00Z",
+          "venue": "Mercedes-Benz Stadium",
+          "city": "Atlanta",
+          "status": "TIMED",
+          "home": {
+            "placeholder": "Por definir",
+            "team": null
+          },
+          "away": {
+            "placeholder": "Por definir",
+            "team": null
+          },
+          "score": {
+            "home": null,
+            "away": null
+          },
+          "broadcast_mx": [
+            "VIX",
+            "TUDN"
+          ]
+        }
+      ]
     },
     {
       "stage": "THIRD_PLACE",
       "label": "Tercer Lugar",
-      "matches": []
+      "matches": [
+        {
+          "id": 537389,
+          "slot": "THIRD_PLACE-537389",
+          "utc_date": "2026-07-18T21:00:00Z",
+          "venue": "Hard Rock Stadium",
+          "city": "Miami Gardens, Florida",
+          "status": "TIMED",
+          "home": {
+            "placeholder": "Por definir",
+            "team": null
+          },
+          "away": {
+            "placeholder": "Por definir",
+            "team": null
+          },
+          "score": {
+            "home": null,
+            "away": null
+          },
+          "broadcast_mx": [
+            "VIX"
+          ]
+        }
+      ]
     },
     {
       "stage": "FINAL",
       "label": "Final",
       "matches": [
         {
-          "id": 537999,
-          "slot": "FINAL",
-          "utc_date": "2026-07-19T18:00:00Z",
+          "id": 537390,
+          "slot": "FINAL-537390",
+          "utc_date": "2026-07-19T19:00:00Z",
           "venue": "MetLife Stadium",
-          "city": "New York/New Jersey",
-          "status": "SCHEDULED",
-          "home": { "placeholder": "Ganador SF1", "team": null },
-          "away": { "placeholder": "Ganador SF2", "team": null },
-          "score": { "home": null, "away": null },
-          "broadcast_mx": ["VIX", "TUDN", "AZTECA7"]
+          "city": "East Rutherford, New Jersey",
+          "status": "TIMED",
+          "home": {
+            "placeholder": "Por definir",
+            "team": null
+          },
+          "away": {
+            "placeholder": "Por definir",
+            "team": null
+          },
+          "score": {
+            "home": null,
+            "away": null
+          },
+          "broadcast_mx": [
+            "VIX",
+            "TUDN"
+          ]
         }
       ]
     }
