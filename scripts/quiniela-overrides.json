@@ -1,0 +1,4 @@
+{
+  "_comment": "Override para casos especiales de la quiniela. 'advances_as_third': lista de TLAs de equipos que terminaron en 3er lugar de su grupo pero clasificaron como uno de los 8 mejores terceros (se mantienen 'active' aunque su posicion en standings sea 3). Edita esta lista manualmente cuando termine la jornada 3 y se sepa que terceros avanzan. Ejemplo: { \"advances_as_third\": [\"MEX\", \"BRA\"] }",
+  "advances_as_third": []
+}
