@@ -1,7 +1,7 @@
 {
   "_meta": {
     "source": "football-data.org+openfootball/worldcup.json",
-    "updated_at": "2026-06-15T14:50:19.897Z"
+    "updated_at": "2026-06-15T18:16:15.688Z"
   },
   "groups": [
     {
@@ -591,43 +591,43 @@
             "tla": "CPV",
             "crest": "https://crests.football-data.org/cape_verde.svg"
           },
-          "played": 0,
+          "played": 1,
           "won": 0,
-          "draw": 0,
+          "draw": 1,
           "lost": 0,
           "goals_for": 0,
           "goals_against": 0,
           "goal_difference": 0,
-          "points": 0,
+          "points": 1,
           "qualified": true
         },
         {
           "position": 2,
-          "team": {
-            "id": 801,
-            "name": "Saudi Arabia",
-            "short_name": "Saudi Arabia",
-            "tla": "KSA",
-            "crest": "https://crests.football-data.org/saudi_arabia.svg"
-          },
-          "played": 0,
-          "won": 0,
-          "draw": 0,
-          "lost": 0,
-          "goals_for": 0,
-          "goals_against": 0,
-          "goal_difference": 0,
-          "points": 0,
-          "qualified": true
-        },
-        {
-          "position": 3,
           "team": {
             "id": 760,
             "name": "Spain",
             "short_name": "Spain",
             "tla": "ESP",
             "crest": "https://crests.football-data.org/760.svg"
+          },
+          "played": 1,
+          "won": 0,
+          "draw": 1,
+          "lost": 0,
+          "goals_for": 0,
+          "goals_against": 0,
+          "goal_difference": 0,
+          "points": 1,
+          "qualified": true
+        },
+        {
+          "position": 3,
+          "team": {
+            "id": 801,
+            "name": "Saudi Arabia",
+            "short_name": "Saudi Arabia",
+            "tla": "KSA",
+            "crest": "https://crests.football-data.org/saudi_arabia.svg"
           },
           "played": 0,
           "won": 0,
