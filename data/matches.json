@@ -1,7 +1,7 @@
 {
   "_meta": {
-    "source": "football-data.org+openfootball/worldcup.json",
-    "updated_at": "2026-06-15T02:05:19.494Z"
+    "source": "football-data.org",
+    "updated_at": "2026-06-15T02:20:03.641Z"
   },
   "matches": [
     {
@@ -13,8 +13,8 @@
       "utc_date": "2026-06-11T19:00:00Z",
       "local_date": null,
       "minute": null,
-      "venue": "Estadio Azteca",
-      "city": "Ciudad de México",
+      "venue": null,
+      "city": null,
       "home_team": {
         "id": 769,
         "name": "Mexico",
@@ -52,8 +52,8 @@
       "utc_date": "2026-06-12T02:00:00Z",
       "local_date": null,
       "minute": null,
-      "venue": "Estadio Akron",
-      "city": "Zapopan, Jalisco",
+      "venue": null,
+      "city": null,
       "home_team": {
         "id": 772,
         "name": "South Korea",
@@ -89,8 +89,8 @@
       "utc_date": "2026-06-12T19:00:00Z",
       "local_date": null,
       "minute": null,
-      "venue": "BMO Field",
-      "city": "Toronto",
+      "venue": null,
+      "city": null,
       "home_team": {
         "id": 828,
         "name": "Canada",
@@ -126,8 +126,8 @@
       "utc_date": "2026-06-13T01:00:00Z",
       "local_date": null,
       "minute": null,
-      "venue": "SoFi Stadium",
-      "city": "Inglewood, California",
+      "venue": null,
+      "city": null,
       "home_team": {
         "id": 771,
         "name": "United States",
@@ -165,8 +165,8 @@
       "utc_date": "2026-06-13T19:00:00Z",
       "local_date": null,
       "minute": null,
-      "venue": "Levi's Stadium",
-      "city": "Santa Clara, California",
+      "venue": null,
+      "city": null,
       "home_team": {
         "id": 8030,
         "name": "Qatar",
@@ -202,8 +202,8 @@
       "utc_date": "2026-06-13T22:00:00Z",
       "local_date": null,
       "minute": null,
-      "venue": "MetLife Stadium",
-      "city": "East Rutherford, New Jersey",
+      "venue": null,
+      "city": null,
       "home_team": {
         "id": 764,
         "name": "Brazil",
@@ -241,8 +241,8 @@
       "utc_date": "2026-06-14T01:00:00Z",
       "local_date": null,
       "minute": null,
-      "venue": "Gillette Stadium",
-      "city": "Foxborough, Massachusetts",
+      "venue": null,
+      "city": null,
       "home_team": {
         "id": 836,
         "name": "Haiti",
@@ -278,8 +278,8 @@
       "utc_date": "2026-06-14T04:00:00Z",
       "local_date": null,
       "minute": null,
-      "venue": "BC Place",
-      "city": "Vancouver",
+      "venue": null,
+      "city": null,
       "home_team": {
         "id": 779,
         "name": "Australia",
@@ -315,8 +315,8 @@
       "utc_date": "2026-06-14T17:00:00Z",
       "local_date": null,
       "minute": null,
-      "venue": "NRG Stadium",
-      "city": "Houston",
+      "venue": null,
+      "city": null,
       "home_team": {
         "id": 759,
         "name": "Germany",
@@ -352,8 +352,8 @@
       "utc_date": "2026-06-14T20:00:00Z",
       "local_date": null,
       "minute": null,
-      "venue": "AT&T Stadium",
-      "city": "Arlington, Texas",
+      "venue": null,
+      "city": null,
       "home_team": {
         "id": 8601,
         "name": "Netherlands",
@@ -387,12 +387,12 @@
       "matchday": 1,
       "stage": "GROUP_STAGE",
       "group": "GROUP_E",
-      "status": "IN_PLAY",
+      "status": "FINISHED",
       "utc_date": "2026-06-14T23:00:00Z",
       "local_date": null,
       "minute": null,
-      "venue": "Lincoln Financial Field",
-      "city": "Philadelphia",
+      "venue": null,
+      "city": null,
       "home_team": {
         "id": 1935,
         "name": "Ivory Coast",
@@ -424,12 +424,12 @@
       "matchday": 1,
       "stage": "GROUP_STAGE",
       "group": "GROUP_F",
-      "status": "TIMED",
+      "status": "IN_PLAY",
       "utc_date": "2026-06-15T02:00:00Z",
       "local_date": null,
       "minute": null,
-      "venue": "Estadio BBVA",
-      "city": "Guadalupe, Nuevo León",
+      "venue": null,
+      "city": null,
       "home_team": {
         "id": 792,
         "name": "Sweden",
@@ -445,8 +445,8 @@
         "crest": "https://crests.football-data.org/tunisia.svg"
       },
       "score": {
-        "home": null,
-        "away": null,
+        "home": 1,
+        "away": 0,
         "halftime_home": null,
         "halftime_away": null
       },
@@ -465,8 +465,8 @@
       "utc_date": "2026-06-15T16:00:00Z",
       "local_date": null,
       "minute": null,
-      "venue": "Mercedes-Benz Stadium",
-      "city": "Atlanta",
+      "venue": null,
+      "city": null,
       "home_team": {
         "id": 760,
         "name": "Spain",
@@ -502,8 +502,8 @@
       "utc_date": "2026-06-15T19:00:00Z",
       "local_date": null,
       "minute": null,
-      "venue": "Lumen Field",
-      "city": "Seattle",
+      "venue": null,
+      "city": null,
       "home_team": {
         "id": 805,
         "name": "Belgium",
@@ -539,8 +539,8 @@
       "utc_date": "2026-06-15T22:00:00Z",
       "local_date": null,
       "minute": null,
-      "venue": "Hard Rock Stadium",
-      "city": "Miami Gardens, Florida",
+      "venue": null,
+      "city": null,
       "home_team": {
         "id": 801,
         "name": "Saudi Arabia",
@@ -576,8 +576,8 @@
       "utc_date": "2026-06-16T01:00:00Z",
       "local_date": null,
       "minute": null,
-      "venue": "SoFi Stadium",
-      "city": "Inglewood, California",
+      "venue": null,
+      "city": null,
       "home_team": {
         "id": 840,
         "name": "Iran",
@@ -613,8 +613,8 @@
       "utc_date": "2026-06-16T19:00:00Z",
       "local_date": null,
       "minute": null,
-      "venue": "MetLife Stadium",
-      "city": "East Rutherford, New Jersey",
+      "venue": null,
+      "city": null,
       "home_team": {
         "id": 773,
         "name": "France",
@@ -650,8 +650,8 @@
       "utc_date": "2026-06-16T22:00:00Z",
       "local_date": null,
       "minute": null,
-      "venue": "Gillette Stadium",
-      "city": "Foxborough, Massachusetts",
+      "venue": null,
+      "city": null,
       "home_team": {
         "id": 8062,
         "name": "Iraq",
@@ -687,8 +687,8 @@
       "utc_date": "2026-06-17T01:00:00Z",
       "local_date": null,
       "minute": null,
-      "venue": "Arrowhead Stadium",
-      "city": "Kansas City",
+      "venue": null,
+      "city": null,
       "home_team": {
         "id": 762,
         "name": "Argentina",
@@ -726,8 +726,8 @@
       "utc_date": "2026-06-17T04:00:00Z",
       "local_date": null,
       "minute": null,
-      "venue": "Levi's Stadium",
-      "city": "Santa Clara, California",
+      "venue": null,
+      "city": null,
       "home_team": {
         "id": 816,
         "name": "Austria",
@@ -763,8 +763,8 @@
       "utc_date": "2026-06-17T17:00:00Z",
       "local_date": null,
       "minute": null,
-      "venue": "NRG Stadium",
-      "city": "Houston",
+      "venue": null,
+      "city": null,
       "home_team": {
         "id": 765,
         "name": "Portugal",
@@ -800,8 +800,8 @@
       "utc_date": "2026-06-17T20:00:00Z",
       "local_date": null,
       "minute": null,
-      "venue": "AT&T Stadium",
-      "city": "Arlington, Texas",
+      "venue": null,
+      "city": null,
       "home_team": {
         "id": 770,
         "name": "England",
@@ -839,8 +839,8 @@
       "utc_date": "2026-06-17T23:00:00Z",
       "local_date": null,
       "minute": null,
-      "venue": "BMO Field",
-      "city": "Toronto",
+      "venue": null,
+      "city": null,
       "home_team": {
         "id": 763,
         "name": "Ghana",
@@ -876,8 +876,8 @@
       "utc_date": "2026-06-18T02:00:00Z",
       "local_date": null,
       "minute": null,
-      "venue": "Estadio Azteca",
-      "city": "Ciudad de México",
+      "venue": null,
+      "city": null,
       "home_team": {
         "id": 8070,
         "name": "Uzbekistan",
@@ -913,8 +913,8 @@
       "utc_date": "2026-06-18T16:00:00Z",
       "local_date": null,
       "minute": null,
-      "venue": "Mercedes-Benz Stadium",
-      "city": "Atlanta",
+      "venue": null,
+      "city": null,
       "home_team": {
         "id": 798,
         "name": "Czechia",
@@ -950,8 +950,8 @@
       "utc_date": "2026-06-18T19:00:00Z",
       "local_date": null,
       "minute": null,
-      "venue": "SoFi Stadium",
-      "city": "Inglewood, California",
+      "venue": null,
+      "city": null,
       "home_team": {
         "id": 788,
         "name": "Switzerland",
@@ -987,8 +987,8 @@
       "utc_date": "2026-06-18T22:00:00Z",
       "local_date": null,
       "minute": null,
-      "venue": "BC Place",
-      "city": "Vancouver",
+      "venue": null,
+      "city": null,
       "home_team": {
         "id": 828,
         "name": "Canada",
@@ -1024,8 +1024,8 @@
       "utc_date": "2026-06-19T01:00:00Z",
       "local_date": null,
       "minute": null,
-      "venue": "Estadio Akron",
-      "city": "Zapopan, Jalisco",
+      "venue": null,
+      "city": null,
       "home_team": {
         "id": 769,
         "name": "Mexico",
@@ -1063,8 +1063,8 @@
       "utc_date": "2026-06-19T19:00:00Z",
       "local_date": null,
       "minute": null,
-      "venue": "Lumen Field",
-      "city": "Seattle",
+      "venue": null,
+      "city": null,
       "home_team": {
         "id": 771,
         "name": "United States",
@@ -1100,8 +1100,8 @@
       "utc_date": "2026-06-19T22:00:00Z",
       "local_date": null,
       "minute": null,
-      "venue": "Gillette Stadium",
-      "city": "Foxborough, Massachusetts",
+      "venue": null,
+      "city": null,
       "home_team": {
         "id": 8873,
         "name": "Scotland",
@@ -1137,8 +1137,8 @@
       "utc_date": "2026-06-20T00:30:00Z",
       "local_date": null,
       "minute": null,
-      "venue": "Lincoln Financial Field",
-      "city": "Philadelphia",
+      "venue": null,
+      "city": null,
       "home_team": {
         "id": 764,
         "name": "Brazil",
@@ -1176,8 +1176,8 @@
       "utc_date": "2026-06-20T03:00:00Z",
       "local_date": null,
       "minute": null,
-      "venue": "Levi's Stadium",
-      "city": "Santa Clara, California",
+      "venue": null,
+      "city": null,
       "home_team": {
         "id": 803,
         "name": "Turkey",
@@ -1213,8 +1213,8 @@
       "utc_date": "2026-06-20T17:00:00Z",
       "local_date": null,
       "minute": null,
-      "venue": "NRG Stadium",
-      "city": "Houston",
+      "venue": null,
+      "city": null,
       "home_team": {
         "id": 8601,
         "name": "Netherlands",
@@ -1252,8 +1252,8 @@
       "utc_date": "2026-06-20T20:00:00Z",
       "local_date": null,
       "minute": null,
-      "venue": "BMO Field",
-      "city": "Toronto",
+      "venue": null,
+      "city": null,
       "home_team": {
         "id": 759,
         "name": "Germany",
@@ -1289,8 +1289,8 @@
       "utc_date": "2026-06-21T00:00:00Z",
       "local_date": null,
       "minute": null,
-      "venue": "Arrowhead Stadium",
-      "city": "Kansas City",
+      "venue": null,
+      "city": null,
       "home_team": {
         "id": 791,
         "name": "Ecuador",
@@ -1326,8 +1326,8 @@
       "utc_date": "2026-06-21T04:00:00Z",
       "local_date": null,
       "minute": null,
-      "venue": "Estadio BBVA",
-      "city": "Guadalupe, Nuevo León",
+      "venue": null,
+      "city": null,
       "home_team": {
         "id": 802,
         "name": "Tunisia",
@@ -1363,8 +1363,8 @@
       "utc_date": "2026-06-21T16:00:00Z",
       "local_date": null,
       "minute": null,
-      "venue": "Mercedes-Benz Stadium",
-      "city": "Atlanta",
+      "venue": null,
+      "city": null,
       "home_team": {
         "id": 760,
         "name": "Spain",
@@ -1387,7 +1387,9 @@
       },
       "scorers": [],
       "broadcast_mx": [
-        "VIX"
+        "VIX",
+        "TUDN",
+        "AZTECA7"
       ],
       "is_inaugural": false
     },
@@ -1400,8 +1402,8 @@
       "utc_date": "2026-06-21T19:00:00Z",
       "local_date": null,
       "minute": null,
-      "venue": "SoFi Stadium",
-      "city": "Inglewood, California",
+      "venue": null,
+      "city": null,
       "home_team": {
         "id": 805,
         "name": "Belgium",
@@ -1437,8 +1439,8 @@
       "utc_date": "2026-06-21T22:00:00Z",
       "local_date": null,
       "minute": null,
-      "venue": "Hard Rock Stadium",
-      "city": "Miami Gardens, Florida",
+      "venue": null,
+      "city": null,
       "home_team": {
         "id": 758,
         "name": "Uruguay",
@@ -1474,8 +1476,8 @@
       "utc_date": "2026-06-22T01:00:00Z",
       "local_date": null,
       "minute": null,
-      "venue": "BC Place",
-      "city": "Vancouver",
+      "venue": null,
+      "city": null,
       "home_team": {
         "id": 783,
         "name": "New Zealand",
@@ -1511,8 +1513,8 @@
       "utc_date": "2026-06-22T17:00:00Z",
       "local_date": null,
       "minute": null,
-      "venue": "AT&T Stadium",
-      "city": "Arlington, Texas",
+      "venue": null,
+      "city": null,
       "home_team": {
         "id": 762,
         "name": "Argentina",
@@ -1548,8 +1550,8 @@
       "utc_date": "2026-06-22T21:00:00Z",
       "local_date": null,
       "minute": null,
-      "venue": "Lincoln Financial Field",
-      "city": "Philadelphia",
+      "venue": null,
+      "city": null,
       "home_team": {
         "id": 773,
         "name": "France",
@@ -1585,8 +1587,8 @@
       "utc_date": "2026-06-23T00:00:00Z",
       "local_date": null,
       "minute": null,
-      "venue": "MetLife Stadium",
-      "city": "East Rutherford, New Jersey",
+      "venue": null,
+      "city": null,
       "home_team": {
         "id": 8872,
         "name": "Norway",
@@ -1609,7 +1611,9 @@
       },
       "scorers": [],
       "broadcast_mx": [
-        "VIX"
+        "VIX",
+        "TUDN",
+        "AZTECA7"
       ],
       "is_inaugural": false
     },
@@ -1622,8 +1626,8 @@
       "utc_date": "2026-06-23T03:00:00Z",
       "local_date": null,
       "minute": null,
-      "venue": "Levi's Stadium",
-      "city": "Santa Clara, California",
+      "venue": null,
+      "city": null,
       "home_team": {
         "id": 8049,
         "name": "Jordan",
@@ -1659,8 +1663,8 @@
       "utc_date": "2026-06-23T17:00:00Z",
       "local_date": null,
       "minute": null,
-      "venue": "NRG Stadium",
-      "city": "Houston",
+      "venue": null,
+      "city": null,
       "home_team": {
         "id": 765,
         "name": "Portugal",
@@ -1696,8 +1700,8 @@
       "utc_date": "2026-06-23T20:00:00Z",
       "local_date": null,
       "minute": null,
-      "venue": "Gillette Stadium",
-      "city": "Foxborough, Massachusetts",
+      "venue": null,
+      "city": null,
       "home_team": {
         "id": 770,
         "name": "England",
@@ -1733,8 +1737,8 @@
       "utc_date": "2026-06-23T23:00:00Z",
       "local_date": null,
       "minute": null,
-      "venue": "BMO Field",
-      "city": "Toronto",
+      "venue": null,
+      "city": null,
       "home_team": {
         "id": 1836,
         "name": "Panama",
@@ -1770,8 +1774,8 @@
       "utc_date": "2026-06-24T02:00:00Z",
       "local_date": null,
       "minute": null,
-      "venue": "Estadio Akron",
-      "city": "Zapopan, Jalisco",
+      "venue": null,
+      "city": null,
       "home_team": {
         "id": 818,
         "name": "Colombia",
@@ -1794,7 +1798,9 @@
       },
       "scorers": [],
       "broadcast_mx": [
-        "VIX"
+        "VIX",
+        "TUDN",
+        "AZTECA7"
       ],
       "is_inaugural": false
     },
@@ -1807,8 +1813,8 @@
       "utc_date": "2026-06-24T19:00:00Z",
       "local_date": null,
       "minute": null,
-      "venue": "Lumen Field",
-      "city": "Seattle",
+      "venue": null,
+      "city": null,
       "home_team": {
         "id": 788,
         "name": "Switzerland",
@@ -1844,8 +1850,8 @@
       "utc_date": "2026-06-24T19:00:00Z",
       "local_date": null,
       "minute": null,
-      "venue": "Lumen Field",
-      "city": "Seattle",
+      "venue": null,
+      "city": null,
       "home_team": {
         "id": 1060,
         "name": "Bosnia-Herzegovina",
@@ -1881,8 +1887,8 @@
       "utc_date": "2026-06-24T22:00:00Z",
       "local_date": null,
       "minute": null,
-      "venue": "Mercedes-Benz Stadium",
-      "city": "Atlanta",
+      "venue": null,
+      "city": null,
       "home_team": {
         "id": 815,
         "name": "Morocco",
@@ -1918,8 +1924,8 @@
       "utc_date": "2026-06-24T22:00:00Z",
       "local_date": null,
       "minute": null,
-      "venue": "Mercedes-Benz Stadium",
-      "city": "Atlanta",
+      "venue": null,
+      "city": null,
       "home_team": {
         "id": 8873,
         "name": "Scotland",
@@ -1955,8 +1961,8 @@
       "utc_date": "2026-06-25T01:00:00Z",
       "local_date": null,
       "minute": null,
-      "venue": "Estadio BBVA",
-      "city": "Guadalupe, Nuevo León",
+      "venue": null,
+      "city": null,
       "home_team": {
         "id": 798,
         "name": "Czechia",
@@ -1979,7 +1985,9 @@
       },
       "scorers": [],
       "broadcast_mx": [
-        "VIX"
+        "VIX",
+        "TUDN",
+        "AZTECA7"
       ],
       "is_inaugural": false
     },
@@ -1992,8 +2000,8 @@
       "utc_date": "2026-06-25T01:00:00Z",
       "local_date": null,
       "minute": null,
-      "venue": "Estadio BBVA",
-      "city": "Guadalupe, Nuevo León",
+      "venue": null,
+      "city": null,
       "home_team": {
         "id": 774,
         "name": "South Africa",
@@ -2029,8 +2037,8 @@
       "utc_date": "2026-06-25T20:00:00Z",
       "local_date": null,
       "minute": null,
-      "venue": "MetLife Stadium",
-      "city": "East Rutherford, New Jersey",
+      "venue": null,
+      "city": null,
       "home_team": {
         "id": 791,
         "name": "Ecuador",
@@ -2053,7 +2061,9 @@
       },
       "scorers": [],
       "broadcast_mx": [
-        "VIX"
+        "VIX",
+        "TUDN",
+        "AZTECA7"
       ],
       "is_inaugural": false
     },
@@ -2066,8 +2076,8 @@
       "utc_date": "2026-06-25T20:00:00Z",
       "local_date": null,
       "minute": null,
-      "venue": "MetLife Stadium",
-      "city": "East Rutherford, New Jersey",
+      "venue": null,
+      "city": null,
       "home_team": {
         "id": 9460,
         "name": "Curaçao",
@@ -2103,8 +2113,8 @@
       "utc_date": "2026-06-25T23:00:00Z",
       "local_date": null,
       "minute": null,
-      "venue": "Arrowhead Stadium",
-      "city": "Kansas City",
+      "venue": null,
+      "city": null,
       "home_team": {
         "id": 802,
         "name": "Tunisia",
@@ -2140,8 +2150,8 @@
       "utc_date": "2026-06-25T23:00:00Z",
       "local_date": null,
       "minute": null,
-      "venue": "Arrowhead Stadium",
-      "city": "Kansas City",
+      "venue": null,
+      "city": null,
       "home_team": {
         "id": 766,
         "name": "Japan",
@@ -2177,8 +2187,8 @@
       "utc_date": "2026-06-26T02:00:00Z",
       "local_date": null,
       "minute": null,
-      "venue": "Levi's Stadium",
-      "city": "Santa Clara, California",
+      "venue": null,
+      "city": null,
       "home_team": {
         "id": 803,
         "name": "Turkey",
@@ -2214,8 +2224,8 @@
       "utc_date": "2026-06-26T02:00:00Z",
       "local_date": null,
       "minute": null,
-      "venue": "Levi's Stadium",
-      "city": "Santa Clara, California",
+      "venue": null,
+      "city": null,
       "home_team": {
         "id": 761,
         "name": "Paraguay",
@@ -2251,8 +2261,8 @@
       "utc_date": "2026-06-26T19:00:00Z",
       "local_date": null,
       "minute": null,
-      "venue": "BMO Field",
-      "city": "Toronto",
+      "venue": null,
+      "city": null,
       "home_team": {
         "id": 8872,
         "name": "Norway",
@@ -2288,8 +2298,8 @@
       "utc_date": "2026-06-26T19:00:00Z",
       "local_date": null,
       "minute": null,
-      "venue": "BMO Field",
-      "city": "Toronto",
+      "venue": null,
+      "city": null,
       "home_team": {
         "id": 804,
         "name": "Senegal",
@@ -2325,8 +2335,8 @@
       "utc_date": "2026-06-27T00:00:00Z",
       "local_date": null,
       "minute": null,
-      "venue": "Estadio Akron",
-      "city": "Zapopan, Jalisco",
+      "venue": null,
+      "city": null,
       "home_team": {
         "id": 758,
         "name": "Uruguay",
@@ -2349,7 +2359,9 @@
       },
       "scorers": [],
       "broadcast_mx": [
-        "VIX"
+        "VIX",
+        "TUDN",
+        "AZTECA7"
       ],
       "is_inaugural": false
     },
@@ -2362,8 +2374,8 @@
       "utc_date": "2026-06-27T00:00:00Z",
       "local_date": null,
       "minute": null,
-      "venue": "Estadio Akron",
-      "city": "Zapopan, Jalisco",
+      "venue": null,
+      "city": null,
       "home_team": {
         "id": 1930,
         "name": "Cape Verde Islands",
@@ -2399,8 +2411,8 @@
       "utc_date": "2026-06-27T03:00:00Z",
       "local_date": null,
       "minute": null,
-      "venue": "BC Place",
-      "city": "Vancouver",
+      "venue": null,
+      "city": null,
       "home_team": {
         "id": 783,
         "name": "New Zealand",
@@ -2436,8 +2448,8 @@
       "utc_date": "2026-06-27T03:00:00Z",
       "local_date": null,
       "minute": null,
-      "venue": "BC Place",
-      "city": "Vancouver",
+      "venue": null,
+      "city": null,
       "home_team": {
         "id": 825,
         "name": "Egypt",
@@ -2473,8 +2485,8 @@
       "utc_date": "2026-06-27T21:00:00Z",
       "local_date": null,
       "minute": null,
-      "venue": "Lincoln Financial Field",
-      "city": "Philadelphia",
+      "venue": null,
+      "city": null,
       "home_team": {
         "id": 1836,
         "name": "Panama",
@@ -2497,7 +2509,9 @@
       },
       "scorers": [],
       "broadcast_mx": [
-        "VIX"
+        "VIX",
+        "TUDN",
+        "AZTECA7"
       ],
       "is_inaugural": false
     },
@@ -2510,8 +2524,8 @@
       "utc_date": "2026-06-27T21:00:00Z",
       "local_date": null,
       "minute": null,
-      "venue": "Lincoln Financial Field",
-      "city": "Philadelphia",
+      "venue": null,
+      "city": null,
       "home_team": {
         "id": 799,
         "name": "Croatia",
@@ -2547,8 +2561,8 @@
       "utc_date": "2026-06-27T23:30:00Z",
       "local_date": null,
       "minute": null,
-      "venue": "Mercedes-Benz Stadium",
-      "city": "Atlanta",
+      "venue": null,
+      "city": null,
       "home_team": {
         "id": 818,
         "name": "Colombia",
@@ -2586,8 +2600,8 @@
       "utc_date": "2026-06-27T23:30:00Z",
       "local_date": null,
       "minute": null,
-      "venue": "Mercedes-Benz Stadium",
-      "city": "Atlanta",
+      "venue": null,
+      "city": null,
       "home_team": {
         "id": 1934,
         "name": "Congo DR",
@@ -2623,8 +2637,8 @@
       "utc_date": "2026-06-28T02:00:00Z",
       "local_date": null,
       "minute": null,
-      "venue": "AT&T Stadium",
-      "city": "Arlington, Texas",
+      "venue": null,
+      "city": null,
       "home_team": {
         "id": 8049,
         "name": "Jordan",
@@ -2660,8 +2674,8 @@
       "utc_date": "2026-06-28T02:00:00Z",
       "local_date": null,
       "minute": null,
-      "venue": "AT&T Stadium",
-      "city": "Arlington, Texas",
+      "venue": null,
+      "city": null,
       "home_team": {
         "id": 778,
         "name": "Algeria",
@@ -2697,8 +2711,8 @@
       "utc_date": "2026-06-28T19:00:00Z",
       "local_date": null,
       "minute": null,
-      "venue": "SoFi Stadium",
-      "city": "Inglewood, California",
+      "venue": null,
+      "city": null,
       "home_team": {
         "id": null,
         "name": "Por definir",
@@ -2721,7 +2735,8 @@
       },
       "scorers": [],
       "broadcast_mx": [
-        "VIX"
+        "VIX",
+        "TUDN"
       ],
       "is_inaugural": false
     },
@@ -2734,8 +2749,8 @@
       "utc_date": "2026-06-29T17:00:00Z",
       "local_date": null,
       "minute": null,
-      "venue": "NRG Stadium",
-      "city": "Houston",
+      "venue": null,
+      "city": null,
       "home_team": {
         "id": null,
         "name": "Por definir",
@@ -2771,8 +2786,8 @@
       "utc_date": "2026-06-29T20:30:00Z",
       "local_date": null,
       "minute": null,
-      "venue": "Gillette Stadium",
-      "city": "Foxborough, Massachusetts",
+      "venue": null,
+      "city": null,
       "home_team": {
         "id": null,
         "name": "Por definir",
@@ -2795,7 +2810,8 @@
       },
       "scorers": [],
       "broadcast_mx": [
-        "VIX"
+        "VIX",
+        "TUDN"
       ],
       "is_inaugural": false
     },
@@ -2808,8 +2824,8 @@
       "utc_date": "2026-06-30T01:00:00Z",
       "local_date": null,
       "minute": null,
-      "venue": "Estadio BBVA",
-      "city": "Guadalupe, Nuevo León",
+      "venue": null,
+      "city": null,
       "home_team": {
         "id": null,
         "name": "Por definir",
@@ -2845,8 +2861,8 @@
       "utc_date": "2026-06-30T17:00:00Z",
       "local_date": null,
       "minute": null,
-      "venue": "AT&T Stadium",
-      "city": "Arlington, Texas",
+      "venue": null,
+      "city": null,
       "home_team": {
         "id": null,
         "name": "Por definir",
@@ -2882,8 +2898,8 @@
       "utc_date": "2026-06-30T21:00:00Z",
       "local_date": null,
       "minute": null,
-      "venue": "MetLife Stadium",
-      "city": "East Rutherford, New Jersey",
+      "venue": null,
+      "city": null,
       "home_team": {
         "id": null,
         "name": "Por definir",
@@ -2919,8 +2935,8 @@
       "utc_date": "2026-07-01T01:00:00Z",
       "local_date": null,
       "minute": null,
-      "venue": "Estadio Azteca",
-      "city": "Ciudad de México",
+      "venue": null,
+      "city": null,
       "home_team": {
         "id": null,
         "name": "Por definir",
@@ -2943,7 +2959,8 @@
       },
       "scorers": [],
       "broadcast_mx": [
-        "VIX"
+        "VIX",
+        "TUDN"
       ],
       "is_inaugural": false
     },
@@ -2956,8 +2973,8 @@
       "utc_date": "2026-07-01T16:00:00Z",
       "local_date": null,
       "minute": null,
-      "venue": "Mercedes-Benz Stadium",
-      "city": "Atlanta",
+      "venue": null,
+      "city": null,
       "home_team": {
         "id": null,
         "name": "Por definir",
@@ -2993,8 +3010,8 @@
       "utc_date": "2026-07-01T20:00:00Z",
       "local_date": null,
       "minute": null,
-      "venue": "Lumen Field",
-      "city": "Seattle",
+      "venue": null,
+      "city": null,
       "home_team": {
         "id": null,
         "name": "Por definir",
@@ -3017,7 +3034,8 @@
       },
       "scorers": [],
       "broadcast_mx": [
-        "VIX"
+        "VIX",
+        "TUDN"
       ],
       "is_inaugural": false
     },
@@ -3030,8 +3048,8 @@
       "utc_date": "2026-07-02T00:00:00Z",
       "local_date": null,
       "minute": null,
-      "venue": "Levi's Stadium",
-      "city": "Santa Clara, California",
+      "venue": null,
+      "city": null,
       "home_team": {
         "id": null,
         "name": "Por definir",
@@ -3067,8 +3085,8 @@
       "utc_date": "2026-07-02T19:00:00Z",
       "local_date": null,
       "minute": null,
-      "venue": "SoFi Stadium",
-      "city": "Inglewood, California",
+      "venue": null,
+      "city": null,
       "home_team": {
         "id": null,
         "name": "Por definir",
@@ -3091,7 +3109,8 @@
       },
       "scorers": [],
       "broadcast_mx": [
-        "VIX"
+        "VIX",
+        "TUDN"
       ],
       "is_inaugural": false
     },
@@ -3104,8 +3123,8 @@
       "utc_date": "2026-07-02T23:00:00Z",
       "local_date": null,
       "minute": null,
-      "venue": "BMO Field",
-      "city": "Toronto",
+      "venue": null,
+      "city": null,
       "home_team": {
         "id": null,
         "name": "Por definir",
@@ -3141,8 +3160,8 @@
       "utc_date": "2026-07-03T03:00:00Z",
       "local_date": null,
       "minute": null,
-      "venue": "BC Place",
-      "city": "Vancouver",
+      "venue": null,
+      "city": null,
       "home_team": {
         "id": null,
         "name": "Por definir",
@@ -3178,8 +3197,8 @@
       "utc_date": "2026-07-03T18:00:00Z",
       "local_date": null,
       "minute": null,
-      "venue": "AT&T Stadium",
-      "city": "Arlington, Texas",
+      "venue": null,
+      "city": null,
       "home_team": {
         "id": null,
         "name": "Por definir",
@@ -3215,8 +3234,8 @@
       "utc_date": "2026-07-03T22:00:00Z",
       "local_date": null,
       "minute": null,
-      "venue": "Hard Rock Stadium",
-      "city": "Miami Gardens, Florida",
+      "venue": null,
+      "city": null,
       "home_team": {
         "id": null,
         "name": "Por definir",
@@ -3239,7 +3258,8 @@
       },
       "scorers": [],
       "broadcast_mx": [
-        "VIX"
+        "VIX",
+        "TUDN"
       ],
       "is_inaugural": false
     },
@@ -3252,8 +3272,8 @@
       "utc_date": "2026-07-04T01:30:00Z",
       "local_date": null,
       "minute": null,
-      "venue": "Arrowhead Stadium",
-      "city": "Kansas City",
+      "venue": null,
+      "city": null,
       "home_team": {
         "id": null,
         "name": "Por definir",
@@ -3289,8 +3309,8 @@
       "utc_date": "2026-07-04T17:00:00Z",
       "local_date": null,
       "minute": null,
-      "venue": "NRG Stadium",
-      "city": "Houston",
+      "venue": null,
+      "city": null,
       "home_team": {
         "id": null,
         "name": "Por definir",
@@ -3313,7 +3333,8 @@
       },
       "scorers": [],
       "broadcast_mx": [
-        "VIX"
+        "VIX",
+        "TUDN"
       ],
       "is_inaugural": false
     },
@@ -3326,8 +3347,8 @@
       "utc_date": "2026-07-04T21:00:00Z",
       "local_date": null,
       "minute": null,
-      "venue": "Lincoln Financial Field",
-      "city": "Philadelphia",
+      "venue": null,
+      "city": null,
       "home_team": {
         "id": null,
         "name": "Por definir",
@@ -3363,8 +3384,8 @@
       "utc_date": "2026-07-05T20:00:00Z",
       "local_date": null,
       "minute": null,
-      "venue": "MetLife Stadium",
-      "city": "East Rutherford, New Jersey",
+      "venue": null,
+      "city": null,
       "home_team": {
         "id": null,
         "name": "Por definir",
@@ -3400,8 +3421,8 @@
       "utc_date": "2026-07-06T00:00:00Z",
       "local_date": null,
       "minute": null,
-      "venue": "Estadio Azteca",
-      "city": "Ciudad de México",
+      "venue": null,
+      "city": null,
       "home_team": {
         "id": null,
         "name": "Por definir",
@@ -3424,7 +3445,8 @@
       },
       "scorers": [],
       "broadcast_mx": [
-        "VIX"
+        "VIX",
+        "TUDN"
       ],
       "is_inaugural": false
     },
@@ -3437,8 +3459,8 @@
       "utc_date": "2026-07-06T19:00:00Z",
       "local_date": null,
       "minute": null,
-      "venue": "AT&T Stadium",
-      "city": "Arlington, Texas",
+      "venue": null,
+      "city": null,
       "home_team": {
         "id": null,
         "name": "Por definir",
@@ -3474,8 +3496,8 @@
       "utc_date": "2026-07-07T00:00:00Z",
       "local_date": null,
       "minute": null,
-      "venue": "Lumen Field",
-      "city": "Seattle",
+      "venue": null,
+      "city": null,
       "home_team": {
         "id": null,
         "name": "Por definir",
@@ -3498,7 +3520,8 @@
       },
       "scorers": [],
       "broadcast_mx": [
-        "VIX"
+        "VIX",
+        "TUDN"
       ],
       "is_inaugural": false
     },
@@ -3511,8 +3534,8 @@
       "utc_date": "2026-07-07T16:00:00Z",
       "local_date": null,
       "minute": null,
-      "venue": "Mercedes-Benz Stadium",
-      "city": "Atlanta",
+      "venue": null,
+      "city": null,
       "home_team": {
         "id": null,
         "name": "Por definir",
@@ -3535,7 +3558,8 @@
       },
       "scorers": [],
       "broadcast_mx": [
-        "VIX"
+        "VIX",
+        "TUDN"
       ],
       "is_inaugural": false
     },
@@ -3548,8 +3572,8 @@
       "utc_date": "2026-07-07T20:00:00Z",
       "local_date": null,
       "minute": null,
-      "venue": "BC Place",
-      "city": "Vancouver",
+      "venue": null,
+      "city": null,
       "home_team": {
         "id": null,
         "name": "Por definir",
@@ -3585,8 +3609,8 @@
       "utc_date": "2026-07-09T20:00:00Z",
       "local_date": null,
       "minute": null,
-      "venue": "Gillette Stadium",
-      "city": "Foxborough, Massachusetts",
+      "venue": null,
+      "city": null,
       "home_team": {
         "id": null,
         "name": "Por definir",
@@ -3609,7 +3633,8 @@
       },
       "scorers": [],
       "broadcast_mx": [
-        "VIX"
+        "VIX",
+        "TUDN"
       ],
       "is_inaugural": false
     },
@@ -3622,8 +3647,8 @@
       "utc_date": "2026-07-10T19:00:00Z",
       "local_date": null,
       "minute": null,
-      "venue": "SoFi Stadium",
-      "city": "Inglewood, California",
+      "venue": null,
+      "city": null,
       "home_team": {
         "id": null,
         "name": "Por definir",
@@ -3659,8 +3684,8 @@
       "utc_date": "2026-07-11T21:00:00Z",
       "local_date": null,
       "minute": null,
-      "venue": "Hard Rock Stadium",
-      "city": "Miami Gardens, Florida",
+      "venue": null,
+      "city": null,
       "home_team": {
         "id": null,
         "name": "Por definir",
@@ -3696,8 +3721,8 @@
       "utc_date": "2026-07-12T01:00:00Z",
       "local_date": null,
       "minute": null,
-      "venue": "Arrowhead Stadium",
-      "city": "Kansas City",
+      "venue": null,
+      "city": null,
       "home_team": {
         "id": null,
         "name": "Por definir",
@@ -3733,8 +3758,8 @@
       "utc_date": "2026-07-14T19:00:00Z",
       "local_date": null,
       "minute": null,
-      "venue": "AT&T Stadium",
-      "city": "Arlington, Texas",
+      "venue": null,
+      "city": null,
       "home_team": {
         "id": null,
         "name": "Por definir",
@@ -3757,7 +3782,8 @@
       },
       "scorers": [],
       "broadcast_mx": [
-        "VIX"
+        "VIX",
+        "TUDN"
       ],
       "is_inaugural": false
     },
@@ -3770,8 +3796,8 @@
       "utc_date": "2026-07-15T19:00:00Z",
       "local_date": null,
       "minute": null,
-      "venue": "Mercedes-Benz Stadium",
-      "city": "Atlanta",
+      "venue": null,
+      "city": null,
       "home_team": {
         "id": null,
         "name": "Por definir",
@@ -3794,7 +3820,8 @@
       },
       "scorers": [],
       "broadcast_mx": [
-        "VIX"
+        "VIX",
+        "TUDN"
       ],
       "is_inaugural": false
     },
@@ -3807,8 +3834,8 @@
       "utc_date": "2026-07-18T21:00:00Z",
       "local_date": null,
       "minute": null,
-      "venue": "Hard Rock Stadium",
-      "city": "Miami Gardens, Florida",
+      "venue": null,
+      "city": null,
       "home_team": {
         "id": null,
         "name": "Por definir",
@@ -3844,8 +3871,8 @@
       "utc_date": "2026-07-19T19:00:00Z",
       "local_date": null,
       "minute": null,
-      "venue": "MetLife Stadium",
-      "city": "East Rutherford, New Jersey",
+      "venue": null,
+      "city": null,
       "home_team": {
         "id": null,
         "name": "Por definir",
@@ -3868,7 +3895,8 @@
       },
       "scorers": [],
       "broadcast_mx": [
-        "VIX"
+        "VIX",
+        "TUDN"
       ],
       "is_inaugural": false
     }
