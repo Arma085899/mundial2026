@@ -1,7 +1,7 @@
 {
   "_meta": {
     "source": "football-data.org",
-    "updated_at": "2026-06-15T02:20:03.641Z"
+    "updated_at": "2026-06-15T07:35:40.445Z"
   },
   "matches": [
     {
@@ -424,7 +424,7 @@
       "matchday": 1,
       "stage": "GROUP_STAGE",
       "group": "GROUP_F",
-      "status": "IN_PLAY",
+      "status": "FINISHED",
       "utc_date": "2026-06-15T02:00:00Z",
       "local_date": null,
       "minute": null,
@@ -445,10 +445,10 @@
         "crest": "https://crests.football-data.org/tunisia.svg"
       },
       "score": {
-        "home": 1,
-        "away": 0,
-        "halftime_home": null,
-        "halftime_away": null
+        "home": 5,
+        "away": 1,
+        "halftime_home": 2,
+        "halftime_away": 1
       },
       "scorers": [],
       "broadcast_mx": [
