@@ -1,7 +1,7 @@
 {
   "_meta": {
     "source": "football-data.org+openfootball/worldcup.json",
-    "updated_at": "2026-06-16T02:08:29.964Z"
+    "updated_at": "2026-06-16T07:42:33.263Z"
   },
   "matches": [
     {
@@ -328,7 +328,7 @@
         "id": 9460,
         "name": "Curaçao",
         "short_name": "Curaçao",
-        "tla": "CUW",
+        "tla": "CUR",
         "crest": "https://crests.football-data.org/curacao.svg"
       },
       "score": {
@@ -572,7 +572,7 @@
       "matchday": 1,
       "stage": "GROUP_STAGE",
       "group": "GROUP_G",
-      "status": "PAUSED",
+      "status": "FINISHED",
       "utc_date": "2026-06-16T01:00:00Z",
       "local_date": null,
       "minute": null,
@@ -593,8 +593,8 @@
         "crest": "https://crests.football-data.org/783.svg"
       },
       "score": {
-        "home": 1,
-        "away": 1,
+        "home": 2,
+        "away": 2,
         "halftime_home": 1,
         "halftime_away": 1
       },
@@ -1302,7 +1302,7 @@
         "id": 9460,
         "name": "Curaçao",
         "short_name": "Curaçao",
-        "tla": "CUW",
+        "tla": "CUR",
         "crest": "https://crests.football-data.org/curacao.svg"
       },
       "score": {
@@ -2082,7 +2082,7 @@
         "id": 9460,
         "name": "Curaçao",
         "short_name": "Curaçao",
-        "tla": "CUW",
+        "tla": "CUR",
         "crest": "https://crests.football-data.org/curacao.svg"
       },
       "away_team": {
