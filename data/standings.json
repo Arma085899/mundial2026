@@ -1,7 +1,7 @@
 {
   "_meta": {
     "source": "football-data.org+openfootball/worldcup.json",
-    "updated_at": "2026-06-16T17:37:34.375Z"
+    "updated_at": "2026-06-16T20:31:52.266Z"
   },
   "groups": [
     {
@@ -673,18 +673,37 @@
             "tla": "FRA",
             "crest": "https://crests.football-data.org/773.svg"
           },
-          "played": 0,
+          "played": 1,
           "won": 0,
-          "draw": 0,
+          "draw": 1,
           "lost": 0,
           "goals_for": 0,
           "goals_against": 0,
           "goal_difference": 0,
-          "points": 0,
+          "points": 1,
           "qualified": true
         },
         {
           "position": 2,
+          "team": {
+            "id": 804,
+            "name": "Senegal",
+            "short_name": "Senegal",
+            "tla": "SEN",
+            "crest": "https://crests.football-data.org/senegal.svg"
+          },
+          "played": 1,
+          "won": 0,
+          "draw": 1,
+          "lost": 0,
+          "goals_for": 0,
+          "goals_against": 0,
+          "goal_difference": 0,
+          "points": 1,
+          "qualified": true
+        },
+        {
+          "position": 3,
           "team": {
             "id": 8062,
             "name": "Iraq",
@@ -700,35 +719,16 @@
           "goals_against": 0,
           "goal_difference": 0,
           "points": 0,
-          "qualified": true
+          "qualified": false
         },
         {
-          "position": 3,
+          "position": 4,
           "team": {
             "id": 8872,
             "name": "Norway",
             "short_name": "Norway",
             "tla": "NOR",
             "crest": "https://crests.football-data.org/813.svg"
-          },
-          "played": 0,
-          "won": 0,
-          "draw": 0,
-          "lost": 0,
-          "goals_for": 0,
-          "goals_against": 0,
-          "goal_difference": 0,
-          "points": 0,
-          "qualified": false
-        },
-        {
-          "position": 4,
-          "team": {
-            "id": 804,
-            "name": "Senegal",
-            "short_name": "Senegal",
-            "tla": "SEN",
-            "crest": "https://crests.football-data.org/senegal.svg"
           },
           "played": 0,
           "won": 0,
