@@ -1,7 +1,7 @@
 {
   "_meta": {
     "source": "football-data.org+openfootball/worldcup.json",
-    "updated_at": "2026-06-17T14:00:52.628Z"
+    "updated_at": "2026-06-17T17:20:23.774Z"
   },
   "groups": [
     {
@@ -837,43 +837,43 @@
             "tla": "COD",
             "crest": "https://crests.football-data.org/congo_dr.svg"
           },
-          "played": 0,
+          "played": 1,
           "won": 0,
-          "draw": 0,
+          "draw": 1,
           "lost": 0,
           "goals_for": 0,
           "goals_against": 0,
           "goal_difference": 0,
-          "points": 0,
+          "points": 1,
           "qualified": true
         },
         {
           "position": 2,
-          "team": {
-            "id": 818,
-            "name": "Colombia",
-            "short_name": "Colombia",
-            "tla": "COL",
-            "crest": "https://crests.football-data.org/818.svg"
-          },
-          "played": 0,
-          "won": 0,
-          "draw": 0,
-          "lost": 0,
-          "goals_for": 0,
-          "goals_against": 0,
-          "goal_difference": 0,
-          "points": 0,
-          "qualified": true
-        },
-        {
-          "position": 3,
           "team": {
             "id": 765,
             "name": "Portugal",
             "short_name": "Portugal",
             "tla": "POR",
             "crest": "https://crests.football-data.org/765.svg"
+          },
+          "played": 1,
+          "won": 0,
+          "draw": 1,
+          "lost": 0,
+          "goals_for": 0,
+          "goals_against": 0,
+          "goal_difference": 0,
+          "points": 1,
+          "qualified": true
+        },
+        {
+          "position": 3,
+          "team": {
+            "id": 818,
+            "name": "Colombia",
+            "short_name": "Colombia",
+            "tla": "COL",
+            "crest": "https://crests.football-data.org/818.svg"
           },
           "played": 0,
           "won": 0,
