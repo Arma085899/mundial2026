@@ -1,7 +1,7 @@
 {
   "_meta": {
     "source": "football-data.org+openfootball/worldcup.json",
-    "updated_at": "2026-06-17T10:09:01.006Z"
+    "updated_at": "2026-06-17T14:00:52.628Z"
   },
   "matches": [
     {
@@ -552,7 +552,7 @@
         "id": 758,
         "name": "Uruguay",
         "short_name": "Uruguay",
-        "tla": "URY",
+        "tla": "URU",
         "crest": "https://crests.football-data.org/758.svg"
       },
       "score": {
@@ -1445,7 +1445,7 @@
         "id": 758,
         "name": "Uruguay",
         "short_name": "Uruguay",
-        "tla": "URY",
+        "tla": "URU",
         "crest": "https://crests.football-data.org/758.svg"
       },
       "away_team": {
@@ -2341,7 +2341,7 @@
         "id": 758,
         "name": "Uruguay",
         "short_name": "Uruguay",
-        "tla": "URY",
+        "tla": "URU",
         "crest": "https://crests.football-data.org/758.svg"
       },
       "away_team": {
