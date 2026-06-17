@@ -1,7 +1,7 @@
 {
   "_meta": {
     "source": "football-data.org+openfootball/worldcup.json",
-    "updated_at": "2026-06-17T00:03:37.304Z"
+    "updated_at": "2026-06-17T05:11:41.927Z"
   },
   "matches": [
     {
@@ -646,7 +646,7 @@
       "matchday": 1,
       "stage": "GROUP_STAGE",
       "group": "GROUP_I",
-      "status": "IN_PLAY",
+      "status": "FINISHED",
       "utc_date": "2026-06-16T22:00:00Z",
       "local_date": null,
       "minute": null,
@@ -668,7 +668,7 @@
       },
       "score": {
         "home": 1,
-        "away": 3,
+        "away": 4,
         "halftime_home": 1,
         "halftime_away": 2
       },
@@ -683,7 +683,7 @@
       "matchday": 1,
       "stage": "GROUP_STAGE",
       "group": "GROUP_J",
-      "status": "TIMED",
+      "status": "FINISHED",
       "utc_date": "2026-06-17T01:00:00Z",
       "local_date": null,
       "minute": null,
@@ -704,10 +704,10 @@
         "crest": "https://crests.football-data.org/algeria.svg"
       },
       "score": {
-        "home": null,
-        "away": null,
-        "halftime_home": null,
-        "halftime_away": null
+        "home": 3,
+        "away": 0,
+        "halftime_home": 1,
+        "halftime_away": 0
       },
       "scorers": [],
       "broadcast_mx": [
@@ -722,7 +722,7 @@
       "matchday": 1,
       "stage": "GROUP_STAGE",
       "group": "GROUP_J",
-      "status": "TIMED",
+      "status": "PAUSED",
       "utc_date": "2026-06-17T04:00:00Z",
       "local_date": null,
       "minute": null,
@@ -743,10 +743,10 @@
         "crest": "https://crests.football-data.org/8049.png"
       },
       "score": {
-        "home": null,
-        "away": null,
-        "halftime_home": null,
-        "halftime_away": null
+        "home": 1,
+        "away": 0,
+        "halftime_home": 1,
+        "halftime_away": 0
       },
       "scorers": [],
       "broadcast_mx": [
