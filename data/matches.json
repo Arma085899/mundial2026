@@ -1,7 +1,7 @@
 {
   "_meta": {
     "source": "football-data.org+openfootball/worldcup.json",
-    "updated_at": "2026-06-18T19:53:53.682Z"
+    "updated_at": "2026-06-18T22:10:58.743Z"
   },
   "matches": [
     {
@@ -552,7 +552,7 @@
         "id": 758,
         "name": "Uruguay",
         "short_name": "Uruguay",
-        "tla": "URU",
+        "tla": "URY",
         "crest": "https://crests.football-data.org/758.svg"
       },
       "score": {
@@ -946,7 +946,7 @@
       "matchday": 2,
       "stage": "GROUP_STAGE",
       "group": "GROUP_B",
-      "status": "TIMED",
+      "status": "FINISHED",
       "utc_date": "2026-06-18T19:00:00Z",
       "local_date": null,
       "minute": null,
@@ -967,10 +967,10 @@
         "crest": "https://crests.football-data.org/bosnia.svg"
       },
       "score": {
-        "home": null,
-        "away": null,
-        "halftime_home": null,
-        "halftime_away": null
+        "home": 4,
+        "away": 1,
+        "halftime_home": 0,
+        "halftime_away": 0
       },
       "scorers": [],
       "broadcast_mx": [
@@ -983,7 +983,7 @@
       "matchday": 2,
       "stage": "GROUP_STAGE",
       "group": "GROUP_B",
-      "status": "TIMED",
+      "status": "IN_PLAY",
       "utc_date": "2026-06-18T22:00:00Z",
       "local_date": null,
       "minute": null,
@@ -1004,8 +1004,8 @@
         "crest": "https://crests.football-data.org/8030.svg"
       },
       "score": {
-        "home": null,
-        "away": null,
+        "home": 0,
+        "away": 0,
         "halftime_home": null,
         "halftime_away": null
       },
@@ -1445,7 +1445,7 @@
         "id": 758,
         "name": "Uruguay",
         "short_name": "Uruguay",
-        "tla": "URU",
+        "tla": "URY",
         "crest": "https://crests.football-data.org/758.svg"
       },
       "away_team": {
@@ -2341,7 +2341,7 @@
         "id": 758,
         "name": "Uruguay",
         "short_name": "Uruguay",
-        "tla": "URU",
+        "tla": "URY",
         "crest": "https://crests.football-data.org/758.svg"
       },
       "away_team": {

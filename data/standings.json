@@ -1,7 +1,7 @@
 {
   "_meta": {
     "source": "football-data.org+openfootball/worldcup.json",
-    "updated_at": "2026-06-18T19:53:53.682Z"
+    "updated_at": "2026-06-18T22:10:58.743Z"
   },
   "groups": [
     {
@@ -100,23 +100,23 @@
             "crest": "https://crests.football-data.org/788.svg"
           },
           "played": 2,
-          "won": 0,
-          "draw": 2,
+          "won": 1,
+          "draw": 1,
           "lost": 0,
-          "goals_for": 1,
-          "goals_against": 1,
-          "goal_difference": 0,
-          "points": 2,
+          "goals_for": 5,
+          "goals_against": 2,
+          "goal_difference": 3,
+          "points": 4,
           "qualified": true
         },
         {
           "position": 2,
           "team": {
-            "id": 1060,
-            "name": "Bosnia-Herzegovina",
-            "short_name": "Bosnia-H.",
-            "tla": "BIH",
-            "crest": "https://crests.football-data.org/bosnia.svg"
+            "id": 828,
+            "name": "Canada",
+            "short_name": "Canada",
+            "tla": "CAN",
+            "crest": "https://crests.football-data.org/canada.svg"
           },
           "played": 2,
           "won": 0,
@@ -131,38 +131,38 @@
         {
           "position": 3,
           "team": {
-            "id": 828,
-            "name": "Canada",
-            "short_name": "Canada",
-            "tla": "CAN",
-            "crest": "https://crests.football-data.org/canada.svg"
-          },
-          "played": 1,
-          "won": 0,
-          "draw": 1,
-          "lost": 0,
-          "goals_for": 1,
-          "goals_against": 1,
-          "goal_difference": 0,
-          "points": 1,
-          "qualified": false
-        },
-        {
-          "position": 4,
-          "team": {
             "id": 8030,
             "name": "Qatar",
             "short_name": "Qatar",
             "tla": "QAT",
             "crest": "https://crests.football-data.org/8030.svg"
           },
-          "played": 1,
+          "played": 2,
           "won": 0,
-          "draw": 1,
+          "draw": 2,
           "lost": 0,
           "goals_for": 1,
           "goals_against": 1,
           "goal_difference": 0,
+          "points": 2,
+          "qualified": false
+        },
+        {
+          "position": 4,
+          "team": {
+            "id": 1060,
+            "name": "Bosnia-Herzegovina",
+            "short_name": "Bosnia-H.",
+            "tla": "BIH",
+            "crest": "https://crests.football-data.org/bosnia.svg"
+          },
+          "played": 2,
+          "won": 0,
+          "draw": 1,
+          "lost": 1,
+          "goals_for": 2,
+          "goals_against": 5,
+          "goal_difference": -3,
           "points": 1,
           "qualified": false
         }
