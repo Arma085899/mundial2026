@@ -1,7 +1,7 @@
 {
   "_meta": {
     "source": "football-data.org+openfootball/worldcup.json",
-    "updated_at": "2026-06-17T23:06:49.089Z"
+    "updated_at": "2026-06-18T01:40:08.644Z"
   },
   "groups": [
     {
@@ -939,13 +939,13 @@
             "crest": "https://crests.football-data.org/ghana.svg"
           },
           "played": 1,
-          "won": 0,
-          "draw": 1,
+          "won": 1,
+          "draw": 0,
           "lost": 0,
-          "goals_for": 0,
+          "goals_for": 1,
           "goals_against": 0,
-          "goal_difference": 0,
-          "points": 1,
+          "goal_difference": 1,
+          "points": 3,
           "qualified": true
         },
         {
@@ -959,12 +959,12 @@
           },
           "played": 1,
           "won": 0,
-          "draw": 1,
-          "lost": 0,
+          "draw": 0,
+          "lost": 1,
           "goals_for": 0,
-          "goals_against": 0,
-          "goal_difference": 0,
-          "points": 1,
+          "goals_against": 1,
+          "goal_difference": -1,
+          "points": 0,
           "qualified": false
         },
         {
