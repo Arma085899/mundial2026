@@ -1,7 +1,7 @@
 {
   "_meta": {
     "source": "football-data.org+openfootball/worldcup.json",
-    "updated_at": "2026-06-18T01:40:08.644Z"
+    "updated_at": "2026-06-18T06:29:27.939Z"
   },
   "groups": [
     {
@@ -831,6 +831,25 @@
         {
           "position": 1,
           "team": {
+            "id": 818,
+            "name": "Colombia",
+            "short_name": "Colombia",
+            "tla": "COL",
+            "crest": "https://crests.football-data.org/818.svg"
+          },
+          "played": 1,
+          "won": 1,
+          "draw": 0,
+          "lost": 0,
+          "goals_for": 3,
+          "goals_against": 1,
+          "goal_difference": 2,
+          "points": 3,
+          "qualified": true
+        },
+        {
+          "position": 2,
+          "team": {
             "id": 1934,
             "name": "Congo DR",
             "short_name": "Congo DR",
@@ -848,7 +867,7 @@
           "qualified": true
         },
         {
-          "position": 2,
+          "position": 3,
           "team": {
             "id": 765,
             "name": "Portugal",
@@ -864,25 +883,6 @@
           "goals_against": 1,
           "goal_difference": 0,
           "points": 1,
-          "qualified": true
-        },
-        {
-          "position": 3,
-          "team": {
-            "id": 818,
-            "name": "Colombia",
-            "short_name": "Colombia",
-            "tla": "COL",
-            "crest": "https://crests.football-data.org/818.svg"
-          },
-          "played": 0,
-          "won": 0,
-          "draw": 0,
-          "lost": 0,
-          "goals_for": 0,
-          "goals_against": 0,
-          "goal_difference": 0,
-          "points": 0,
           "qualified": false
         },
         {
@@ -894,13 +894,13 @@
             "tla": "UZB",
             "crest": "https://crests.football-data.org/8070.png"
           },
-          "played": 0,
+          "played": 1,
           "won": 0,
           "draw": 0,
-          "lost": 0,
-          "goals_for": 0,
-          "goals_against": 0,
-          "goal_difference": 0,
+          "lost": 1,
+          "goals_for": 1,
+          "goals_against": 3,
+          "goal_difference": -2,
           "points": 0,
           "qualified": false
         }
