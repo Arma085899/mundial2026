@@ -1,7 +1,7 @@
 {
   "_meta": {
     "source": "football-data.org+openfootball/worldcup.json",
-    "updated_at": "2026-06-19T21:33:32.176Z"
+    "updated_at": "2026-06-19T22:35:17.851Z"
   },
   "groups": [
     {
@@ -175,39 +175,39 @@
         {
           "position": 1,
           "team": {
-            "id": 8873,
-            "name": "Scotland",
-            "short_name": "Scotland",
-            "tla": "SCO",
-            "crest": "https://crests.football-data.org/814.svg"
-          },
-          "played": 1,
-          "won": 1,
-          "draw": 0,
-          "lost": 0,
-          "goals_for": 1,
-          "goals_against": 0,
-          "goal_difference": 1,
-          "points": 3,
-          "qualified": true
-        },
-        {
-          "position": 2,
-          "team": {
             "id": 815,
             "name": "Morocco",
             "short_name": "Morocco",
             "tla": "MAR",
             "crest": "https://crests.football-data.org/morocco.svg"
           },
-          "played": 1,
-          "won": 0,
+          "played": 2,
+          "won": 1,
           "draw": 1,
           "lost": 0,
+          "goals_for": 2,
+          "goals_against": 1,
+          "goal_difference": 1,
+          "points": 4,
+          "qualified": true
+        },
+        {
+          "position": 2,
+          "team": {
+            "id": 8873,
+            "name": "Scotland",
+            "short_name": "Scotland",
+            "tla": "SCO",
+            "crest": "https://crests.football-data.org/814.svg"
+          },
+          "played": 2,
+          "won": 1,
+          "draw": 0,
+          "lost": 1,
           "goals_for": 1,
           "goals_against": 1,
           "goal_difference": 0,
-          "points": 1,
+          "points": 3,
           "qualified": true
         },
         {
