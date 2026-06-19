@@ -1,7 +1,7 @@
 {
   "_meta": {
     "source": "football-data.org+openfootball/worldcup.json",
-    "updated_at": "2026-06-19T00:01:38.612Z"
+    "updated_at": "2026-06-19T05:21:31.543Z"
   },
   "matches": [
     {
@@ -552,7 +552,7 @@
         "id": 758,
         "name": "Uruguay",
         "short_name": "Uruguay",
-        "tla": "URY",
+        "tla": "URU",
         "crest": "https://crests.football-data.org/758.svg"
       },
       "score": {
@@ -983,7 +983,7 @@
       "matchday": 2,
       "stage": "GROUP_STAGE",
       "group": "GROUP_B",
-      "status": "IN_PLAY",
+      "status": "FINISHED",
       "utc_date": "2026-06-18T22:00:00Z",
       "local_date": null,
       "minute": null,
@@ -1020,7 +1020,7 @@
       "matchday": 2,
       "stage": "GROUP_STAGE",
       "group": "GROUP_A",
-      "status": "TIMED",
+      "status": "FINISHED",
       "utc_date": "2026-06-19T01:00:00Z",
       "local_date": null,
       "minute": null,
@@ -1041,10 +1041,10 @@
         "crest": "https://crests.football-data.org/772.png"
       },
       "score": {
-        "home": null,
-        "away": null,
-        "halftime_home": null,
-        "halftime_away": null
+        "home": 1,
+        "away": 0,
+        "halftime_home": 0,
+        "halftime_away": 0
       },
       "scorers": [],
       "broadcast_mx": [
@@ -1445,7 +1445,7 @@
         "id": 758,
         "name": "Uruguay",
         "short_name": "Uruguay",
-        "tla": "URY",
+        "tla": "URU",
         "crest": "https://crests.football-data.org/758.svg"
       },
       "away_team": {
@@ -2341,7 +2341,7 @@
         "id": 758,
         "name": "Uruguay",
         "short_name": "Uruguay",
-        "tla": "URY",
+        "tla": "URU",
         "crest": "https://crests.football-data.org/758.svg"
       },
       "away_team": {

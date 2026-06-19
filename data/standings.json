@@ -1,7 +1,7 @@
 {
   "_meta": {
     "source": "football-data.org+openfootball/worldcup.json",
-    "updated_at": "2026-06-19T00:01:38.612Z"
+    "updated_at": "2026-06-19T05:21:31.543Z"
   },
   "groups": [
     {
@@ -17,14 +17,14 @@
             "tla": "MEX",
             "crest": "https://crests.football-data.org/769.svg"
           },
-          "played": 1,
-          "won": 1,
+          "played": 2,
+          "won": 2,
           "draw": 0,
           "lost": 0,
-          "goals_for": 2,
+          "goals_for": 3,
           "goals_against": 0,
-          "goal_difference": 2,
-          "points": 3,
+          "goal_difference": 3,
+          "points": 6,
           "qualified": true
         },
         {
@@ -36,13 +36,13 @@
             "tla": "KOR",
             "crest": "https://crests.football-data.org/772.png"
           },
-          "played": 1,
+          "played": 2,
           "won": 1,
           "draw": 0,
-          "lost": 0,
+          "lost": 1,
           "goals_for": 2,
-          "goals_against": 1,
-          "goal_difference": 1,
+          "goals_against": 2,
+          "goal_difference": 0,
           "points": 3,
           "qualified": true
         },
