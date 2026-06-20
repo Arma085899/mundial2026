@@ -1,7 +1,7 @@
 {
   "_meta": {
     "source": "football-data.org+openfootball/worldcup.json",
-    "updated_at": "2026-06-20T18:17:49.523Z"
+    "updated_at": "2026-06-20T20:00:06.326Z"
   },
   "groups": [
     {
@@ -345,14 +345,14 @@
             "tla": "GER",
             "crest": "https://crests.football-data.org/759.svg"
           },
-          "played": 1,
+          "played": 2,
           "won": 1,
-          "draw": 0,
+          "draw": 1,
           "lost": 0,
           "goals_for": 7,
           "goals_against": 1,
           "goal_difference": 6,
-          "points": 3,
+          "points": 4,
           "qualified": true
         },
         {
@@ -364,14 +364,14 @@
             "tla": "CIV",
             "crest": "https://crests.football-data.org/787.svg"
           },
-          "played": 1,
+          "played": 2,
           "won": 1,
-          "draw": 0,
+          "draw": 1,
           "lost": 0,
           "goals_for": 1,
           "goals_against": 0,
           "goal_difference": 1,
-          "points": 3,
+          "points": 4,
           "qualified": true
         },
         {
@@ -431,9 +431,9 @@
           "won": 1,
           "draw": 1,
           "lost": 0,
-          "goals_for": 4,
-          "goals_against": 2,
-          "goal_difference": 2,
+          "goals_for": 7,
+          "goals_against": 3,
+          "goal_difference": 4,
           "points": 4,
           "qualified": true
         },
@@ -450,9 +450,9 @@
           "won": 1,
           "draw": 0,
           "lost": 1,
-          "goals_for": 5,
-          "goals_against": 3,
-          "goal_difference": 2,
+          "goals_for": 6,
+          "goals_against": 6,
+          "goal_difference": 0,
           "points": 3,
           "qualified": true
         },
