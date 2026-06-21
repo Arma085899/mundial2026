@@ -1,7 +1,7 @@
 {
   "_meta": {
     "source": "football-data.org+openfootball/worldcup.json",
-    "updated_at": "2026-06-21T15:27:00.801Z"
+    "updated_at": "2026-06-21T17:06:57.812Z"
   },
   "groups": [
     {
@@ -585,6 +585,25 @@
         {
           "position": 1,
           "team": {
+            "id": 760,
+            "name": "Spain",
+            "short_name": "Spain",
+            "tla": "ESP",
+            "crest": "https://crests.football-data.org/760.svg"
+          },
+          "played": 2,
+          "won": 1,
+          "draw": 1,
+          "lost": 0,
+          "goals_for": 3,
+          "goals_against": 0,
+          "goal_difference": 3,
+          "points": 4,
+          "qualified": true
+        },
+        {
+          "position": 2,
+          "team": {
             "id": 758,
             "name": "Uruguay",
             "short_name": "Uruguay",
@@ -602,45 +621,7 @@
           "qualified": true
         },
         {
-          "position": 2,
-          "team": {
-            "id": 801,
-            "name": "Saudi Arabia",
-            "short_name": "Saudi Arabia",
-            "tla": "KSA",
-            "crest": "https://crests.football-data.org/saudi_arabia.svg"
-          },
-          "played": 1,
-          "won": 0,
-          "draw": 1,
-          "lost": 0,
-          "goals_for": 1,
-          "goals_against": 1,
-          "goal_difference": 0,
-          "points": 1,
-          "qualified": true
-        },
-        {
           "position": 3,
-          "team": {
-            "id": 760,
-            "name": "Spain",
-            "short_name": "Spain",
-            "tla": "ESP",
-            "crest": "https://crests.football-data.org/760.svg"
-          },
-          "played": 1,
-          "won": 0,
-          "draw": 1,
-          "lost": 0,
-          "goals_for": 0,
-          "goals_against": 0,
-          "goal_difference": 0,
-          "points": 1,
-          "qualified": false
-        },
-        {
-          "position": 4,
           "team": {
             "id": 1930,
             "name": "Cape Verde Islands",
@@ -655,6 +636,25 @@
           "goals_for": 0,
           "goals_against": 0,
           "goal_difference": 0,
+          "points": 1,
+          "qualified": false
+        },
+        {
+          "position": 4,
+          "team": {
+            "id": 801,
+            "name": "Saudi Arabia",
+            "short_name": "Saudi Arabia",
+            "tla": "KSA",
+            "crest": "https://crests.football-data.org/saudi_arabia.svg"
+          },
+          "played": 2,
+          "won": 0,
+          "draw": 1,
+          "lost": 1,
+          "goals_for": 1,
+          "goals_against": 4,
+          "goal_difference": -3,
           "points": 1,
           "qualified": false
         }
