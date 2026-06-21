@@ -1,7 +1,7 @@
 {
   "_meta": {
     "source": "football-data.org+openfootball/worldcup.json",
-    "updated_at": "2026-06-20T23:53:46.483Z"
+    "updated_at": "2026-06-21T04:22:29.232Z"
   },
   "groups": [
     {
@@ -383,14 +383,14 @@
             "tla": "ECU",
             "crest": "https://crests.football-data.org/791.svg"
           },
-          "played": 1,
+          "played": 2,
           "won": 0,
-          "draw": 0,
+          "draw": 1,
           "lost": 1,
           "goals_for": 0,
           "goals_against": 1,
           "goal_difference": -1,
-          "points": 0,
+          "points": 1,
           "qualified": false
         },
         {
@@ -402,14 +402,14 @@
             "tla": "CUW",
             "crest": "https://crests.football-data.org/curacao.svg"
           },
-          "played": 1,
+          "played": 2,
           "won": 0,
-          "draw": 0,
+          "draw": 1,
           "lost": 1,
           "goals_for": 1,
           "goals_against": 7,
           "goal_difference": -6,
-          "points": 0,
+          "points": 1,
           "qualified": false
         }
       ]
@@ -465,14 +465,14 @@
             "tla": "JPN",
             "crest": "https://crests.football-data.org/766.svg"
           },
-          "played": 1,
+          "played": 2,
           "won": 0,
-          "draw": 1,
+          "draw": 2,
           "lost": 0,
           "goals_for": 2,
           "goals_against": 2,
           "goal_difference": 0,
-          "points": 1,
+          "points": 2,
           "qualified": false
         },
         {
@@ -484,14 +484,14 @@
             "tla": "TUN",
             "crest": "https://crests.football-data.org/tunisia.svg"
           },
-          "played": 1,
+          "played": 2,
           "won": 0,
-          "draw": 0,
+          "draw": 1,
           "lost": 1,
           "goals_for": 1,
           "goals_against": 5,
           "goal_difference": -4,
-          "points": 0,
+          "points": 1,
           "qualified": false
         }
       ]
