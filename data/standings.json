@@ -1,7 +1,7 @@
 {
   "_meta": {
     "source": "football-data.org+openfootball/worldcup.json",
-    "updated_at": "2026-06-21T18:48:25.678Z"
+    "updated_at": "2026-06-21T20:19:09.444Z"
   },
   "groups": [
     {
@@ -503,6 +503,44 @@
         {
           "position": 1,
           "team": {
+            "id": 840,
+            "name": "Iran",
+            "short_name": "Iran",
+            "tla": "IRN",
+            "crest": "https://crests.football-data.org/iran.svg"
+          },
+          "played": 2,
+          "won": 0,
+          "draw": 2,
+          "lost": 0,
+          "goals_for": 2,
+          "goals_against": 2,
+          "goal_difference": 0,
+          "points": 2,
+          "qualified": true
+        },
+        {
+          "position": 2,
+          "team": {
+            "id": 805,
+            "name": "Belgium",
+            "short_name": "Belgium",
+            "tla": "BEL",
+            "crest": "https://crests.football-data.org/805.svg"
+          },
+          "played": 2,
+          "won": 0,
+          "draw": 2,
+          "lost": 0,
+          "goals_for": 1,
+          "goals_against": 1,
+          "goal_difference": 0,
+          "points": 2,
+          "qualified": true
+        },
+        {
+          "position": 3,
+          "team": {
             "id": 783,
             "name": "New Zealand",
             "short_name": "New Zealand",
@@ -515,44 +553,6 @@
           "lost": 0,
           "goals_for": 2,
           "goals_against": 2,
-          "goal_difference": 0,
-          "points": 1,
-          "qualified": true
-        },
-        {
-          "position": 2,
-          "team": {
-            "id": 840,
-            "name": "Iran",
-            "short_name": "Iran",
-            "tla": "IRN",
-            "crest": "https://crests.football-data.org/iran.svg"
-          },
-          "played": 1,
-          "won": 0,
-          "draw": 1,
-          "lost": 0,
-          "goals_for": 2,
-          "goals_against": 2,
-          "goal_difference": 0,
-          "points": 1,
-          "qualified": true
-        },
-        {
-          "position": 3,
-          "team": {
-            "id": 805,
-            "name": "Belgium",
-            "short_name": "Belgium",
-            "tla": "BEL",
-            "crest": "https://crests.football-data.org/805.svg"
-          },
-          "played": 1,
-          "won": 0,
-          "draw": 1,
-          "lost": 0,
-          "goals_for": 1,
-          "goals_against": 1,
           "goal_difference": 0,
           "points": 1,
           "qualified": false

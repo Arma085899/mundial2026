@@ -1,7 +1,7 @@
 {
   "_meta": {
     "source": "football-data.org+openfootball/worldcup.json",
-    "updated_at": "2026-06-21T18:48:25.678Z"
+    "updated_at": "2026-06-21T20:19:09.444Z"
   },
   "matches": [
     {
@@ -1398,7 +1398,7 @@
       "matchday": 2,
       "stage": "GROUP_STAGE",
       "group": "GROUP_G",
-      "status": "TIMED",
+      "status": "IN_PLAY",
       "utc_date": "2026-06-21T19:00:00Z",
       "local_date": null,
       "minute": null,
@@ -1419,10 +1419,10 @@
         "crest": "https://crests.football-data.org/iran.svg"
       },
       "score": {
-        "home": null,
-        "away": null,
-        "halftime_home": null,
-        "halftime_away": null
+        "home": 0,
+        "away": 0,
+        "halftime_home": 0,
+        "halftime_away": 0
       },
       "scorers": [],
       "broadcast_mx": [
