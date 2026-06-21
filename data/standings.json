@@ -1,7 +1,7 @@
 {
   "_meta": {
     "source": "football-data.org+openfootball/worldcup.json",
-    "updated_at": "2026-06-21T04:22:29.232Z"
+    "updated_at": "2026-06-21T08:46:13.671Z"
   },
   "groups": [
     {
@@ -440,6 +440,25 @@
         {
           "position": 2,
           "team": {
+            "id": 766,
+            "name": "Japan",
+            "short_name": "Japan",
+            "tla": "JPN",
+            "crest": "https://crests.football-data.org/766.svg"
+          },
+          "played": 2,
+          "won": 1,
+          "draw": 1,
+          "lost": 0,
+          "goals_for": 6,
+          "goals_against": 2,
+          "goal_difference": 4,
+          "points": 4,
+          "qualified": true
+        },
+        {
+          "position": 3,
+          "team": {
             "id": 792,
             "name": "Sweden",
             "short_name": "Sweden",
@@ -454,25 +473,6 @@
           "goals_against": 6,
           "goal_difference": 0,
           "points": 3,
-          "qualified": true
-        },
-        {
-          "position": 3,
-          "team": {
-            "id": 766,
-            "name": "Japan",
-            "short_name": "Japan",
-            "tla": "JPN",
-            "crest": "https://crests.football-data.org/766.svg"
-          },
-          "played": 2,
-          "won": 0,
-          "draw": 2,
-          "lost": 0,
-          "goals_for": 2,
-          "goals_against": 2,
-          "goal_difference": 0,
-          "points": 2,
           "qualified": false
         },
         {
@@ -486,12 +486,12 @@
           },
           "played": 2,
           "won": 0,
-          "draw": 1,
-          "lost": 1,
+          "draw": 0,
+          "lost": 2,
           "goals_for": 1,
-          "goals_against": 5,
-          "goal_difference": -4,
-          "points": 1,
+          "goals_against": 9,
+          "goal_difference": -8,
+          "points": 0,
           "qualified": false
         }
       ]
