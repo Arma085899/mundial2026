@@ -1,7 +1,7 @@
 {
   "_meta": {
     "source": "football-data.org+openfootball/worldcup.json",
-    "updated_at": "2026-06-22T00:13:31.019Z"
+    "updated_at": "2026-06-22T05:34:56.227Z"
   },
   "groups": [
     {
@@ -503,6 +503,25 @@
         {
           "position": 1,
           "team": {
+            "id": 825,
+            "name": "Egypt",
+            "short_name": "Egypt",
+            "tla": "EGY",
+            "crest": "https://crests.football-data.org/825.svg"
+          },
+          "played": 2,
+          "won": 1,
+          "draw": 1,
+          "lost": 0,
+          "goals_for": 4,
+          "goals_against": 2,
+          "goal_difference": 2,
+          "points": 4,
+          "qualified": true
+        },
+        {
+          "position": 2,
+          "team": {
             "id": 840,
             "name": "Iran",
             "short_name": "Iran",
@@ -520,7 +539,7 @@
           "qualified": true
         },
         {
-          "position": 2,
+          "position": 3,
           "team": {
             "id": 805,
             "name": "Belgium",
@@ -536,10 +555,10 @@
           "goals_against": 1,
           "goal_difference": 0,
           "points": 2,
-          "qualified": true
+          "qualified": false
         },
         {
-          "position": 3,
+          "position": 4,
           "team": {
             "id": 783,
             "name": "New Zealand",
@@ -547,32 +566,13 @@
             "tla": "NZL",
             "crest": "https://crests.football-data.org/783.svg"
           },
-          "played": 1,
+          "played": 2,
           "won": 0,
           "draw": 1,
-          "lost": 0,
-          "goals_for": 2,
-          "goals_against": 2,
-          "goal_difference": 0,
-          "points": 1,
-          "qualified": false
-        },
-        {
-          "position": 4,
-          "team": {
-            "id": 825,
-            "name": "Egypt",
-            "short_name": "Egypt",
-            "tla": "EGY",
-            "crest": "https://crests.football-data.org/825.svg"
-          },
-          "played": 1,
-          "won": 0,
-          "draw": 1,
-          "lost": 0,
-          "goals_for": 1,
-          "goals_against": 1,
-          "goal_difference": 0,
+          "lost": 1,
+          "goals_for": 3,
+          "goals_against": 5,
+          "goal_difference": -2,
           "points": 1,
           "qualified": false
         }
