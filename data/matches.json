@@ -1,7 +1,7 @@
 {
   "_meta": {
     "source": "football-data.org+openfootball/worldcup.json",
-    "updated_at": "2026-06-23T22:40:59.952Z"
+    "updated_at": "2026-06-23T23:43:08.680Z"
   },
   "matches": [
     {
@@ -1733,7 +1733,7 @@
       "matchday": 2,
       "stage": "GROUP_STAGE",
       "group": "GROUP_L",
-      "status": "TIMED",
+      "status": "LIVE",
       "utc_date": "2026-06-23T23:00:00Z",
       "local_date": null,
       "minute": null,
@@ -1754,8 +1754,8 @@
         "crest": "https://crests.football-data.org/799.svg"
       },
       "score": {
-        "home": null,
-        "away": null,
+        "home": 0,
+        "away": 0,
         "halftime_home": null,
         "halftime_away": null
       },
@@ -2789,11 +2789,11 @@
       "venue": "Gillette Stadium",
       "city": "Foxborough, Massachusetts",
       "home_team": {
-        "id": null,
-        "name": "Por definir",
-        "short_name": "?",
-        "tla": "?",
-        "crest": null
+        "id": 759,
+        "name": "Germany",
+        "short_name": "Germany",
+        "tla": "GER",
+        "crest": "https://crests.football-data.org/759.svg"
       },
       "away_team": {
         "id": null,
@@ -2938,11 +2938,11 @@
       "venue": "Estadio Azteca",
       "city": "Ciudad de México",
       "home_team": {
-        "id": null,
-        "name": "Por definir",
-        "short_name": "?",
-        "tla": "?",
-        "crest": null
+        "id": 769,
+        "name": "Mexico",
+        "short_name": "Mexico",
+        "tla": "MEX",
+        "crest": "https://crests.football-data.org/769.svg"
       },
       "away_team": {
         "id": null,
@@ -3051,11 +3051,11 @@
       "venue": "Levi's Stadium",
       "city": "Santa Clara, California",
       "home_team": {
-        "id": null,
-        "name": "Por definir",
-        "short_name": "?",
-        "tla": "?",
-        "crest": null
+        "id": 771,
+        "name": "United States",
+        "short_name": "USA",
+        "tla": "USA",
+        "crest": "https://crests.football-data.org/usa.svg"
       },
       "away_team": {
         "id": null,

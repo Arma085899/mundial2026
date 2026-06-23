@@ -1,7 +1,7 @@
 {
   "_meta": {
     "source": "matches.json (derivado)",
-    "updated_at": "2026-06-23T22:40:59.952Z"
+    "updated_at": "2026-06-23T23:43:08.680Z"
   },
   "stages": [
     {
@@ -63,8 +63,14 @@
           "city": "Foxborough, Massachusetts",
           "status": "TIMED",
           "home": {
-            "placeholder": "Por definir",
-            "team": null
+            "placeholder": null,
+            "team": {
+              "id": 759,
+              "name": "Germany",
+              "short_name": "Germany",
+              "tla": "GER",
+              "crest": "https://crests.football-data.org/759.svg"
+            }
           },
           "away": {
             "placeholder": "Por definir",
@@ -156,8 +162,14 @@
           "city": "Ciudad de México",
           "status": "TIMED",
           "home": {
-            "placeholder": "Por definir",
-            "team": null
+            "placeholder": null,
+            "team": {
+              "id": 769,
+              "name": "Mexico",
+              "short_name": "Mexico",
+              "tla": "MEX",
+              "crest": "https://crests.football-data.org/769.svg"
+            }
           },
           "away": {
             "placeholder": "Por definir",
@@ -227,8 +239,14 @@
           "city": "Santa Clara, California",
           "status": "TIMED",
           "home": {
-            "placeholder": "Por definir",
-            "team": null
+            "placeholder": null,
+            "team": {
+              "id": 771,
+              "name": "United States",
+              "short_name": "USA",
+              "tla": "USA",
+              "crest": "https://crests.football-data.org/usa.svg"
+            }
           },
           "away": {
             "placeholder": "Por definir",

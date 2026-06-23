@@ -1,7 +1,7 @@
 {
   "_meta": {
     "source": "football-data.org+openfootball/worldcup.json",
-    "updated_at": "2026-06-23T22:40:59.952Z"
+    "updated_at": "2026-06-23T23:43:08.680Z"
   },
   "groups": [
     {
@@ -957,14 +957,14 @@
             "tla": "PAN",
             "crest": "https://crests.football-data.org/panama.svg"
           },
-          "played": 1,
+          "played": 2,
           "won": 0,
-          "draw": 0,
+          "draw": 1,
           "lost": 1,
           "goals_for": 0,
           "goals_against": 1,
           "goal_difference": -1,
-          "points": 0,
+          "points": 1,
           "qualified": false
         },
         {
@@ -976,14 +976,14 @@
             "tla": "CRO",
             "crest": "https://crests.football-data.org/799.svg"
           },
-          "played": 1,
+          "played": 2,
           "won": 0,
-          "draw": 0,
+          "draw": 1,
           "lost": 1,
           "goals_for": 2,
           "goals_against": 4,
           "goal_difference": -2,
-          "points": 0,
+          "points": 1,
           "qualified": false
         }
       ]
