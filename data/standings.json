@@ -1,7 +1,7 @@
 {
   "_meta": {
     "source": "football-data.org+openfootball/worldcup.json",
-    "updated_at": "2026-06-23T17:28:48.984Z"
+    "updated_at": "2026-06-23T19:29:00.834Z"
   },
   "groups": [
     {
@@ -831,6 +831,25 @@
         {
           "position": 1,
           "team": {
+            "id": 765,
+            "name": "Portugal",
+            "short_name": "Portugal",
+            "tla": "POR",
+            "crest": "https://crests.football-data.org/765.svg"
+          },
+          "played": 2,
+          "won": 1,
+          "draw": 1,
+          "lost": 0,
+          "goals_for": 6,
+          "goals_against": 1,
+          "goal_difference": 5,
+          "points": 4,
+          "qualified": true
+        },
+        {
+          "position": 2,
+          "team": {
             "id": 818,
             "name": "Colombia",
             "short_name": "Colombia",
@@ -845,25 +864,6 @@
           "goals_against": 1,
           "goal_difference": 2,
           "points": 3,
-          "qualified": true
-        },
-        {
-          "position": 2,
-          "team": {
-            "id": 765,
-            "name": "Portugal",
-            "short_name": "Portugal",
-            "tla": "POR",
-            "crest": "https://crests.football-data.org/765.svg"
-          },
-          "played": 2,
-          "won": 0,
-          "draw": 2,
-          "lost": 0,
-          "goals_for": 1,
-          "goals_against": 1,
-          "goal_difference": 0,
-          "points": 2,
           "qualified": true
         },
         {
@@ -896,12 +896,12 @@
           },
           "played": 2,
           "won": 0,
-          "draw": 1,
-          "lost": 1,
+          "draw": 0,
+          "lost": 2,
           "goals_for": 1,
-          "goals_against": 3,
-          "goal_difference": -2,
-          "points": 1,
+          "goals_against": 8,
+          "goal_difference": -7,
+          "points": 0,
           "qualified": false
         }
       ]
