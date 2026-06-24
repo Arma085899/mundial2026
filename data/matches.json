@@ -1,7 +1,7 @@
 {
   "_meta": {
     "source": "football-data.org+openfootball/worldcup.json",
-    "updated_at": "2026-06-24T01:48:05.825Z"
+    "updated_at": "2026-06-24T05:53:18.511Z"
   },
   "matches": [
     {
@@ -552,7 +552,7 @@
         "id": 758,
         "name": "Uruguay",
         "short_name": "Uruguay",
-        "tla": "URY",
+        "tla": "URU",
         "crest": "https://crests.football-data.org/758.svg"
       },
       "score": {
@@ -1445,7 +1445,7 @@
         "id": 758,
         "name": "Uruguay",
         "short_name": "Uruguay",
-        "tla": "URY",
+        "tla": "URU",
         "crest": "https://crests.football-data.org/758.svg"
       },
       "away_team": {
@@ -1770,7 +1770,7 @@
       "matchday": 2,
       "stage": "GROUP_STAGE",
       "group": "GROUP_K",
-      "status": "TIMED",
+      "status": "FINISHED",
       "utc_date": "2026-06-24T02:00:00Z",
       "local_date": null,
       "minute": null,
@@ -1791,10 +1791,10 @@
         "crest": "https://crests.football-data.org/congo_dr.svg"
       },
       "score": {
-        "home": null,
-        "away": null,
-        "halftime_home": null,
-        "halftime_away": null
+        "home": 1,
+        "away": 0,
+        "halftime_home": 0,
+        "halftime_away": 0
       },
       "scorers": [],
       "broadcast_mx": [
@@ -2341,7 +2341,7 @@
         "id": 758,
         "name": "Uruguay",
         "short_name": "Uruguay",
-        "tla": "URY",
+        "tla": "URU",
         "crest": "https://crests.football-data.org/758.svg"
       },
       "away_team": {
@@ -2789,11 +2789,11 @@
       "venue": "Gillette Stadium",
       "city": "Foxborough, Massachusetts",
       "home_team": {
-        "id": null,
-        "name": "Por definir",
-        "short_name": "?",
-        "tla": "?",
-        "crest": null
+        "id": 759,
+        "name": "Germany",
+        "short_name": "Germany",
+        "tla": "GER",
+        "crest": "https://crests.football-data.org/759.svg"
       },
       "away_team": {
         "id": null,
@@ -2938,11 +2938,11 @@
       "venue": "Estadio Azteca",
       "city": "Ciudad de México",
       "home_team": {
-        "id": null,
-        "name": "Por definir",
-        "short_name": "?",
-        "tla": "?",
-        "crest": null
+        "id": 769,
+        "name": "Mexico",
+        "short_name": "Mexico",
+        "tla": "MEX",
+        "crest": "https://crests.football-data.org/769.svg"
       },
       "away_team": {
         "id": null,
@@ -3051,11 +3051,11 @@
       "venue": "Levi's Stadium",
       "city": "Santa Clara, California",
       "home_team": {
-        "id": null,
-        "name": "Por definir",
-        "short_name": "?",
-        "tla": "?",
-        "crest": null
+        "id": 771,
+        "name": "United States",
+        "short_name": "USA",
+        "tla": "USA",
+        "crest": "https://crests.football-data.org/usa.svg"
       },
       "away_team": {
         "id": null,
@@ -3237,11 +3237,11 @@
       "venue": "Hard Rock Stadium",
       "city": "Miami Gardens, Florida",
       "home_team": {
-        "id": null,
-        "name": "Por definir",
-        "short_name": "?",
-        "tla": "?",
-        "crest": null
+        "id": 762,
+        "name": "Argentina",
+        "short_name": "Argentina",
+        "tla": "ARG",
+        "crest": "https://crests.football-data.org/762.png"
       },
       "away_team": {
         "id": null,
