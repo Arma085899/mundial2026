@@ -1,7 +1,7 @@
 {
   "_meta": {
     "source": "manual",
-    "updated_at": "2026-06-24T19:03:24.953Z",
+    "updated_at": "2026-06-24T22:19:39.639Z",
     "note": "El campo 'status' se actualiza automaticamente segun standings/resultados; ver scripts/quiniela-overrides.json para casos especiales (terceros lugares)."
   },
   "participants": [
@@ -208,7 +208,7 @@
         {
           "tla": "SCO",
           "name": "Escocia",
-          "status": "active"
+          "status": "eliminated"
         }
       ],
       "quote": "Francia se rindió antes que yo el lunes a las 7am."
@@ -283,7 +283,7 @@
         {
           "tla": "HAI",
           "name": "Haití",
-          "status": "active"
+          "status": "eliminated"
         },
         {
           "tla": "BEL",
