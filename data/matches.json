@@ -1,7 +1,7 @@
 {
   "_meta": {
     "source": "football-data.org+openfootball/worldcup.json",
-    "updated_at": "2026-06-24T19:02:49.402Z"
+    "updated_at": "2026-06-24T20:54:25.123Z"
   },
   "matches": [
     {
@@ -328,7 +328,7 @@
         "id": 9460,
         "name": "Curaçao",
         "short_name": "Curaçao",
-        "tla": "CUR",
+        "tla": "CUW",
         "crest": "https://crests.football-data.org/curacao.svg"
       },
       "score": {
@@ -1302,7 +1302,7 @@
         "id": 9460,
         "name": "Curaçao",
         "short_name": "Curaçao",
-        "tla": "CUR",
+        "tla": "CUW",
         "crest": "https://crests.football-data.org/curacao.svg"
       },
       "score": {
@@ -1809,7 +1809,7 @@
       "matchday": 3,
       "stage": "GROUP_STAGE",
       "group": "GROUP_B",
-      "status": "TIMED",
+      "status": "IN_PLAY",
       "utc_date": "2026-06-24T19:00:00Z",
       "local_date": null,
       "minute": null,
@@ -1830,10 +1830,10 @@
         "crest": "https://crests.football-data.org/canada.svg"
       },
       "score": {
-        "home": null,
-        "away": null,
-        "halftime_home": null,
-        "halftime_away": null
+        "home": 2,
+        "away": 1,
+        "halftime_home": 0,
+        "halftime_away": 0
       },
       "scorers": [],
       "broadcast_mx": [
@@ -1846,7 +1846,7 @@
       "matchday": 3,
       "stage": "GROUP_STAGE",
       "group": "GROUP_B",
-      "status": "TIMED",
+      "status": "IN_PLAY",
       "utc_date": "2026-06-24T19:00:00Z",
       "local_date": null,
       "minute": null,
@@ -1867,10 +1867,10 @@
         "crest": "https://crests.football-data.org/8030.svg"
       },
       "score": {
-        "home": null,
-        "away": null,
-        "halftime_home": null,
-        "halftime_away": null
+        "home": 3,
+        "away": 1,
+        "halftime_home": 2,
+        "halftime_away": 1
       },
       "scorers": [],
       "broadcast_mx": [
@@ -2082,7 +2082,7 @@
         "id": 9460,
         "name": "Curaçao",
         "short_name": "Curaçao",
-        "tla": "CUR",
+        "tla": "CUW",
         "crest": "https://crests.football-data.org/curacao.svg"
       },
       "away_team": {
