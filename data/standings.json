@@ -1,7 +1,7 @@
 {
   "_meta": {
     "source": "football-data.org+openfootball/worldcup.json",
-    "updated_at": "2026-06-25T01:36:46.809Z"
+    "updated_at": "2026-06-25T05:50:46.790Z"
   },
   "groups": [
     {
@@ -18,17 +18,36 @@
             "crest": "https://crests.football-data.org/769.svg"
           },
           "played": 3,
-          "won": 2,
-          "draw": 1,
+          "won": 3,
+          "draw": 0,
           "lost": 0,
-          "goals_for": 3,
+          "goals_for": 6,
           "goals_against": 0,
-          "goal_difference": 3,
-          "points": 7,
+          "goal_difference": 6,
+          "points": 9,
           "qualified": true
         },
         {
           "position": 2,
+          "team": {
+            "id": 774,
+            "name": "South Africa",
+            "short_name": "South Africa",
+            "tla": "RSA",
+            "crest": "https://crests.football-data.org/9396.svg"
+          },
+          "played": 3,
+          "won": 1,
+          "draw": 1,
+          "lost": 1,
+          "goals_for": 2,
+          "goals_against": 3,
+          "goal_difference": -1,
+          "points": 4,
+          "qualified": true
+        },
+        {
+          "position": 3,
           "team": {
             "id": 772,
             "name": "South Korea",
@@ -38,16 +57,16 @@
           },
           "played": 3,
           "won": 1,
-          "draw": 1,
-          "lost": 1,
+          "draw": 0,
+          "lost": 2,
           "goals_for": 2,
-          "goals_against": 2,
-          "goal_difference": 0,
-          "points": 4,
-          "qualified": true
+          "goals_against": 3,
+          "goal_difference": -1,
+          "points": 3,
+          "qualified": false
         },
         {
-          "position": 3,
+          "position": 4,
           "team": {
             "id": 798,
             "name": "Czechia",
@@ -57,31 +76,12 @@
           },
           "played": 3,
           "won": 0,
-          "draw": 2,
-          "lost": 1,
+          "draw": 1,
+          "lost": 2,
           "goals_for": 2,
-          "goals_against": 3,
-          "goal_difference": -1,
-          "points": 2,
-          "qualified": false
-        },
-        {
-          "position": 4,
-          "team": {
-            "id": 774,
-            "name": "South Africa",
-            "short_name": "South Africa",
-            "tla": "RSA",
-            "crest": "https://crests.football-data.org/9396.svg"
-          },
-          "played": 3,
-          "won": 0,
-          "draw": 2,
-          "lost": 1,
-          "goals_for": 1,
-          "goals_against": 3,
-          "goal_difference": -2,
-          "points": 2,
+          "goals_against": 6,
+          "goal_difference": -4,
+          "points": 1,
           "qualified": false
         }
       ]

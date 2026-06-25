@@ -1,7 +1,7 @@
 {
   "_meta": {
     "source": "manual",
-    "updated_at": "2026-06-25T01:37:23.516Z",
+    "updated_at": "2026-06-25T05:51:22.162Z",
     "note": "El campo 'status' se actualiza automaticamente segun standings/resultados; ver scripts/quiniela-overrides.json para casos especiales (terceros lugares)."
   },
   "participants": [
@@ -240,7 +240,7 @@
         {
           "tla": "KOR",
           "name": "Corea del Sur",
-          "status": "active"
+          "status": "eliminated"
         }
       ],
       "quote": "Eliminada con estilo, como cuando renuncias a un grupo de WhatsApp sin avisar."
@@ -256,7 +256,7 @@
         {
           "tla": "RSA",
           "name": "Sudáfrica",
-          "status": "eliminated"
+          "status": "active"
         }
       ],
       "quote": "Que alguien me pase el aguacate, porque aquí terminé."

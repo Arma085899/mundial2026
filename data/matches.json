@@ -1,7 +1,7 @@
 {
   "_meta": {
     "source": "football-data.org+openfootball/worldcup.json",
-    "updated_at": "2026-06-25T01:36:46.809Z"
+    "updated_at": "2026-06-25T05:50:46.790Z"
   },
   "matches": [
     {
@@ -1957,7 +1957,7 @@
       "matchday": 3,
       "stage": "GROUP_STAGE",
       "group": "GROUP_A",
-      "status": "TIMED",
+      "status": "FINISHED",
       "utc_date": "2026-06-25T01:00:00Z",
       "local_date": null,
       "minute": null,
@@ -1978,10 +1978,10 @@
         "crest": "https://crests.football-data.org/769.svg"
       },
       "score": {
-        "home": null,
-        "away": null,
-        "halftime_home": null,
-        "halftime_away": null
+        "home": 0,
+        "away": 3,
+        "halftime_home": 0,
+        "halftime_away": 0
       },
       "scorers": [],
       "broadcast_mx": [
@@ -1996,7 +1996,7 @@
       "matchday": 3,
       "stage": "GROUP_STAGE",
       "group": "GROUP_A",
-      "status": "TIMED",
+      "status": "FINISHED",
       "utc_date": "2026-06-25T01:00:00Z",
       "local_date": null,
       "minute": null,
@@ -2017,10 +2017,10 @@
         "crest": "https://crests.football-data.org/772.png"
       },
       "score": {
-        "home": null,
-        "away": null,
-        "halftime_home": null,
-        "halftime_away": null
+        "home": 1,
+        "away": 0,
+        "halftime_home": 0,
+        "halftime_away": 0
       },
       "scorers": [],
       "broadcast_mx": [
@@ -2789,11 +2789,11 @@
       "venue": "Gillette Stadium",
       "city": "Foxborough, Massachusetts",
       "home_team": {
-        "id": 759,
-        "name": "Germany",
-        "short_name": "Germany",
-        "tla": "GER",
-        "crest": "https://crests.football-data.org/759.svg"
+        "id": null,
+        "name": "Por definir",
+        "short_name": "?",
+        "tla": "?",
+        "crest": null
       },
       "away_team": {
         "id": null,
@@ -2938,11 +2938,11 @@
       "venue": "Estadio Azteca",
       "city": "Ciudad de México",
       "home_team": {
-        "id": 769,
-        "name": "Mexico",
-        "short_name": "Mexico",
-        "tla": "MEX",
-        "crest": "https://crests.football-data.org/769.svg"
+        "id": null,
+        "name": "Por definir",
+        "short_name": "?",
+        "tla": "?",
+        "crest": null
       },
       "away_team": {
         "id": null,
@@ -3051,11 +3051,11 @@
       "venue": "Levi's Stadium",
       "city": "Santa Clara, California",
       "home_team": {
-        "id": 771,
-        "name": "United States",
-        "short_name": "USA",
-        "tla": "USA",
-        "crest": "https://crests.football-data.org/usa.svg"
+        "id": null,
+        "name": "Por definir",
+        "short_name": "?",
+        "tla": "?",
+        "crest": null
       },
       "away_team": {
         "id": null,
@@ -3237,11 +3237,11 @@
       "venue": "Hard Rock Stadium",
       "city": "Miami Gardens, Florida",
       "home_team": {
-        "id": 762,
-        "name": "Argentina",
-        "short_name": "Argentina",
-        "tla": "ARG",
-        "crest": "https://crests.football-data.org/762.png"
+        "id": null,
+        "name": "Por definir",
+        "short_name": "?",
+        "tla": "?",
+        "crest": null
       },
       "away_team": {
         "id": null,
