@@ -1,7 +1,7 @@
 {
   "_meta": {
     "source": "manual",
-    "updated_at": "2026-06-24T22:19:39.639Z",
+    "updated_at": "2026-06-25T01:37:23.516Z",
     "note": "El campo 'status' se actualiza automaticamente segun standings/resultados; ver scripts/quiniela-overrides.json para casos especiales (terceros lugares)."
   },
   "participants": [
@@ -123,7 +123,7 @@
         {
           "tla": "CZE",
           "name": "República Checa",
-          "status": "active"
+          "status": "eliminated"
         },
         {
           "tla": "GHA",
@@ -256,7 +256,7 @@
         {
           "tla": "RSA",
           "name": "Sudáfrica",
-          "status": "active"
+          "status": "eliminated"
         }
       ],
       "quote": "Que alguien me pase el aguacate, porque aquí terminé."
