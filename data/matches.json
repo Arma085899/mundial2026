@@ -1,7 +1,7 @@
 {
   "_meta": {
     "source": "football-data.org+openfootball/worldcup.json",
-    "updated_at": "2026-06-25T21:12:15.653Z"
+    "updated_at": "2026-06-25T22:50:46.778Z"
   },
   "matches": [
     {
@@ -552,7 +552,7 @@
         "id": 758,
         "name": "Uruguay",
         "short_name": "Uruguay",
-        "tla": "URU",
+        "tla": "URY",
         "crest": "https://crests.football-data.org/758.svg"
       },
       "score": {
@@ -1445,7 +1445,7 @@
         "id": 758,
         "name": "Uruguay",
         "short_name": "Uruguay",
-        "tla": "URU",
+        "tla": "URY",
         "crest": "https://crests.football-data.org/758.svg"
       },
       "away_team": {
@@ -2033,7 +2033,7 @@
       "matchday": 3,
       "stage": "GROUP_STAGE",
       "group": "GROUP_E",
-      "status": "IN_PLAY",
+      "status": "TIMED",
       "utc_date": "2026-06-25T20:00:00Z",
       "local_date": null,
       "minute": null,
@@ -2054,10 +2054,10 @@
         "crest": "https://crests.football-data.org/759.svg"
       },
       "score": {
-        "home": 1,
-        "away": 1,
-        "halftime_home": 1,
-        "halftime_away": 1
+        "home": null,
+        "away": null,
+        "halftime_home": null,
+        "halftime_away": null
       },
       "scorers": [],
       "broadcast_mx": [
@@ -2072,7 +2072,7 @@
       "matchday": 3,
       "stage": "GROUP_STAGE",
       "group": "GROUP_E",
-      "status": "LIVE",
+      "status": "TIMED",
       "utc_date": "2026-06-25T20:00:00Z",
       "local_date": null,
       "minute": null,
@@ -2093,10 +2093,10 @@
         "crest": "https://crests.football-data.org/787.svg"
       },
       "score": {
-        "home": 0,
-        "away": 1,
-        "halftime_home": 0,
-        "halftime_away": 1
+        "home": null,
+        "away": null,
+        "halftime_home": null,
+        "halftime_away": null
       },
       "scorers": [],
       "broadcast_mx": [
@@ -2341,7 +2341,7 @@
         "id": 758,
         "name": "Uruguay",
         "short_name": "Uruguay",
-        "tla": "URU",
+        "tla": "URY",
         "crest": "https://crests.football-data.org/758.svg"
       },
       "away_team": {
