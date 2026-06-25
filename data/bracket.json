@@ -1,7 +1,7 @@
 {
   "_meta": {
     "source": "matches.json (derivado)",
-    "updated_at": "2026-06-25T17:23:01.931Z"
+    "updated_at": "2026-06-25T19:24:59.687Z"
   },
   "stages": [
     {
@@ -63,14 +63,8 @@
           "city": "Foxborough, Massachusetts",
           "status": "TIMED",
           "home": {
-            "placeholder": null,
-            "team": {
-              "id": 759,
-              "name": "Germany",
-              "short_name": "Germany",
-              "tla": "GER",
-              "crest": "https://crests.football-data.org/759.svg"
-            }
+            "placeholder": "Por definir",
+            "team": null
           },
           "away": {
             "placeholder": "Por definir",
@@ -162,14 +156,8 @@
           "city": "Ciudad de México",
           "status": "TIMED",
           "home": {
-            "placeholder": null,
-            "team": {
-              "id": 769,
-              "name": "Mexico",
-              "short_name": "Mexico",
-              "tla": "MEX",
-              "crest": "https://crests.football-data.org/769.svg"
-            }
+            "placeholder": "Por definir",
+            "team": null
           },
           "away": {
             "placeholder": "Por definir",
@@ -239,14 +227,8 @@
           "city": "Santa Clara, California",
           "status": "TIMED",
           "home": {
-            "placeholder": null,
-            "team": {
-              "id": 771,
-              "name": "United States",
-              "short_name": "USA",
-              "tla": "USA",
-              "crest": "https://crests.football-data.org/usa.svg"
-            }
+            "placeholder": "Por definir",
+            "team": null
           },
           "away": {
             "placeholder": "Por definir",
@@ -361,14 +343,8 @@
           "city": "Miami Gardens, Florida",
           "status": "TIMED",
           "home": {
-            "placeholder": null,
-            "team": {
-              "id": 762,
-              "name": "Argentina",
-              "short_name": "Argentina",
-              "tla": "ARG",
-              "crest": "https://crests.football-data.org/762.png"
-            }
+            "placeholder": "Por definir",
+            "team": null
           },
           "away": {
             "placeholder": "Por definir",

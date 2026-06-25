@@ -1,7 +1,7 @@
 {
   "_meta": {
     "source": "football-data.org+openfootball/worldcup.json",
-    "updated_at": "2026-06-25T17:23:01.931Z"
+    "updated_at": "2026-06-25T19:24:59.687Z"
   },
   "matches": [
     {
@@ -2789,11 +2789,11 @@
       "venue": "Gillette Stadium",
       "city": "Foxborough, Massachusetts",
       "home_team": {
-        "id": 759,
-        "name": "Germany",
-        "short_name": "Germany",
-        "tla": "GER",
-        "crest": "https://crests.football-data.org/759.svg"
+        "id": null,
+        "name": "Por definir",
+        "short_name": "?",
+        "tla": "?",
+        "crest": null
       },
       "away_team": {
         "id": null,
@@ -2938,11 +2938,11 @@
       "venue": "Estadio Azteca",
       "city": "Ciudad de México",
       "home_team": {
-        "id": 769,
-        "name": "Mexico",
-        "short_name": "Mexico",
-        "tla": "MEX",
-        "crest": "https://crests.football-data.org/769.svg"
+        "id": null,
+        "name": "Por definir",
+        "short_name": "?",
+        "tla": "?",
+        "crest": null
       },
       "away_team": {
         "id": null,
@@ -3051,11 +3051,11 @@
       "venue": "Levi's Stadium",
       "city": "Santa Clara, California",
       "home_team": {
-        "id": 771,
-        "name": "United States",
-        "short_name": "USA",
-        "tla": "USA",
-        "crest": "https://crests.football-data.org/usa.svg"
+        "id": null,
+        "name": "Por definir",
+        "short_name": "?",
+        "tla": "?",
+        "crest": null
       },
       "away_team": {
         "id": null,
@@ -3237,11 +3237,11 @@
       "venue": "Hard Rock Stadium",
       "city": "Miami Gardens, Florida",
       "home_team": {
-        "id": 762,
-        "name": "Argentina",
-        "short_name": "Argentina",
-        "tla": "ARG",
-        "crest": "https://crests.football-data.org/762.png"
+        "id": null,
+        "name": "Por definir",
+        "short_name": "?",
+        "tla": "?",
+        "crest": null
       },
       "away_team": {
         "id": null,
