@@ -1,7 +1,7 @@
 {
   "_meta": {
     "source": "football-data.org+openfootball/worldcup.json",
-    "updated_at": "2026-06-25T19:24:59.687Z"
+    "updated_at": "2026-06-25T21:12:15.653Z"
   },
   "groups": [
     {
@@ -345,14 +345,14 @@
             "tla": "GER",
             "crest": "https://crests.football-data.org/759.svg"
           },
-          "played": 2,
+          "played": 3,
           "won": 2,
-          "draw": 0,
+          "draw": 1,
           "lost": 0,
-          "goals_for": 9,
-          "goals_against": 2,
+          "goals_for": 10,
+          "goals_against": 3,
           "goal_difference": 7,
-          "points": 6,
+          "points": 7,
           "qualified": true
         },
         {
@@ -364,14 +364,14 @@
             "tla": "CIV",
             "crest": "https://crests.football-data.org/787.svg"
           },
-          "played": 2,
-          "won": 1,
+          "played": 3,
+          "won": 2,
           "draw": 0,
           "lost": 1,
-          "goals_for": 2,
+          "goals_for": 3,
           "goals_against": 2,
-          "goal_difference": 0,
-          "points": 3,
+          "goal_difference": 1,
+          "points": 6,
           "qualified": true
         },
         {
@@ -383,14 +383,14 @@
             "tla": "ECU",
             "crest": "https://crests.football-data.org/791.svg"
           },
-          "played": 2,
+          "played": 3,
           "won": 0,
-          "draw": 1,
+          "draw": 2,
           "lost": 1,
-          "goals_for": 0,
-          "goals_against": 1,
+          "goals_for": 1,
+          "goals_against": 2,
           "goal_difference": -1,
-          "points": 1,
+          "points": 2,
           "qualified": false
         },
         {
@@ -402,13 +402,13 @@
             "tla": "CUW",
             "crest": "https://crests.football-data.org/curacao.svg"
           },
-          "played": 2,
+          "played": 3,
           "won": 0,
           "draw": 1,
-          "lost": 1,
+          "lost": 2,
           "goals_for": 1,
-          "goals_against": 7,
-          "goal_difference": -6,
+          "goals_against": 8,
+          "goal_difference": -7,
           "points": 1,
           "qualified": false
         }
