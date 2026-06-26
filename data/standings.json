@@ -1,7 +1,7 @@
 {
   "_meta": {
     "source": "football-data.org+openfootball/worldcup.json",
-    "updated_at": "2026-06-26T19:25:17.156Z"
+    "updated_at": "2026-06-26T21:06:56.180Z"
   },
   "groups": [
     {
@@ -674,13 +674,13 @@
             "crest": "https://crests.football-data.org/773.svg"
           },
           "played": 3,
-          "won": 2,
-          "draw": 1,
+          "won": 3,
+          "draw": 0,
           "lost": 0,
-          "goals_for": 6,
-          "goals_against": 1,
-          "goal_difference": 5,
-          "points": 7,
+          "goals_for": 10,
+          "goals_against": 2,
+          "goal_difference": 8,
+          "points": 9,
           "qualified": true
         },
         {
@@ -694,12 +694,12 @@
           },
           "played": 3,
           "won": 2,
-          "draw": 1,
-          "lost": 0,
-          "goals_for": 7,
-          "goals_against": 3,
-          "goal_difference": 4,
-          "points": 7,
+          "draw": 0,
+          "lost": 1,
+          "goals_for": 8,
+          "goals_against": 7,
+          "goal_difference": 1,
+          "points": 6,
           "qualified": true
         },
         {
@@ -712,13 +712,13 @@
             "crest": "https://crests.football-data.org/senegal.svg"
           },
           "played": 3,
-          "won": 0,
-          "draw": 1,
+          "won": 1,
+          "draw": 0,
           "lost": 2,
-          "goals_for": 3,
+          "goals_for": 8,
           "goals_against": 6,
-          "goal_difference": -3,
-          "points": 1,
+          "goal_difference": 2,
+          "points": 3,
           "qualified": false
         },
         {
@@ -732,12 +732,12 @@
           },
           "played": 3,
           "won": 0,
-          "draw": 1,
-          "lost": 2,
+          "draw": 0,
+          "lost": 3,
           "goals_for": 1,
-          "goals_against": 7,
-          "goal_difference": -6,
-          "points": 1,
+          "goals_against": 12,
+          "goal_difference": -11,
+          "points": 0,
           "qualified": false
         }
       ]

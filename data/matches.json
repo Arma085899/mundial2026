@@ -1,7 +1,7 @@
 {
   "_meta": {
     "source": "football-data.org+openfootball/worldcup.json",
-    "updated_at": "2026-06-26T19:25:17.156Z"
+    "updated_at": "2026-06-26T21:06:56.180Z"
   },
   "matches": [
     {
@@ -2257,7 +2257,7 @@
       "matchday": 3,
       "stage": "GROUP_STAGE",
       "group": "GROUP_I",
-      "status": "LIVE",
+      "status": "FINISHED",
       "utc_date": "2026-06-26T19:00:00Z",
       "local_date": null,
       "minute": null,
@@ -2278,10 +2278,10 @@
         "crest": "https://crests.football-data.org/773.svg"
       },
       "score": {
-        "home": 0,
-        "away": 1,
-        "halftime_home": null,
-        "halftime_away": null
+        "home": 1,
+        "away": 4,
+        "halftime_home": 1,
+        "halftime_away": 3
       },
       "scorers": [],
       "broadcast_mx": [
@@ -2294,7 +2294,7 @@
       "matchday": 3,
       "stage": "GROUP_STAGE",
       "group": "GROUP_I",
-      "status": "LIVE",
+      "status": "IN_PLAY",
       "utc_date": "2026-06-26T19:00:00Z",
       "local_date": null,
       "minute": null,
@@ -2315,10 +2315,10 @@
         "crest": "https://crests.football-data.org/iraq.svg"
       },
       "score": {
-        "home": 1,
+        "home": 5,
         "away": 0,
-        "halftime_home": null,
-        "halftime_away": null
+        "halftime_home": 1,
+        "halftime_away": 0
       },
       "scorers": [],
       "broadcast_mx": [
