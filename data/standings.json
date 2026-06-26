@@ -1,7 +1,7 @@
 {
   "_meta": {
     "source": "football-data.org+openfootball/worldcup.json",
-    "updated_at": "2026-06-26T17:49:54.913Z"
+    "updated_at": "2026-06-26T19:25:17.156Z"
   },
   "groups": [
     {
@@ -673,14 +673,14 @@
             "tla": "FRA",
             "crest": "https://crests.football-data.org/773.svg"
           },
-          "played": 2,
+          "played": 3,
           "won": 2,
-          "draw": 0,
+          "draw": 1,
           "lost": 0,
           "goals_for": 6,
           "goals_against": 1,
           "goal_difference": 5,
-          "points": 6,
+          "points": 7,
           "qualified": true
         },
         {
@@ -692,14 +692,14 @@
             "tla": "NOR",
             "crest": "https://crests.football-data.org/813.svg"
           },
-          "played": 2,
+          "played": 3,
           "won": 2,
-          "draw": 0,
+          "draw": 1,
           "lost": 0,
           "goals_for": 7,
           "goals_against": 3,
           "goal_difference": 4,
-          "points": 6,
+          "points": 7,
           "qualified": true
         },
         {
@@ -711,14 +711,14 @@
             "tla": "SEN",
             "crest": "https://crests.football-data.org/senegal.svg"
           },
-          "played": 2,
+          "played": 3,
           "won": 0,
-          "draw": 0,
+          "draw": 1,
           "lost": 2,
           "goals_for": 3,
           "goals_against": 6,
           "goal_difference": -3,
-          "points": 0,
+          "points": 1,
           "qualified": false
         },
         {
@@ -730,14 +730,14 @@
             "tla": "IRQ",
             "crest": "https://crests.football-data.org/iraq.svg"
           },
-          "played": 2,
+          "played": 3,
           "won": 0,
-          "draw": 0,
+          "draw": 1,
           "lost": 2,
           "goals_for": 1,
           "goals_against": 7,
           "goal_difference": -6,
-          "points": 0,
+          "points": 1,
           "qualified": false
         }
       ]
