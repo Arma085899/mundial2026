@@ -1,7 +1,7 @@
 {
   "_meta": {
     "source": "football-data.org+openfootball/worldcup.json",
-    "updated_at": "2026-06-26T00:11:09.010Z"
+    "updated_at": "2026-06-26T04:43:49.948Z"
   },
   "groups": [
     {
@@ -263,13 +263,13 @@
             "tla": "USA",
             "crest": "https://crests.football-data.org/usa.svg"
           },
-          "played": 2,
+          "played": 3,
           "won": 2,
           "draw": 0,
-          "lost": 0,
-          "goals_for": 6,
-          "goals_against": 1,
-          "goal_difference": 5,
+          "lost": 1,
+          "goals_for": 8,
+          "goals_against": 4,
+          "goal_difference": 4,
           "points": 6,
           "qualified": true
         },
@@ -282,14 +282,14 @@
             "tla": "AUS",
             "crest": "https://crests.football-data.org/779.svg"
           },
-          "played": 2,
+          "played": 3,
           "won": 1,
-          "draw": 0,
+          "draw": 1,
           "lost": 1,
           "goals_for": 2,
           "goals_against": 2,
           "goal_difference": 0,
-          "points": 3,
+          "points": 4,
           "qualified": true
         },
         {
@@ -301,14 +301,14 @@
             "tla": "PAR",
             "crest": "https://crests.football-data.org/761.svg"
           },
-          "played": 2,
+          "played": 3,
           "won": 1,
-          "draw": 0,
+          "draw": 1,
           "lost": 1,
           "goals_for": 2,
           "goals_against": 4,
           "goal_difference": -2,
-          "points": 3,
+          "points": 4,
           "qualified": false
         },
         {
@@ -320,14 +320,14 @@
             "tla": "TUR",
             "crest": "https://crests.football-data.org/803.svg"
           },
-          "played": 2,
-          "won": 0,
+          "played": 3,
+          "won": 1,
           "draw": 0,
           "lost": 2,
-          "goals_for": 0,
-          "goals_against": 3,
-          "goal_difference": -3,
-          "points": 0,
+          "goals_for": 3,
+          "goals_against": 5,
+          "goal_difference": -2,
+          "points": 3,
           "qualified": false
         }
       ]
@@ -431,8 +431,8 @@
           "won": 2,
           "draw": 1,
           "lost": 0,
-          "goals_for": 9,
-          "goals_against": 3,
+          "goals_for": 10,
+          "goals_against": 4,
           "goal_difference": 6,
           "points": 7,
           "qualified": true
@@ -450,8 +450,8 @@
           "won": 1,
           "draw": 2,
           "lost": 0,
-          "goals_for": 6,
-          "goals_against": 2,
+          "goals_for": 7,
+          "goals_against": 3,
           "goal_difference": 4,
           "points": 5,
           "qualified": true
@@ -469,8 +469,8 @@
           "won": 1,
           "draw": 1,
           "lost": 1,
-          "goals_for": 6,
-          "goals_against": 6,
+          "goals_for": 7,
+          "goals_against": 7,
           "goal_difference": 0,
           "points": 4,
           "qualified": false
@@ -488,8 +488,8 @@
           "won": 0,
           "draw": 0,
           "lost": 3,
-          "goals_for": 1,
-          "goals_against": 11,
+          "goals_for": 2,
+          "goals_against": 12,
           "goal_difference": -10,
           "points": 0,
           "qualified": false

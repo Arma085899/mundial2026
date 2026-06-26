@@ -1,7 +1,7 @@
 {
   "_meta": {
     "source": "manual",
-    "updated_at": "2026-06-26T00:11:45.075Z",
+    "updated_at": "2026-06-26T04:44:26.217Z",
     "note": "El campo 'status' se actualiza automaticamente segun standings/resultados; ver scripts/quiniela-overrides.json para casos especiales (terceros lugares)."
   },
   "participants": [
@@ -16,7 +16,7 @@
         {
           "tla": "TUR",
           "name": "Turquía",
-          "status": "active"
+          "status": "eliminated"
         }
       ],
       "quote": "Bueno... siempre quedan las quesadillas del Oxxo."
@@ -48,7 +48,7 @@
         {
           "tla": "PAR",
           "name": "Paraguay",
-          "status": "active"
+          "status": "eliminated"
         }
       ],
       "quote": "Eliminado, pero con la frente en alto y la calculadora lista para la próxima."

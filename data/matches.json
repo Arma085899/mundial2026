@@ -1,7 +1,7 @@
 {
   "_meta": {
     "source": "football-data.org+openfootball/worldcup.json",
-    "updated_at": "2026-06-26T00:11:09.010Z"
+    "updated_at": "2026-06-26T04:43:49.948Z"
   },
   "matches": [
     {
@@ -328,7 +328,7 @@
         "id": 9460,
         "name": "Curaçao",
         "short_name": "Curaçao",
-        "tla": "CUR",
+        "tla": "CUW",
         "crest": "https://crests.football-data.org/curacao.svg"
       },
       "score": {
@@ -552,7 +552,7 @@
         "id": 758,
         "name": "Uruguay",
         "short_name": "Uruguay",
-        "tla": "URY",
+        "tla": "URU",
         "crest": "https://crests.football-data.org/758.svg"
       },
       "score": {
@@ -1302,7 +1302,7 @@
         "id": 9460,
         "name": "Curaçao",
         "short_name": "Curaçao",
-        "tla": "CUR",
+        "tla": "CUW",
         "crest": "https://crests.football-data.org/curacao.svg"
       },
       "score": {
@@ -1445,7 +1445,7 @@
         "id": 758,
         "name": "Uruguay",
         "short_name": "Uruguay",
-        "tla": "URY",
+        "tla": "URU",
         "crest": "https://crests.football-data.org/758.svg"
       },
       "away_team": {
@@ -2082,7 +2082,7 @@
         "id": 9460,
         "name": "Curaçao",
         "short_name": "Curaçao",
-        "tla": "CUR",
+        "tla": "CUW",
         "crest": "https://crests.football-data.org/curacao.svg"
       },
       "away_team": {
@@ -2109,7 +2109,7 @@
       "matchday": 3,
       "stage": "GROUP_STAGE",
       "group": "GROUP_F",
-      "status": "IN_PLAY",
+      "status": "FINISHED",
       "utc_date": "2026-06-25T23:00:00Z",
       "local_date": null,
       "minute": null,
@@ -2130,8 +2130,8 @@
         "crest": "https://crests.football-data.org/8601.svg"
       },
       "score": {
-        "home": 0,
-        "away": 2,
+        "home": 1,
+        "away": 3,
         "halftime_home": 0,
         "halftime_away": 2
       },
@@ -2146,7 +2146,7 @@
       "matchday": 3,
       "stage": "GROUP_STAGE",
       "group": "GROUP_F",
-      "status": "LIVE",
+      "status": "FINISHED",
       "utc_date": "2026-06-25T23:00:00Z",
       "local_date": null,
       "minute": null,
@@ -2167,8 +2167,8 @@
         "crest": "https://crests.football-data.org/792.svg"
       },
       "score": {
-        "home": 0,
-        "away": 0,
+        "home": 1,
+        "away": 1,
         "halftime_home": 0,
         "halftime_away": 0
       },
@@ -2183,7 +2183,7 @@
       "matchday": 3,
       "stage": "GROUP_STAGE",
       "group": "GROUP_D",
-      "status": "TIMED",
+      "status": "FINISHED",
       "utc_date": "2026-06-26T02:00:00Z",
       "local_date": null,
       "minute": null,
@@ -2204,10 +2204,10 @@
         "crest": "https://crests.football-data.org/usa.svg"
       },
       "score": {
-        "home": null,
-        "away": null,
-        "halftime_home": null,
-        "halftime_away": null
+        "home": 3,
+        "away": 2,
+        "halftime_home": 2,
+        "halftime_away": 1
       },
       "scorers": [],
       "broadcast_mx": [
@@ -2220,7 +2220,7 @@
       "matchday": 3,
       "stage": "GROUP_STAGE",
       "group": "GROUP_D",
-      "status": "TIMED",
+      "status": "FINISHED",
       "utc_date": "2026-06-26T02:00:00Z",
       "local_date": null,
       "minute": null,
@@ -2241,10 +2241,10 @@
         "crest": "https://crests.football-data.org/779.svg"
       },
       "score": {
-        "home": null,
-        "away": null,
-        "halftime_home": null,
-        "halftime_away": null
+        "home": 0,
+        "away": 0,
+        "halftime_home": 0,
+        "halftime_away": 0
       },
       "scorers": [],
       "broadcast_mx": [
@@ -2341,7 +2341,7 @@
         "id": 758,
         "name": "Uruguay",
         "short_name": "Uruguay",
-        "tla": "URY",
+        "tla": "URU",
         "crest": "https://crests.football-data.org/758.svg"
       },
       "away_team": {
