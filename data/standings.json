@@ -1,7 +1,7 @@
 {
   "_meta": {
     "source": "football-data.org+openfootball/worldcup.json",
-    "updated_at": "2026-06-25T22:50:46.778Z"
+    "updated_at": "2026-06-26T00:11:09.010Z"
   },
   "groups": [
     {
@@ -427,14 +427,14 @@
             "tla": "NED",
             "crest": "https://crests.football-data.org/8601.svg"
           },
-          "played": 2,
-          "won": 1,
+          "played": 3,
+          "won": 2,
           "draw": 1,
           "lost": 0,
-          "goals_for": 7,
+          "goals_for": 9,
           "goals_against": 3,
-          "goal_difference": 4,
-          "points": 4,
+          "goal_difference": 6,
+          "points": 7,
           "qualified": true
         },
         {
@@ -446,14 +446,14 @@
             "tla": "JPN",
             "crest": "https://crests.football-data.org/766.svg"
           },
-          "played": 2,
+          "played": 3,
           "won": 1,
-          "draw": 1,
+          "draw": 2,
           "lost": 0,
           "goals_for": 6,
           "goals_against": 2,
           "goal_difference": 4,
-          "points": 4,
+          "points": 5,
           "qualified": true
         },
         {
@@ -465,14 +465,14 @@
             "tla": "SWE",
             "crest": "https://crests.football-data.org/792.svg"
           },
-          "played": 2,
+          "played": 3,
           "won": 1,
-          "draw": 0,
+          "draw": 1,
           "lost": 1,
           "goals_for": 6,
           "goals_against": 6,
           "goal_difference": 0,
-          "points": 3,
+          "points": 4,
           "qualified": false
         },
         {
@@ -484,13 +484,13 @@
             "tla": "TUN",
             "crest": "https://crests.football-data.org/tunisia.svg"
           },
-          "played": 2,
+          "played": 3,
           "won": 0,
           "draw": 0,
-          "lost": 2,
+          "lost": 3,
           "goals_for": 1,
-          "goals_against": 9,
-          "goal_difference": -8,
+          "goals_against": 11,
+          "goal_difference": -10,
           "points": 0,
           "qualified": false
         }
