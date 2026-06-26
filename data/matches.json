@@ -1,7 +1,7 @@
 {
   "_meta": {
     "source": "football-data.org+openfootball/worldcup.json",
-    "updated_at": "2026-06-26T13:29:16.394Z"
+    "updated_at": "2026-06-26T15:54:24.704Z"
   },
   "matches": [
     {
@@ -2714,18 +2714,18 @@
       "venue": "SoFi Stadium",
       "city": "Inglewood, California",
       "home_team": {
-        "id": null,
-        "name": "Por definir",
-        "short_name": "?",
-        "tla": "?",
-        "crest": null
+        "id": 774,
+        "name": "South Africa",
+        "short_name": "South Africa",
+        "tla": "RSA",
+        "crest": "https://crests.football-data.org/9396.svg"
       },
       "away_team": {
-        "id": null,
-        "name": "Por definir",
-        "short_name": "?",
-        "tla": "?",
-        "crest": null
+        "id": 828,
+        "name": "Canada",
+        "short_name": "Canada",
+        "tla": "CAN",
+        "crest": "https://crests.football-data.org/canada.svg"
       },
       "score": {
         "home": null,
@@ -2752,18 +2752,18 @@
       "venue": "NRG Stadium",
       "city": "Houston",
       "home_team": {
-        "id": null,
-        "name": "Por definir",
-        "short_name": "?",
-        "tla": "?",
-        "crest": null
+        "id": 764,
+        "name": "Brazil",
+        "short_name": "Brazil",
+        "tla": "BRA",
+        "crest": "https://crests.football-data.org/764.svg"
       },
       "away_team": {
-        "id": null,
-        "name": "Por definir",
-        "short_name": "?",
-        "tla": "?",
-        "crest": null
+        "id": 766,
+        "name": "Japan",
+        "short_name": "Japan",
+        "tla": "JPN",
+        "crest": "https://crests.football-data.org/766.svg"
       },
       "score": {
         "home": null,
@@ -2789,11 +2789,11 @@
       "venue": "Gillette Stadium",
       "city": "Foxborough, Massachusetts",
       "home_team": {
-        "id": null,
-        "name": "Por definir",
-        "short_name": "?",
-        "tla": "?",
-        "crest": null
+        "id": 759,
+        "name": "Germany",
+        "short_name": "Germany",
+        "tla": "GER",
+        "crest": "https://crests.football-data.org/759.svg"
       },
       "away_team": {
         "id": null,
@@ -2827,18 +2827,18 @@
       "venue": "Estadio BBVA",
       "city": "Guadalupe, Nuevo León",
       "home_team": {
-        "id": null,
-        "name": "Por definir",
-        "short_name": "?",
-        "tla": "?",
-        "crest": null
+        "id": 8601,
+        "name": "Netherlands",
+        "short_name": "Netherlands",
+        "tla": "NED",
+        "crest": "https://crests.football-data.org/8601.svg"
       },
       "away_team": {
-        "id": null,
-        "name": "Por definir",
-        "short_name": "?",
-        "tla": "?",
-        "crest": null
+        "id": 815,
+        "name": "Morocco",
+        "short_name": "Morocco",
+        "tla": "MAR",
+        "crest": "https://crests.football-data.org/morocco.svg"
       },
       "score": {
         "home": null,
@@ -2938,11 +2938,11 @@
       "venue": "Estadio Azteca",
       "city": "Ciudad de México",
       "home_team": {
-        "id": null,
-        "name": "Por definir",
-        "short_name": "?",
-        "tla": "?",
-        "crest": null
+        "id": 769,
+        "name": "Mexico",
+        "short_name": "Mexico",
+        "tla": "MEX",
+        "crest": "https://crests.football-data.org/769.svg"
       },
       "away_team": {
         "id": null,
@@ -3051,18 +3051,18 @@
       "venue": "Levi's Stadium",
       "city": "Santa Clara, California",
       "home_team": {
-        "id": null,
-        "name": "Por definir",
-        "short_name": "?",
-        "tla": "?",
-        "crest": null
+        "id": 771,
+        "name": "United States",
+        "short_name": "USA",
+        "tla": "USA",
+        "crest": "https://crests.football-data.org/usa.svg"
       },
       "away_team": {
-        "id": null,
-        "name": "Por definir",
-        "short_name": "?",
-        "tla": "?",
-        "crest": null
+        "id": 1060,
+        "name": "Bosnia-Herzegovina",
+        "short_name": "Bosnia-H.",
+        "tla": "BIH",
+        "crest": "https://crests.football-data.org/bosnia.svg"
       },
       "score": {
         "home": null,
@@ -3163,11 +3163,11 @@
       "venue": "BC Place",
       "city": "Vancouver",
       "home_team": {
-        "id": null,
-        "name": "Por definir",
-        "short_name": "?",
-        "tla": "?",
-        "crest": null
+        "id": 788,
+        "name": "Switzerland",
+        "short_name": "Switzerland",
+        "tla": "SUI",
+        "crest": "https://crests.football-data.org/788.svg"
       },
       "away_team": {
         "id": null,
@@ -3200,11 +3200,11 @@
       "venue": "AT&T Stadium",
       "city": "Arlington, Texas",
       "home_team": {
-        "id": null,
-        "name": "Por definir",
-        "short_name": "?",
-        "tla": "?",
-        "crest": null
+        "id": 779,
+        "name": "Australia",
+        "short_name": "Australia",
+        "tla": "AUS",
+        "crest": "https://crests.football-data.org/779.svg"
       },
       "away_team": {
         "id": null,
@@ -3237,11 +3237,11 @@
       "venue": "Hard Rock Stadium",
       "city": "Miami Gardens, Florida",
       "home_team": {
-        "id": null,
-        "name": "Por definir",
-        "short_name": "?",
-        "tla": "?",
-        "crest": null
+        "id": 762,
+        "name": "Argentina",
+        "short_name": "Argentina",
+        "tla": "ARG",
+        "crest": "https://crests.football-data.org/762.png"
       },
       "away_team": {
         "id": null,
