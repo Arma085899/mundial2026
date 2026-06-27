@@ -1,7 +1,7 @@
 {
   "_meta": {
     "source": "manual",
-    "updated_at": "2026-06-27T21:32:54.603Z",
+    "updated_at": "2026-06-27T22:42:30.166Z",
     "note": "El campo 'status' se actualiza automaticamente segun standings/resultados; ver scripts/quiniela-overrides.json para casos especiales (terceros lugares)."
   },
   "participants": [
@@ -128,7 +128,7 @@
         {
           "tla": "GHA",
           "name": "Ghana",
-          "status": "active"
+          "status": "eliminated"
         }
       ],
       "quote": "Ghana me dio una lección de humildad que no pedí."
@@ -192,7 +192,7 @@
         {
           "tla": "CRO",
           "name": "Croacia",
-          "status": "eliminated"
+          "status": "active"
         }
       ],
       "quote": "Me fui del torneo igual de rápido que se va el saldo del celular."
