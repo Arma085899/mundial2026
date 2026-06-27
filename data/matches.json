@@ -1,7 +1,7 @@
 {
   "_meta": {
     "source": "football-data.org+openfootball/worldcup.json",
-    "updated_at": "2026-06-27T22:41:53.006Z"
+    "updated_at": "2026-06-27T23:45:12.117Z"
   },
   "matches": [
     {
@@ -2481,7 +2481,7 @@
       "matchday": 3,
       "stage": "GROUP_STAGE",
       "group": "GROUP_L",
-      "status": "IN_PLAY",
+      "status": "FINISHED",
       "utc_date": "2026-06-27T21:00:00Z",
       "local_date": null,
       "minute": null,
@@ -2520,7 +2520,7 @@
       "matchday": 3,
       "stage": "GROUP_STAGE",
       "group": "GROUP_L",
-      "status": "IN_PLAY",
+      "status": "FINISHED",
       "utc_date": "2026-06-27T21:00:00Z",
       "local_date": null,
       "minute": null,
@@ -2541,7 +2541,7 @@
         "crest": "https://crests.football-data.org/ghana.svg"
       },
       "score": {
-        "home": 1,
+        "home": 2,
         "away": 1,
         "halftime_home": 1,
         "halftime_away": 0
@@ -2557,7 +2557,7 @@
       "matchday": 3,
       "stage": "GROUP_STAGE",
       "group": "GROUP_K",
-      "status": "TIMED",
+      "status": "LIVE",
       "utc_date": "2026-06-27T23:30:00Z",
       "local_date": null,
       "minute": null,
@@ -2578,8 +2578,8 @@
         "crest": "https://crests.football-data.org/765.svg"
       },
       "score": {
-        "home": null,
-        "away": null,
+        "home": 0,
+        "away": 0,
         "halftime_home": null,
         "halftime_away": null
       },
@@ -2596,7 +2596,7 @@
       "matchday": 3,
       "stage": "GROUP_STAGE",
       "group": "GROUP_K",
-      "status": "TIMED",
+      "status": "LIVE",
       "utc_date": "2026-06-27T23:30:00Z",
       "local_date": null,
       "minute": null,
@@ -2617,8 +2617,8 @@
         "crest": "https://crests.football-data.org/8070.png"
       },
       "score": {
-        "home": null,
-        "away": null,
+        "home": 0,
+        "away": 0,
         "halftime_home": null,
         "halftime_away": null
       },

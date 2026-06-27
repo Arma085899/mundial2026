@@ -1,7 +1,7 @@
 {
   "_meta": {
     "source": "manual",
-    "updated_at": "2026-06-27T22:42:30.166Z",
+    "updated_at": "2026-06-27T23:45:49.084Z",
     "note": "El campo 'status' se actualiza automaticamente segun standings/resultados; ver scripts/quiniela-overrides.json para casos especiales (terceros lugares)."
   },
   "participants": [
@@ -96,7 +96,7 @@
         {
           "tla": "COD",
           "name": "RD del Congo",
-          "status": "active"
+          "status": "eliminated"
         }
       ],
       "quote": "Sabía que era difícil, pero le eché ganas como al café del office."
@@ -347,7 +347,7 @@
         {
           "tla": "UZB",
           "name": "Uzbekistán",
-          "status": "active"
+          "status": "eliminated"
         },
         {
           "tla": "NZL",

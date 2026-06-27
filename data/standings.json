@@ -1,7 +1,7 @@
 {
   "_meta": {
     "source": "football-data.org+openfootball/worldcup.json",
-    "updated_at": "2026-06-27T22:41:53.006Z"
+    "updated_at": "2026-06-27T23:45:12.117Z"
   },
   "groups": [
     {
@@ -837,14 +837,14 @@
             "tla": "COL",
             "crest": "https://crests.football-data.org/818.svg"
           },
-          "played": 2,
+          "played": 3,
           "won": 2,
-          "draw": 0,
+          "draw": 1,
           "lost": 0,
           "goals_for": 4,
           "goals_against": 1,
           "goal_difference": 3,
-          "points": 6,
+          "points": 7,
           "qualified": true
         },
         {
@@ -856,14 +856,14 @@
             "tla": "POR",
             "crest": "https://crests.football-data.org/765.svg"
           },
-          "played": 2,
+          "played": 3,
           "won": 1,
-          "draw": 1,
+          "draw": 2,
           "lost": 0,
           "goals_for": 6,
           "goals_against": 1,
           "goal_difference": 5,
-          "points": 4,
+          "points": 5,
           "qualified": true
         },
         {
@@ -875,14 +875,14 @@
             "tla": "COD",
             "crest": "https://crests.football-data.org/congo_dr.svg"
           },
-          "played": 2,
+          "played": 3,
           "won": 0,
-          "draw": 1,
+          "draw": 2,
           "lost": 1,
           "goals_for": 1,
           "goals_against": 2,
           "goal_difference": -1,
-          "points": 1,
+          "points": 2,
           "qualified": false
         },
         {
@@ -894,14 +894,14 @@
             "tla": "UZB",
             "crest": "https://crests.football-data.org/8070.png"
           },
-          "played": 2,
+          "played": 3,
           "won": 0,
-          "draw": 0,
+          "draw": 1,
           "lost": 2,
           "goals_for": 1,
           "goals_against": 8,
           "goal_difference": -7,
-          "points": 0,
+          "points": 1,
           "qualified": false
         }
       ]
@@ -942,8 +942,8 @@
           "won": 2,
           "draw": 0,
           "lost": 1,
-          "goals_for": 4,
-          "goals_against": 4,
+          "goals_for": 5,
+          "goals_against": 5,
           "goal_difference": 0,
           "points": 6,
           "qualified": true
@@ -961,8 +961,8 @@
           "won": 1,
           "draw": 1,
           "lost": 1,
-          "goals_for": 1,
-          "goals_against": 1,
+          "goals_for": 2,
+          "goals_against": 2,
           "goal_difference": 0,
           "points": 4,
           "qualified": false
