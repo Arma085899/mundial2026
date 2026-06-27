@@ -1,7 +1,7 @@
 {
   "_meta": {
     "source": "football-data.org+openfootball/worldcup.json",
-    "updated_at": "2026-06-26T23:43:18.653Z"
+    "updated_at": "2026-06-27T01:47:00.571Z"
   },
   "groups": [
     {
@@ -591,37 +591,18 @@
             "tla": "ESP",
             "crest": "https://crests.football-data.org/760.svg"
           },
-          "played": 2,
-          "won": 1,
+          "played": 3,
+          "won": 2,
           "draw": 1,
           "lost": 0,
-          "goals_for": 4,
+          "goals_for": 5,
           "goals_against": 0,
-          "goal_difference": 4,
-          "points": 4,
+          "goal_difference": 5,
+          "points": 7,
           "qualified": true
         },
         {
           "position": 2,
-          "team": {
-            "id": 758,
-            "name": "Uruguay",
-            "short_name": "Uruguay",
-            "tla": "URU",
-            "crest": "https://crests.football-data.org/758.svg"
-          },
-          "played": 2,
-          "won": 0,
-          "draw": 2,
-          "lost": 0,
-          "goals_for": 3,
-          "goals_against": 3,
-          "goal_difference": 0,
-          "points": 2,
-          "qualified": true
-        },
-        {
-          "position": 3,
           "team": {
             "id": 1930,
             "name": "Cape Verde Islands",
@@ -629,13 +610,32 @@
             "tla": "CPV",
             "crest": "https://crests.football-data.org/cape_verde.svg"
           },
-          "played": 2,
+          "played": 3,
           "won": 0,
-          "draw": 2,
+          "draw": 3,
           "lost": 0,
           "goals_for": 2,
           "goals_against": 2,
           "goal_difference": 0,
+          "points": 3,
+          "qualified": true
+        },
+        {
+          "position": 3,
+          "team": {
+            "id": 758,
+            "name": "Uruguay",
+            "short_name": "Uruguay",
+            "tla": "URU",
+            "crest": "https://crests.football-data.org/758.svg"
+          },
+          "played": 3,
+          "won": 0,
+          "draw": 2,
+          "lost": 1,
+          "goals_for": 3,
+          "goals_against": 4,
+          "goal_difference": -1,
           "points": 2,
           "qualified": false
         },
@@ -648,14 +648,14 @@
             "tla": "KSA",
             "crest": "https://crests.football-data.org/saudi_arabia.svg"
           },
-          "played": 2,
+          "played": 3,
           "won": 0,
-          "draw": 1,
+          "draw": 2,
           "lost": 1,
           "goals_for": 1,
           "goals_against": 5,
           "goal_difference": -4,
-          "points": 1,
+          "points": 2,
           "qualified": false
         }
       ]
