@@ -1,7 +1,7 @@
 {
   "_meta": {
     "source": "matches.json (derivado)",
-    "updated_at": "2026-06-27T15:36:53.423Z"
+    "updated_at": "2026-06-27T16:44:26.446Z"
   },
   "stages": [
     {
@@ -16,24 +16,12 @@
           "city": "Inglewood, California",
           "status": "TIMED",
           "home": {
-            "placeholder": null,
-            "team": {
-              "id": 774,
-              "name": "South Africa",
-              "short_name": "South Africa",
-              "tla": "RSA",
-              "crest": "https://crests.football-data.org/9396.svg"
-            }
+            "placeholder": "Por definir",
+            "team": null
           },
           "away": {
-            "placeholder": null,
-            "team": {
-              "id": 828,
-              "name": "Canada",
-              "short_name": "Canada",
-              "tla": "CAN",
-              "crest": "https://crests.football-data.org/canada.svg"
-            }
+            "placeholder": "Por definir",
+            "team": null
           },
           "score": {
             "home": null,
@@ -52,24 +40,12 @@
           "city": "Houston",
           "status": "TIMED",
           "home": {
-            "placeholder": null,
-            "team": {
-              "id": 764,
-              "name": "Brazil",
-              "short_name": "Brazil",
-              "tla": "BRA",
-              "crest": "https://crests.football-data.org/764.svg"
-            }
+            "placeholder": "Por definir",
+            "team": null
           },
           "away": {
-            "placeholder": null,
-            "team": {
-              "id": 766,
-              "name": "Japan",
-              "short_name": "Japan",
-              "tla": "JPN",
-              "crest": "https://crests.football-data.org/766.svg"
-            }
+            "placeholder": "Por definir",
+            "team": null
           },
           "score": {
             "home": null,
@@ -87,14 +63,8 @@
           "city": "Foxborough, Massachusetts",
           "status": "TIMED",
           "home": {
-            "placeholder": null,
-            "team": {
-              "id": 759,
-              "name": "Germany",
-              "short_name": "Germany",
-              "tla": "GER",
-              "crest": "https://crests.football-data.org/759.svg"
-            }
+            "placeholder": "Por definir",
+            "team": null
           },
           "away": {
             "placeholder": "Por definir",
@@ -117,24 +87,12 @@
           "city": "Guadalupe, Nuevo León",
           "status": "TIMED",
           "home": {
-            "placeholder": null,
-            "team": {
-              "id": 8601,
-              "name": "Netherlands",
-              "short_name": "Netherlands",
-              "tla": "NED",
-              "crest": "https://crests.football-data.org/8601.svg"
-            }
+            "placeholder": "Por definir",
+            "team": null
           },
           "away": {
-            "placeholder": null,
-            "team": {
-              "id": 815,
-              "name": "Morocco",
-              "short_name": "Morocco",
-              "tla": "MAR",
-              "crest": "https://crests.football-data.org/morocco.svg"
-            }
+            "placeholder": "Por definir",
+            "team": null
           },
           "score": {
             "home": null,
@@ -152,14 +110,8 @@
           "city": "Arlington, Texas",
           "status": "TIMED",
           "home": {
-            "placeholder": null,
-            "team": {
-              "id": 1935,
-              "name": "Ivory Coast",
-              "short_name": "Ivory Coast",
-              "tla": "CIV",
-              "crest": "https://crests.football-data.org/787.svg"
-            }
+            "placeholder": "Por definir",
+            "team": null
           },
           "away": {
             "placeholder": "Por definir",
@@ -204,14 +156,8 @@
           "city": "Ciudad de México",
           "status": "TIMED",
           "home": {
-            "placeholder": null,
-            "team": {
-              "id": 769,
-              "name": "Mexico",
-              "short_name": "Mexico",
-              "tla": "MEX",
-              "crest": "https://crests.football-data.org/769.svg"
-            }
+            "placeholder": "Por definir",
+            "team": null
           },
           "away": {
             "placeholder": "Por definir",
@@ -281,24 +227,12 @@
           "city": "Santa Clara, California",
           "status": "TIMED",
           "home": {
-            "placeholder": null,
-            "team": {
-              "id": 771,
-              "name": "United States",
-              "short_name": "USA",
-              "tla": "USA",
-              "crest": "https://crests.football-data.org/usa.svg"
-            }
+            "placeholder": "Por definir",
+            "team": null
           },
           "away": {
-            "placeholder": null,
-            "team": {
-              "id": 1060,
-              "name": "Bosnia-Herzegovina",
-              "short_name": "Bosnia-H.",
-              "tla": "BIH",
-              "crest": "https://crests.football-data.org/bosnia.svg"
-            }
+            "placeholder": "Por definir",
+            "team": null
           },
           "score": {
             "home": null,
@@ -363,14 +297,8 @@
           "city": "Vancouver",
           "status": "TIMED",
           "home": {
-            "placeholder": null,
-            "team": {
-              "id": 788,
-              "name": "Switzerland",
-              "short_name": "Switzerland",
-              "tla": "SUI",
-              "crest": "https://crests.football-data.org/788.svg"
-            }
+            "placeholder": "Por definir",
+            "team": null
           },
           "away": {
             "placeholder": "Por definir",
@@ -392,14 +320,8 @@
           "city": "Arlington, Texas",
           "status": "TIMED",
           "home": {
-            "placeholder": null,
-            "team": {
-              "id": 779,
-              "name": "Australia",
-              "short_name": "Australia",
-              "tla": "AUS",
-              "crest": "https://crests.football-data.org/779.svg"
-            }
+            "placeholder": "Por definir",
+            "team": null
           },
           "away": {
             "placeholder": "Por definir",
@@ -421,14 +343,8 @@
           "city": "Miami Gardens, Florida",
           "status": "TIMED",
           "home": {
-            "placeholder": null,
-            "team": {
-              "id": 762,
-              "name": "Argentina",
-              "short_name": "Argentina",
-              "tla": "ARG",
-              "crest": "https://crests.football-data.org/762.png"
-            }
+            "placeholder": "Por definir",
+            "team": null
           },
           "away": {
             "placeholder": "Por definir",
