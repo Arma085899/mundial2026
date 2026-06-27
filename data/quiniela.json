@@ -1,7 +1,7 @@
 {
   "_meta": {
     "source": "manual",
-    "updated_at": "2026-06-27T01:47:36.196Z",
+    "updated_at": "2026-06-27T05:41:37.333Z",
     "note": "El campo 'status' se actualiza automaticamente segun standings/resultados; ver scripts/quiniela-overrides.json para casos especiales (terceros lugares)."
   },
   "participants": [
@@ -219,7 +219,7 @@
         {
           "tla": "IRN",
           "name": "Irán",
-          "status": "active"
+          "status": "eliminated"
         },
         {
           "tla": "PAN",
@@ -352,7 +352,7 @@
         {
           "tla": "NZL",
           "name": "Nueva Zelanda",
-          "status": "active"
+          "status": "eliminated"
         }
       ],
       "quote": "Eliminado, pero con el orgullo intacto de haber elegido equipos exóticos."
