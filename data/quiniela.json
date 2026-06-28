@@ -1,7 +1,7 @@
 {
   "_meta": {
     "source": "manual",
-    "updated_at": "2026-06-27T23:45:49.084Z",
+    "updated_at": "2026-06-28T06:22:38.928Z",
     "note": "El campo 'status' se actualiza automaticamente segun standings/resultados; ver scripts/quiniela-overrides.json para casos especiales (terceros lugares)."
   },
   "participants": [
@@ -160,7 +160,7 @@
         {
           "tla": "ALG",
           "name": "Argelia",
-          "status": "active"
+          "status": "eliminated"
         }
       ],
       "quote": "Brasil prometió samba y me dejó bailando solo."
@@ -331,7 +331,7 @@
         {
           "tla": "JOR",
           "name": "Jordania",
-          "status": "active"
+          "status": "eliminated"
         },
         {
           "tla": "COL",
