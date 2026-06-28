@@ -1,7 +1,7 @@
 {
   "_meta": {
     "source": "football-data.org+openfootball/worldcup.json",
-    "updated_at": "2026-06-27T23:45:12.117Z"
+    "updated_at": "2026-06-28T01:55:40.124Z"
   },
   "groups": [
     {
@@ -876,13 +876,13 @@
             "crest": "https://crests.football-data.org/congo_dr.svg"
           },
           "played": 3,
-          "won": 0,
-          "draw": 2,
+          "won": 1,
+          "draw": 1,
           "lost": 1,
-          "goals_for": 1,
-          "goals_against": 2,
-          "goal_difference": -1,
-          "points": 2,
+          "goals_for": 4,
+          "goals_against": 3,
+          "goal_difference": 1,
+          "points": 4,
           "qualified": false
         },
         {
@@ -896,12 +896,12 @@
           },
           "played": 3,
           "won": 0,
-          "draw": 1,
-          "lost": 2,
-          "goals_for": 1,
-          "goals_against": 8,
-          "goal_difference": -7,
-          "points": 1,
+          "draw": 0,
+          "lost": 3,
+          "goals_for": 2,
+          "goals_against": 11,
+          "goal_difference": -9,
+          "points": 0,
           "qualified": false
         }
       ]

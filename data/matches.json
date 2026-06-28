@@ -1,7 +1,7 @@
 {
   "_meta": {
     "source": "football-data.org+openfootball/worldcup.json",
-    "updated_at": "2026-06-27T23:45:12.117Z"
+    "updated_at": "2026-06-28T01:55:40.124Z"
   },
   "matches": [
     {
@@ -2557,7 +2557,7 @@
       "matchday": 3,
       "stage": "GROUP_STAGE",
       "group": "GROUP_K",
-      "status": "LIVE",
+      "status": "FINISHED",
       "utc_date": "2026-06-27T23:30:00Z",
       "local_date": null,
       "minute": null,
@@ -2580,8 +2580,8 @@
       "score": {
         "home": 0,
         "away": 0,
-        "halftime_home": null,
-        "halftime_away": null
+        "halftime_home": 0,
+        "halftime_away": 0
       },
       "scorers": [],
       "broadcast_mx": [
@@ -2596,7 +2596,7 @@
       "matchday": 3,
       "stage": "GROUP_STAGE",
       "group": "GROUP_K",
-      "status": "LIVE",
+      "status": "FINISHED",
       "utc_date": "2026-06-27T23:30:00Z",
       "local_date": null,
       "minute": null,
@@ -2617,10 +2617,10 @@
         "crest": "https://crests.football-data.org/8070.png"
       },
       "score": {
-        "home": 0,
-        "away": 0,
-        "halftime_home": null,
-        "halftime_away": null
+        "home": 3,
+        "away": 1,
+        "halftime_home": 0,
+        "halftime_away": 1
       },
       "scorers": [],
       "broadcast_mx": [
