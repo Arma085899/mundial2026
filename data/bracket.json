@@ -1,7 +1,7 @@
 {
   "_meta": {
     "source": "matches.json (derivado)",
-    "updated_at": "2026-06-29T20:26:28.329Z"
+    "updated_at": "2026-06-29T21:53:28.575Z"
   },
   "stages": [
     {
@@ -85,7 +85,7 @@
           "utc_date": "2026-06-29T20:30:00Z",
           "venue": "Gillette Stadium",
           "city": "Foxborough, Massachusetts",
-          "status": "TIMED",
+          "status": "IN_PLAY",
           "home": {
             "placeholder": null,
             "team": {
@@ -107,8 +107,8 @@
             }
           },
           "score": {
-            "home": null,
-            "away": null
+            "home": 1,
+            "away": 1
           },
           "broadcast_mx": [
             "VIX",
