@@ -1,7 +1,7 @@
 {
   "_meta": {
     "source": "matches.json (derivado)",
-    "updated_at": "2026-06-29T01:58:25.277Z"
+    "updated_at": "2026-06-29T07:00:25.629Z"
   },
   "stages": [
     {
@@ -588,8 +588,14 @@
           "city": "Houston",
           "status": "TIMED",
           "home": {
-            "placeholder": "Por definir",
-            "team": null
+            "placeholder": null,
+            "team": {
+              "id": 828,
+              "name": "Canada",
+              "short_name": "Canada",
+              "tla": "CAN",
+              "crest": "https://crests.football-data.org/canada.svg"
+            }
           },
           "away": {
             "placeholder": "Por definir",
