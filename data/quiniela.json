@@ -1,7 +1,7 @@
 {
   "_meta": {
     "source": "manual",
-    "updated_at": "2026-06-28T21:17:46.801Z",
+    "updated_at": "2026-06-29T20:27:03.339Z",
     "note": "El campo 'status' se actualiza automaticamente segun standings/resultados; ver scripts/quiniela-overrides.json para casos especiales (terceros lugares)."
   },
   "participants": [
@@ -267,7 +267,7 @@
         {
           "tla": "JPN",
           "name": "Japón",
-          "status": "active"
+          "status": "eliminated"
         },
         {
           "tla": "EGY",
