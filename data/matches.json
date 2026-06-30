@@ -1,7 +1,7 @@
 {
   "_meta": {
     "source": "football-data.org+openfootball/worldcup.json",
-    "updated_at": "2026-06-30T00:15:21.413Z"
+    "updated_at": "2026-06-30T04:37:49.330Z"
   },
   "matches": [
     {
@@ -2803,8 +2803,8 @@
         "crest": "https://crests.football-data.org/761.svg"
       },
       "score": {
-        "home": 5,
-        "away": 6,
+        "home": 4,
+        "away": 5,
         "halftime_home": 0,
         "halftime_away": 1
       },
@@ -2820,7 +2820,7 @@
       "matchday": null,
       "stage": "LAST_32",
       "group": null,
-      "status": "TIMED",
+      "status": "FINISHED",
       "utc_date": "2026-06-30T01:00:00Z",
       "local_date": null,
       "minute": null,
@@ -2841,10 +2841,10 @@
         "crest": "https://crests.football-data.org/morocco.svg"
       },
       "score": {
-        "home": null,
-        "away": null,
-        "halftime_home": null,
-        "halftime_away": null
+        "home": 3,
+        "away": 4,
+        "halftime_home": 0,
+        "halftime_away": 0
       },
       "scorers": [],
       "broadcast_mx": [
