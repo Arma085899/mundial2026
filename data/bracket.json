@@ -1,7 +1,7 @@
 {
   "_meta": {
     "source": "matches.json (derivado)",
-    "updated_at": "2026-06-30T04:37:49.330Z"
+    "updated_at": "2026-06-30T08:19:58.076Z"
   },
   "stages": [
     {
@@ -598,8 +598,14 @@
             }
           },
           "away": {
-            "placeholder": "Por definir",
-            "team": null
+            "placeholder": null,
+            "team": {
+              "id": 815,
+              "name": "Morocco",
+              "short_name": "Morocco",
+              "tla": "MAR",
+              "crest": "https://crests.football-data.org/morocco.svg"
+            }
           },
           "score": {
             "home": null,
@@ -618,8 +624,14 @@
           "city": "Philadelphia",
           "status": "TIMED",
           "home": {
-            "placeholder": "Por definir",
-            "team": null
+            "placeholder": null,
+            "team": {
+              "id": 761,
+              "name": "Paraguay",
+              "short_name": "Paraguay",
+              "tla": "PAR",
+              "crest": "https://crests.football-data.org/761.svg"
+            }
           },
           "away": {
             "placeholder": "Por definir",
@@ -641,8 +653,14 @@
           "city": "East Rutherford, New Jersey",
           "status": "TIMED",
           "home": {
-            "placeholder": "Por definir",
-            "team": null
+            "placeholder": null,
+            "team": {
+              "id": 764,
+              "name": "Brazil",
+              "short_name": "Brazil",
+              "tla": "BRA",
+              "crest": "https://crests.football-data.org/764.svg"
+            }
           },
           "away": {
             "placeholder": "Por definir",
