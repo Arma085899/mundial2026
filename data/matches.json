@@ -1,7 +1,7 @@
 {
   "_meta": {
     "source": "football-data.org+openfootball/worldcup.json",
-    "updated_at": "2026-06-30T21:56:15.247Z"
+    "updated_at": "2026-06-30T23:17:05.606Z"
   },
   "matches": [
     {
@@ -2894,7 +2894,7 @@
       "matchday": null,
       "stage": "LAST_32",
       "group": null,
-      "status": "PAUSED",
+      "status": "FINISHED",
       "utc_date": "2026-06-30T21:00:00Z",
       "local_date": null,
       "minute": null,
@@ -2915,9 +2915,9 @@
         "crest": "https://crests.football-data.org/792.svg"
       },
       "score": {
-        "home": 0,
+        "home": 3,
         "away": 0,
-        "halftime_home": 0,
+        "halftime_home": 1,
         "halftime_away": 0
       },
       "scorers": [],
