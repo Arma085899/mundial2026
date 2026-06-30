@@ -1,7 +1,7 @@
 {
   "_meta": {
     "source": "manual",
-    "updated_at": "2026-06-29T20:27:03.339Z",
+    "updated_at": "2026-06-30T00:15:50.906Z",
     "note": "El campo 'status' se actualiza automaticamente segun standings/resultados; ver scripts/quiniela-overrides.json para casos especiales (terceros lugares)."
   },
   "participants": [
@@ -32,7 +32,7 @@
         {
           "tla": "GER",
           "name": "Alemania",
-          "status": "active"
+          "status": "eliminated"
         }
       ],
       "quote": "Alemania me falló más que el Excel sin guardar."
@@ -48,7 +48,7 @@
         {
           "tla": "PAR",
           "name": "Paraguay",
-          "status": "eliminated"
+          "status": "active"
         }
       ],
       "quote": "Eliminado, pero con la frente en alto y la calculadora lista para la próxima."
