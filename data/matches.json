@@ -1,7 +1,7 @@
 {
   "_meta": {
     "source": "football-data.org+openfootball/worldcup.json",
-    "updated_at": "2026-07-01T21:47:20.692Z"
+    "updated_at": "2026-07-01T22:57:18.240Z"
   },
   "matches": [
     {
@@ -3006,7 +3006,7 @@
       "matchday": null,
       "stage": "LAST_32",
       "group": null,
-      "status": "IN_PLAY",
+      "status": "FINISHED",
       "utc_date": "2026-07-01T20:00:00Z",
       "local_date": null,
       "minute": null,
@@ -3027,7 +3027,7 @@
         "crest": "https://crests.football-data.org/senegal.svg"
       },
       "score": {
-        "home": 0,
+        "home": 3,
         "away": 2,
         "halftime_home": 0,
         "halftime_away": 1
