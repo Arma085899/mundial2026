@@ -1,7 +1,7 @@
 {
   "_meta": {
     "source": "matches.json (derivado)",
-    "updated_at": "2026-07-01T15:57:54.487Z"
+    "updated_at": "2026-07-01T18:05:41.714Z"
   },
   "stages": [
     {
@@ -262,7 +262,7 @@
           "utc_date": "2026-07-01T16:00:00Z",
           "venue": "Mercedes-Benz Stadium",
           "city": "Atlanta",
-          "status": "TIMED",
+          "status": "FINISHED",
           "home": {
             "placeholder": null,
             "team": {
@@ -284,8 +284,8 @@
             }
           },
           "score": {
-            "home": null,
-            "away": null
+            "home": 2,
+            "away": 1
           },
           "broadcast_mx": [
             "VIX"
