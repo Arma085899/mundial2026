@@ -1,7 +1,7 @@
 {
   "_meta": {
     "source": "matches.json (derivado)",
-    "updated_at": "2026-07-01T01:35:23.192Z"
+    "updated_at": "2026-07-01T06:09:24.903Z"
   },
   "stages": [
     {
@@ -156,7 +156,7 @@
           "utc_date": "2026-06-30T17:00:00Z",
           "venue": "AT&T Stadium",
           "city": "Arlington, Texas",
-          "status": "TIMED",
+          "status": "FINISHED",
           "home": {
             "placeholder": null,
             "team": {
@@ -178,8 +178,8 @@
             }
           },
           "score": {
-            "home": null,
-            "away": null
+            "home": 1,
+            "away": 2
           },
           "broadcast_mx": [
             "VIX"
@@ -226,7 +226,7 @@
           "utc_date": "2026-07-01T01:00:00Z",
           "venue": "Estadio Azteca",
           "city": "Ciudad de México",
-          "status": "IN_PLAY",
+          "status": "FINISHED",
           "home": {
             "placeholder": null,
             "team": {
@@ -248,7 +248,7 @@
             }
           },
           "score": {
-            "home": 0,
+            "home": 2,
             "away": 0
           },
           "broadcast_mx": [
