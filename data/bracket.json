@@ -1,7 +1,7 @@
 {
   "_meta": {
     "source": "matches.json (derivado)",
-    "updated_at": "2026-07-01T20:09:19.573Z"
+    "updated_at": "2026-07-01T21:47:20.692Z"
   },
   "stages": [
     {
@@ -320,7 +320,7 @@
           },
           "score": {
             "home": 0,
-            "away": 0
+            "away": 2
           },
           "broadcast_mx": [
             "VIX",
