@@ -1,7 +1,7 @@
 {
   "_meta": {
     "source": "football-data.org+openfootball/worldcup.json",
-    "updated_at": "2026-07-01T06:09:24.903Z"
+    "updated_at": "2026-07-01T10:13:47.292Z"
   },
   "matches": [
     {
@@ -3357,11 +3357,11 @@
         "crest": "https://crests.football-data.org/761.svg"
       },
       "away_team": {
-        "id": null,
-        "name": "Por definir",
-        "short_name": "?",
-        "tla": "?",
-        "crest": null
+        "id": 773,
+        "name": "France",
+        "short_name": "France",
+        "tla": "FRA",
+        "crest": "https://crests.football-data.org/773.svg"
       },
       "score": {
         "home": null,
@@ -3394,11 +3394,11 @@
         "crest": "https://crests.football-data.org/764.svg"
       },
       "away_team": {
-        "id": null,
-        "name": "Por definir",
-        "short_name": "?",
-        "tla": "?",
-        "crest": null
+        "id": 8872,
+        "name": "Norway",
+        "short_name": "Norway",
+        "tla": "NOR",
+        "crest": "https://crests.football-data.org/813.svg"
       },
       "score": {
         "home": null,

@@ -1,7 +1,7 @@
 {
   "_meta": {
     "source": "matches.json (derivado)",
-    "updated_at": "2026-07-01T06:09:24.903Z"
+    "updated_at": "2026-07-01T10:13:47.292Z"
   },
   "stages": [
     {
@@ -634,8 +634,14 @@
             }
           },
           "away": {
-            "placeholder": "Por definir",
-            "team": null
+            "placeholder": null,
+            "team": {
+              "id": 773,
+              "name": "France",
+              "short_name": "France",
+              "tla": "FRA",
+              "crest": "https://crests.football-data.org/773.svg"
+            }
           },
           "score": {
             "home": null,
@@ -663,8 +669,14 @@
             }
           },
           "away": {
-            "placeholder": "Por definir",
-            "team": null
+            "placeholder": null,
+            "team": {
+              "id": 8872,
+              "name": "Norway",
+              "short_name": "Norway",
+              "tla": "NOR",
+              "crest": "https://crests.football-data.org/813.svg"
+            }
           },
           "score": {
             "home": null,
