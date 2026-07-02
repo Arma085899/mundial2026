@@ -1,7 +1,7 @@
 {
   "_meta": {
     "source": "football-data.org+openfootball/worldcup.json",
-    "updated_at": "2026-07-02T04:34:16.616Z"
+    "updated_at": "2026-07-02T07:54:25.729Z"
   },
   "matches": [
     {
@@ -3424,18 +3424,18 @@
       "venue": "Estadio Azteca",
       "city": "Ciudad de México",
       "home_team": {
-        "id": null,
-        "name": "Por definir",
-        "short_name": "?",
-        "tla": "?",
-        "crest": null
+        "id": 769,
+        "name": "Mexico",
+        "short_name": "Mexico",
+        "tla": "MEX",
+        "crest": "https://crests.football-data.org/769.svg"
       },
       "away_team": {
-        "id": null,
-        "name": "Por definir",
-        "short_name": "?",
-        "tla": "?",
-        "crest": null
+        "id": 770,
+        "name": "England",
+        "short_name": "England",
+        "tla": "ENG",
+        "crest": "https://crests.football-data.org/770.svg"
       },
       "score": {
         "home": null,
@@ -3499,18 +3499,18 @@
       "venue": "Lumen Field",
       "city": "Seattle",
       "home_team": {
-        "id": null,
-        "name": "Por definir",
-        "short_name": "?",
-        "tla": "?",
-        "crest": null
+        "id": 771,
+        "name": "United States",
+        "short_name": "USA",
+        "tla": "USA",
+        "crest": "https://crests.football-data.org/usa.svg"
       },
       "away_team": {
-        "id": null,
-        "name": "Por definir",
-        "short_name": "?",
-        "tla": "?",
-        "crest": null
+        "id": 805,
+        "name": "Belgium",
+        "short_name": "Belgium",
+        "tla": "BEL",
+        "crest": "https://crests.football-data.org/805.svg"
       },
       "score": {
         "home": null,
