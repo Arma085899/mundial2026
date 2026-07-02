@@ -1,7 +1,7 @@
 {
   "_meta": {
     "source": "matches.json (derivado)",
-    "updated_at": "2026-07-01T22:57:18.240Z"
+    "updated_at": "2026-07-02T00:16:28.749Z"
   },
   "stages": [
     {
@@ -333,7 +333,7 @@
           "utc_date": "2026-07-02T00:00:00Z",
           "venue": "Levi's Stadium",
           "city": "Santa Clara, California",
-          "status": "TIMED",
+          "status": "IN_PLAY",
           "home": {
             "placeholder": null,
             "team": {
@@ -355,8 +355,8 @@
             }
           },
           "score": {
-            "home": null,
-            "away": null
+            "home": 0,
+            "away": 0
           },
           "broadcast_mx": [
             "VIX"
