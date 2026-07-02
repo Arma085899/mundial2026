@@ -1,7 +1,7 @@
 {
   "_meta": {
     "source": "matches.json (derivado)",
-    "updated_at": "2026-07-02T18:27:29.770Z"
+    "updated_at": "2026-07-02T20:04:14.782Z"
   },
   "stages": [
     {
@@ -368,7 +368,7 @@
           "utc_date": "2026-07-02T19:00:00Z",
           "venue": "SoFi Stadium",
           "city": "Inglewood, California",
-          "status": "TIMED",
+          "status": "PAUSED",
           "home": {
             "placeholder": null,
             "team": {
@@ -390,8 +390,8 @@
             }
           },
           "score": {
-            "home": null,
-            "away": null
+            "home": 1,
+            "away": 0
           },
           "broadcast_mx": [
             "VIX",
