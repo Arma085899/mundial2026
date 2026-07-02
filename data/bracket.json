@@ -1,7 +1,7 @@
 {
   "_meta": {
     "source": "matches.json (derivado)",
-    "updated_at": "2026-07-02T22:36:33.894Z"
+    "updated_at": "2026-07-02T23:43:43.561Z"
   },
   "stages": [
     {
@@ -404,7 +404,7 @@
           "utc_date": "2026-07-02T23:00:00Z",
           "venue": "BMO Field",
           "city": "Toronto",
-          "status": "TIMED",
+          "status": "IN_PLAY",
           "home": {
             "placeholder": null,
             "team": {
@@ -426,8 +426,8 @@
             }
           },
           "score": {
-            "home": null,
-            "away": null
+            "home": 0,
+            "away": 0
           },
           "broadcast_mx": [
             "VIX"
