@@ -1,7 +1,7 @@
 {
   "_meta": {
     "source": "matches.json (derivado)",
-    "updated_at": "2026-07-03T01:20:47.666Z"
+    "updated_at": "2026-07-03T05:27:32.462Z"
   },
   "stages": [
     {
@@ -427,7 +427,7 @@
           },
           "score": {
             "home": 2,
-            "away": 2
+            "away": 1
           },
           "broadcast_mx": [
             "VIX"
@@ -439,7 +439,7 @@
           "utc_date": "2026-07-03T03:00:00Z",
           "venue": "BC Place",
           "city": "Vancouver",
-          "status": "TIMED",
+          "status": "FINISHED",
           "home": {
             "placeholder": null,
             "team": {
@@ -461,8 +461,8 @@
             }
           },
           "score": {
-            "home": null,
-            "away": null
+            "home": 2,
+            "away": 0
           },
           "broadcast_mx": [
             "VIX"
