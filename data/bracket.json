@@ -1,7 +1,7 @@
 {
   "_meta": {
     "source": "matches.json (derivado)",
-    "updated_at": "2026-07-03T16:58:27.490Z"
+    "updated_at": "2026-07-03T18:19:21.908Z"
   },
   "stages": [
     {
@@ -474,7 +474,7 @@
           "utc_date": "2026-07-03T18:00:00Z",
           "venue": "AT&T Stadium",
           "city": "Arlington, Texas",
-          "status": "TIMED",
+          "status": "IN_PLAY",
           "home": {
             "placeholder": null,
             "team": {
@@ -496,8 +496,8 @@
             }
           },
           "score": {
-            "home": null,
-            "away": null
+            "home": 0,
+            "away": 1
           },
           "broadcast_mx": [
             "VIX"
