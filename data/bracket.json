@@ -1,7 +1,7 @@
 {
   "_meta": {
     "source": "matches.json (derivado)",
-    "updated_at": "2026-07-04T20:00:03.116Z"
+    "updated_at": "2026-07-04T21:09:52.232Z"
   },
   "stages": [
     {
@@ -622,7 +622,7 @@
           "utc_date": "2026-07-04T21:00:00Z",
           "venue": "Lincoln Financial Field",
           "city": "Philadelphia",
-          "status": "TIMED",
+          "status": "LIVE",
           "home": {
             "placeholder": null,
             "team": {
@@ -644,8 +644,8 @@
             }
           },
           "score": {
-            "home": null,
-            "away": null
+            "home": 0,
+            "away": 0
           },
           "broadcast_mx": [
             "VIX"
