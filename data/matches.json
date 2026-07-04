@@ -1,7 +1,7 @@
 {
   "_meta": {
     "source": "football-data.org+openfootball/worldcup.json",
-    "updated_at": "2026-07-03T23:30:44.374Z"
+    "updated_at": "2026-07-04T01:13:53.149Z"
   },
   "matches": [
     {
@@ -3230,7 +3230,7 @@
       "matchday": null,
       "stage": "LAST_32",
       "group": null,
-      "status": "IN_PLAY",
+      "status": "FINISHED",
       "utc_date": "2026-07-03T22:00:00Z",
       "local_date": null,
       "minute": null,
@@ -3251,8 +3251,8 @@
         "crest": "https://crests.football-data.org/cape_verde.svg"
       },
       "score": {
-        "home": 1,
-        "away": 1,
+        "home": 3,
+        "away": 2,
         "halftime_home": 1,
         "halftime_away": 0
       },
