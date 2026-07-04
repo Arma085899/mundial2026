@@ -1,7 +1,7 @@
 {
   "_meta": {
     "source": "matches.json (derivado)",
-    "updated_at": "2026-07-04T04:55:29.274Z"
+    "updated_at": "2026-07-04T07:48:32.378Z"
   },
   "stages": [
     {
@@ -730,12 +730,24 @@
           "city": "Arlington, Texas",
           "status": "TIMED",
           "home": {
-            "placeholder": "Por definir",
-            "team": null
+            "placeholder": null,
+            "team": {
+              "id": 765,
+              "name": "Portugal",
+              "short_name": "Portugal",
+              "tla": "POR",
+              "crest": "https://crests.football-data.org/765.svg"
+            }
           },
           "away": {
-            "placeholder": "Por definir",
-            "team": null
+            "placeholder": null,
+            "team": {
+              "id": 760,
+              "name": "Spain",
+              "short_name": "Spain",
+              "tla": "ESP",
+              "crest": "https://crests.football-data.org/760.svg"
+            }
           },
           "score": {
             "home": null,
@@ -789,12 +801,24 @@
           "city": "Atlanta",
           "status": "TIMED",
           "home": {
-            "placeholder": "Por definir",
-            "team": null
+            "placeholder": null,
+            "team": {
+              "id": 762,
+              "name": "Argentina",
+              "short_name": "Argentina",
+              "tla": "ARG",
+              "crest": "https://crests.football-data.org/762.png"
+            }
           },
           "away": {
-            "placeholder": "Por definir",
-            "team": null
+            "placeholder": null,
+            "team": {
+              "id": 825,
+              "name": "Egypt",
+              "short_name": "Egypt",
+              "tla": "EGY",
+              "crest": "https://crests.football-data.org/825.svg"
+            }
           },
           "score": {
             "home": null,
@@ -813,12 +837,24 @@
           "city": "Vancouver",
           "status": "TIMED",
           "home": {
-            "placeholder": "Por definir",
-            "team": null
+            "placeholder": null,
+            "team": {
+              "id": 788,
+              "name": "Switzerland",
+              "short_name": "Switzerland",
+              "tla": "SUI",
+              "crest": "https://crests.football-data.org/788.svg"
+            }
           },
           "away": {
-            "placeholder": "Por definir",
-            "team": null
+            "placeholder": null,
+            "team": {
+              "id": 818,
+              "name": "Colombia",
+              "short_name": "Colombia",
+              "tla": "COL",
+              "crest": "https://crests.football-data.org/818.svg"
+            }
           },
           "score": {
             "home": null,
