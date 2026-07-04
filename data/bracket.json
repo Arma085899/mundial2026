@@ -1,7 +1,7 @@
 {
   "_meta": {
     "source": "matches.json (derivado)",
-    "updated_at": "2026-07-04T21:09:52.232Z"
+    "updated_at": "2026-07-04T22:11:15.810Z"
   },
   "stages": [
     {
@@ -622,7 +622,7 @@
           "utc_date": "2026-07-04T21:00:00Z",
           "venue": "Lincoln Financial Field",
           "city": "Philadelphia",
-          "status": "LIVE",
+          "status": "PAUSED",
           "home": {
             "placeholder": null,
             "team": {
