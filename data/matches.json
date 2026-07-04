@@ -1,7 +1,7 @@
 {
   "_meta": {
     "source": "football-data.org+openfootball/worldcup.json",
-    "updated_at": "2026-07-04T16:40:11.785Z"
+    "updated_at": "2026-07-04T17:48:00.894Z"
   },
   "matches": [
     {
@@ -3305,7 +3305,7 @@
       "matchday": null,
       "stage": "LAST_16",
       "group": null,
-      "status": "TIMED",
+      "status": "IN_PLAY",
       "utc_date": "2026-07-04T17:00:00Z",
       "local_date": null,
       "minute": null,
@@ -3326,8 +3326,8 @@
         "crest": "https://crests.football-data.org/morocco.svg"
       },
       "score": {
-        "home": null,
-        "away": null,
+        "home": 0,
+        "away": 0,
         "halftime_home": null,
         "halftime_away": null
       },
