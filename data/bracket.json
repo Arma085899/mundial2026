@@ -1,7 +1,7 @@
 {
   "_meta": {
     "source": "matches.json (derivado)",
-    "updated_at": "2026-07-04T18:45:17.968Z"
+    "updated_at": "2026-07-04T20:00:03.116Z"
   },
   "stages": [
     {
@@ -586,7 +586,7 @@
           "utc_date": "2026-07-04T17:00:00Z",
           "venue": "NRG Stadium",
           "city": "Houston",
-          "status": "IN_PLAY",
+          "status": "FINISHED",
           "home": {
             "placeholder": null,
             "team": {
@@ -609,7 +609,7 @@
           },
           "score": {
             "home": 0,
-            "away": 1
+            "away": 3
           },
           "broadcast_mx": [
             "VIX",

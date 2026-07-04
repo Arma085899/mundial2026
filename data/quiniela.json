@@ -1,7 +1,7 @@
 {
   "_meta": {
     "source": "manual",
-    "updated_at": "2026-07-04T01:14:21.302Z",
+    "updated_at": "2026-07-04T20:00:40.530Z",
     "note": "El campo 'status' se actualiza automaticamente segun standings/resultados; ver scripts/quiniela-overrides.json para casos especiales (terceros lugares)."
   },
   "participants": [
@@ -176,7 +176,7 @@
         {
           "tla": "CAN",
           "name": "Canadá",
-          "status": "active"
+          "status": "eliminated"
         }
       ],
       "quote": "Eliminado, pero al menos no tan tronado como el Wifi de la sala de juntas."
