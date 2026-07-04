@@ -1,7 +1,7 @@
 {
   "_meta": {
     "source": "football-data.org+openfootball/worldcup.json",
-    "updated_at": "2026-07-04T01:13:53.149Z"
+    "updated_at": "2026-07-04T04:55:29.274Z"
   },
   "matches": [
     {
@@ -3268,7 +3268,7 @@
       "matchday": null,
       "stage": "LAST_32",
       "group": null,
-      "status": "TIMED",
+      "status": "FINISHED",
       "utc_date": "2026-07-04T01:30:00Z",
       "local_date": null,
       "minute": null,
@@ -3289,10 +3289,10 @@
         "crest": "https://crests.football-data.org/ghana.svg"
       },
       "score": {
-        "home": null,
-        "away": null,
-        "halftime_home": null,
-        "halftime_away": null
+        "home": 1,
+        "away": 0,
+        "halftime_home": 1,
+        "halftime_away": 0
       },
       "scorers": [],
       "broadcast_mx": [
