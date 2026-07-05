@@ -1,7 +1,7 @@
 {
   "_meta": {
     "source": "football-data.org+openfootball/worldcup.json",
-    "updated_at": "2026-07-05T22:34:13.878Z"
+    "updated_at": "2026-07-05T23:41:32.422Z"
   },
   "matches": [
     {
@@ -3417,12 +3417,12 @@
       "matchday": null,
       "stage": "LAST_16",
       "group": null,
-      "status": "TIMED",
-      "utc_date": "2026-07-06T00:00:00Z",
+      "status": "2026-07-06 01:00:00Z",
+      "utc_date": "2026-07-06T01:00:00Z",
       "local_date": null,
       "minute": null,
-      "venue": "Estadio Azteca",
-      "city": "Ciudad de México",
+      "venue": null,
+      "city": null,
       "home_team": {
         "id": 769,
         "name": "Mexico",
