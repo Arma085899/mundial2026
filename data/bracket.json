@@ -1,7 +1,7 @@
 {
   "_meta": {
     "source": "matches.json (derivado)",
-    "updated_at": "2026-07-05T05:11:22.256Z"
+    "updated_at": "2026-07-05T08:20:30.061Z"
   },
   "stages": [
     {
@@ -878,12 +878,24 @@
           "city": "Foxborough, Massachusetts",
           "status": "TIMED",
           "home": {
-            "placeholder": "Por definir",
-            "team": null
+            "placeholder": null,
+            "team": {
+              "id": 773,
+              "name": "France",
+              "short_name": "France",
+              "tla": "FRA",
+              "crest": "https://crests.football-data.org/773.svg"
+            }
           },
           "away": {
-            "placeholder": "Por definir",
-            "team": null
+            "placeholder": null,
+            "team": {
+              "id": 815,
+              "name": "Morocco",
+              "short_name": "Morocco",
+              "tla": "MAR",
+              "crest": "https://crests.football-data.org/morocco.svg"
+            }
           },
           "score": {
             "home": null,
