@@ -1,7 +1,7 @@
 {
   "_meta": {
     "source": "manual",
-    "updated_at": "2026-07-04T23:17:49.957Z",
+    "updated_at": "2026-07-05T22:34:35.123Z",
     "note": "El campo 'status' se actualiza automaticamente segun standings/resultados; ver scripts/quiniela-overrides.json para casos especiales (terceros lugares)."
   },
   "participants": [
@@ -155,7 +155,7 @@
         {
           "tla": "BRA",
           "name": "Brasil",
-          "status": "active"
+          "status": "eliminated"
         },
         {
           "tla": "ALG",
