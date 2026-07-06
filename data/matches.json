@@ -1,7 +1,7 @@
 {
   "_meta": {
     "source": "football-data.org+openfootball/worldcup.json",
-    "updated_at": "2026-07-06T06:06:00.565Z"
+    "updated_at": "2026-07-06T10:59:51.413Z"
   },
   "matches": [
     {
@@ -3687,18 +3687,18 @@
       "venue": "Hard Rock Stadium",
       "city": "Miami Gardens, Florida",
       "home_team": {
-        "id": null,
-        "name": "Por definir",
-        "short_name": "?",
-        "tla": "?",
-        "crest": null
+        "id": 8872,
+        "name": "Norway",
+        "short_name": "Norway",
+        "tla": "NOR",
+        "crest": "https://crests.football-data.org/813.svg"
       },
       "away_team": {
-        "id": null,
-        "name": "Por definir",
-        "short_name": "?",
-        "tla": "?",
-        "crest": null
+        "id": 770,
+        "name": "England",
+        "short_name": "England",
+        "tla": "ENG",
+        "crest": "https://crests.football-data.org/770.svg"
       },
       "score": {
         "home": null,
