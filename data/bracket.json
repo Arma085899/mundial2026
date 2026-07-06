@@ -1,7 +1,7 @@
 {
   "_meta": {
     "source": "matches.json (derivado)",
-    "updated_at": "2026-07-05T23:41:32.422Z"
+    "updated_at": "2026-07-06T01:27:22.926Z"
   },
   "stages": [
     {
@@ -692,7 +692,7 @@
           "utc_date": "2026-07-06T01:00:00Z",
           "venue": null,
           "city": null,
-          "status": "2026-07-06 01:00:00Z",
+          "status": "IN_PLAY",
           "home": {
             "placeholder": null,
             "team": {
@@ -714,8 +714,8 @@
             }
           },
           "score": {
-            "home": null,
-            "away": null
+            "home": 0,
+            "away": 0
           },
           "broadcast_mx": [
             "VIX",
