@@ -1,7 +1,7 @@
 {
   "_meta": {
     "source": "football-data.org+openfootball/worldcup.json",
-    "updated_at": "2026-07-06T21:05:08.065Z"
+    "updated_at": "2026-07-06T22:33:41.626Z"
   },
   "matches": [
     {
@@ -3455,7 +3455,7 @@
       "matchday": null,
       "stage": "LAST_16",
       "group": null,
-      "status": "IN_PLAY",
+      "status": "FINISHED",
       "utc_date": "2026-07-06T19:00:00Z",
       "local_date": null,
       "minute": null,

@@ -1,7 +1,7 @@
 {
   "_meta": {
     "source": "matches.json (derivado)",
-    "updated_at": "2026-07-06T21:05:08.065Z"
+    "updated_at": "2026-07-06T22:33:41.626Z"
   },
   "stages": [
     {
@@ -728,7 +728,7 @@
           "utc_date": "2026-07-06T19:00:00Z",
           "venue": "AT&T Stadium",
           "city": "Arlington, Texas",
-          "status": "IN_PLAY",
+          "status": "FINISHED",
           "home": {
             "placeholder": null,
             "team": {

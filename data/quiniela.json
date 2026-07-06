@@ -1,7 +1,7 @@
 {
   "_meta": {
     "source": "manual",
-    "updated_at": "2026-07-06T06:06:21.816Z",
+    "updated_at": "2026-07-06T22:33:56.047Z",
     "note": "El campo 'status' se actualiza automaticamente segun standings/resultados; ver scripts/quiniela-overrides.json para casos especiales (terceros lugares)."
   },
   "participants": [
@@ -171,7 +171,7 @@
         {
           "tla": "POR",
           "name": "Portugal",
-          "status": "active"
+          "status": "eliminated"
         },
         {
           "tla": "CAN",
