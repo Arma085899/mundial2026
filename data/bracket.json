@@ -1,7 +1,7 @@
 {
   "_meta": {
     "source": "matches.json (derivado)",
-    "updated_at": "2026-07-07T01:27:26.835Z"
+    "updated_at": "2026-07-07T05:46:39.115Z"
   },
   "stages": [
     {
@@ -763,7 +763,7 @@
           "utc_date": "2026-07-07T00:00:00Z",
           "venue": "Lumen Field",
           "city": "Seattle",
-          "status": "IN_PLAY",
+          "status": "FINISHED",
           "home": {
             "placeholder": null,
             "team": {
@@ -786,7 +786,7 @@
           },
           "score": {
             "home": 1,
-            "away": 3
+            "away": 4
           },
           "broadcast_mx": [
             "VIX",

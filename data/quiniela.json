@@ -1,7 +1,7 @@
 {
   "_meta": {
     "source": "manual",
-    "updated_at": "2026-07-06T22:33:56.047Z",
+    "updated_at": "2026-07-07T05:47:01.328Z",
     "note": "El campo 'status' se actualiza automaticamente segun standings/resultados; ver scripts/quiniela-overrides.json para casos especiales (terceros lugares)."
   },
   "participants": [
@@ -384,7 +384,7 @@
         {
           "tla": "USA",
           "name": "Estados Unidos",
-          "status": "active"
+          "status": "eliminated"
         }
       ],
       "quote": "Argentina prometió Messi-magia y me dejó viendo el partido desde el banquito."
