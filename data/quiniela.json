@@ -1,7 +1,7 @@
 {
   "_meta": {
     "source": "manual",
-    "updated_at": "2026-07-07T19:15:51.854Z",
+    "updated_at": "2026-07-07T23:26:29.376Z",
     "note": "El campo 'status' se actualiza automaticamente segun standings/resultados; ver scripts/quiniela-overrides.json para casos especiales (terceros lugares)."
   },
   "participants": [
@@ -336,7 +336,7 @@
         {
           "tla": "COL",
           "name": "Colombia",
-          "status": "active"
+          "status": "eliminated"
         }
       ],
       "quote": "Colombia se fue de fiesta y se le olvidó volver."
