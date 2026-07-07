@@ -1,7 +1,7 @@
 {
   "_meta": {
     "source": "football-data.org+openfootball/worldcup.json",
-    "updated_at": "2026-07-07T05:46:39.115Z"
+    "updated_at": "2026-07-07T08:56:48.124Z"
   },
   "matches": [
     {
@@ -3650,18 +3650,18 @@
       "venue": "SoFi Stadium",
       "city": "Inglewood, California",
       "home_team": {
-        "id": null,
-        "name": "Por definir",
-        "short_name": "?",
-        "tla": "?",
-        "crest": null
+        "id": 760,
+        "name": "Spain",
+        "short_name": "Spain",
+        "tla": "ESP",
+        "crest": "https://crests.football-data.org/760.svg"
       },
       "away_team": {
-        "id": null,
-        "name": "Por definir",
-        "short_name": "?",
-        "tla": "?",
-        "crest": null
+        "id": 805,
+        "name": "Belgium",
+        "short_name": "Belgium",
+        "tla": "BEL",
+        "crest": "https://crests.football-data.org/805.svg"
       },
       "score": {
         "home": null,
