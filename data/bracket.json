@@ -1,7 +1,7 @@
 {
   "_meta": {
     "source": "matches.json (derivado)",
-    "updated_at": "2026-07-08T04:28:41.700Z"
+    "updated_at": "2026-07-08T07:06:53.386Z"
   },
   "stages": [
     {
@@ -984,12 +984,24 @@
           "city": "Kansas City",
           "status": "TIMED",
           "home": {
-            "placeholder": "Por definir",
-            "team": null
+            "placeholder": null,
+            "team": {
+              "id": 762,
+              "name": "Argentina",
+              "short_name": "Argentina",
+              "tla": "ARG",
+              "crest": "https://crests.football-data.org/762.png"
+            }
           },
           "away": {
-            "placeholder": "Por definir",
-            "team": null
+            "placeholder": null,
+            "team": {
+              "id": 788,
+              "name": "Switzerland",
+              "short_name": "Switzerland",
+              "tla": "SUI",
+              "crest": "https://crests.football-data.org/788.svg"
+            }
           },
           "score": {
             "home": null,
