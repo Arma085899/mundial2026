@@ -1,7 +1,7 @@
 {
   "_meta": {
     "source": "manual",
-    "updated_at": "2026-07-07T23:26:29.376Z",
+    "updated_at": "2026-07-09T22:39:20.621Z",
     "note": "El campo 'status' se actualiza automaticamente segun standings/resultados; ver scripts/quiniela-overrides.json para casos especiales (terceros lugares)."
   },
   "participants": [
@@ -11,7 +11,7 @@
         {
           "tla": "MAR",
           "name": "Marruecos",
-          "status": "active"
+          "status": "eliminated"
         },
         {
           "tla": "TUR",
