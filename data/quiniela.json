@@ -1,7 +1,7 @@
 {
   "_meta": {
     "source": "manual",
-    "updated_at": "2026-07-09T22:39:20.621Z",
+    "updated_at": "2026-07-10T21:06:46.521Z",
     "note": "El campo 'status' se actualiza automaticamente segun standings/resultados; ver scripts/quiniela-overrides.json para casos especiales (terceros lugares)."
   },
   "participants": [
@@ -288,7 +288,7 @@
         {
           "tla": "BEL",
           "name": "Bélgica",
-          "status": "active"
+          "status": "eliminated"
         }
       ],
       "quote": "Bélgica jugó como mi conexión a internet: prometedora al inicio, decepción al final."
