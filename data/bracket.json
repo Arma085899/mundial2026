@@ -1,7 +1,7 @@
 {
   "_meta": {
     "source": "matches.json (derivado)",
-    "updated_at": "2026-07-10T05:40:57.782Z"
+    "updated_at": "2026-07-10T08:52:40.673Z"
   },
   "stages": [
     {
@@ -1025,8 +1025,14 @@
           "city": "Arlington, Texas",
           "status": "TIMED",
           "home": {
-            "placeholder": "Por definir",
-            "team": null
+            "placeholder": null,
+            "team": {
+              "id": 773,
+              "name": "France",
+              "short_name": "France",
+              "tla": "FRA",
+              "crest": "https://crests.football-data.org/773.svg"
+            }
           },
           "away": {
             "placeholder": "Por definir",
