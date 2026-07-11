@@ -1,7 +1,7 @@
 {
   "_meta": {
     "source": "manual",
-    "updated_at": "2026-07-10T21:06:46.521Z",
+    "updated_at": "2026-07-11T21:30:43.643Z",
     "note": "El campo 'status' se actualiza automaticamente segun standings/resultados; ver scripts/quiniela-overrides.json para casos especiales (terceros lugares)."
   },
   "participants": [
@@ -320,7 +320,7 @@
         {
           "tla": "MEX",
           "name": "México",
-          "status": "eliminated"
+          "status": "active"
         }
       ],
       "quote": "Si hasta México me falla, ya nada es sagrado."
