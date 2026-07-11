@@ -1,7 +1,7 @@
 {
   "_meta": {
     "source": "football-data.org+openfootball/worldcup.json",
-    "updated_at": "2026-07-11T06:03:28.601Z"
+    "updated_at": "2026-07-11T08:11:49.610Z"
   },
   "matches": [
     {
@@ -3768,11 +3768,11 @@
         "crest": "https://crests.football-data.org/773.svg"
       },
       "away_team": {
-        "id": null,
-        "name": "Por definir",
-        "short_name": "?",
-        "tla": "?",
-        "crest": null
+        "id": 760,
+        "name": "Spain",
+        "short_name": "Spain",
+        "tla": "ESP",
+        "crest": "https://crests.football-data.org/760.svg"
       },
       "score": {
         "home": null,
