@@ -1,7 +1,7 @@
 {
   "_meta": {
     "source": "matches.json (derivado)",
-    "updated_at": "2026-07-11T23:31:53.989Z"
+    "updated_at": "2026-07-12T01:11:08.149Z"
   },
   "stages": [
     {
@@ -947,7 +947,7 @@
           "utc_date": "2026-07-11T21:00:00Z",
           "venue": "Hard Rock Stadium",
           "city": "Miami Gardens, Florida",
-          "status": "IN_PLAY",
+          "status": "FINISHED",
           "home": {
             "placeholder": null,
             "team": {
@@ -982,7 +982,7 @@
           "utc_date": "2026-07-12T01:00:00Z",
           "venue": "Arrowhead Stadium",
           "city": "Kansas City",
-          "status": "TIMED",
+          "status": "IN_PLAY",
           "home": {
             "placeholder": null,
             "team": {
@@ -1004,8 +1004,8 @@
             }
           },
           "score": {
-            "home": null,
-            "away": null
+            "home": 0,
+            "away": 0
           },
           "broadcast_mx": [
             "VIX"

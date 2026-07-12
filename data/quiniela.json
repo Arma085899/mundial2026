@@ -1,7 +1,7 @@
 {
   "_meta": {
     "source": "manual",
-    "updated_at": "2026-07-11T21:30:43.643Z",
+    "updated_at": "2026-07-12T01:11:22.822Z",
     "note": "El campo 'status' se actualiza automaticamente segun standings/resultados; ver scripts/quiniela-overrides.json para casos especiales (terceros lugares)."
   },
   "participants": [
@@ -235,7 +235,7 @@
         {
           "tla": "NOR",
           "name": "Noruega",
-          "status": "active"
+          "status": "eliminated"
         },
         {
           "tla": "KOR",

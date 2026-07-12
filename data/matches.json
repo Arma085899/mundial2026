@@ -1,7 +1,7 @@
 {
   "_meta": {
     "source": "football-data.org+openfootball/worldcup.json",
-    "updated_at": "2026-07-11T23:31:53.989Z"
+    "updated_at": "2026-07-12T01:11:08.149Z"
   },
   "matches": [
     {
@@ -3680,7 +3680,7 @@
       "matchday": null,
       "stage": "QUARTER_FINALS",
       "group": null,
-      "status": "IN_PLAY",
+      "status": "FINISHED",
       "utc_date": "2026-07-11T21:00:00Z",
       "local_date": null,
       "minute": null,
@@ -3717,7 +3717,7 @@
       "matchday": null,
       "stage": "QUARTER_FINALS",
       "group": null,
-      "status": "TIMED",
+      "status": "IN_PLAY",
       "utc_date": "2026-07-12T01:00:00Z",
       "local_date": null,
       "minute": null,
@@ -3738,8 +3738,8 @@
         "crest": "https://crests.football-data.org/788.svg"
       },
       "score": {
-        "home": null,
-        "away": null,
+        "home": 0,
+        "away": 0,
         "halftime_home": null,
         "halftime_away": null
       },
