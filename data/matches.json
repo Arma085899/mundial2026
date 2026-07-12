@@ -1,7 +1,7 @@
 {
   "_meta": {
     "source": "football-data.org+openfootball/worldcup.json",
-    "updated_at": "2026-07-12T04:42:56.015Z"
+    "updated_at": "2026-07-12T07:19:03.377Z"
   },
   "matches": [
     {
@@ -3417,7 +3417,7 @@
       "matchday": null,
       "stage": "LAST_16",
       "group": null,
-      "status": "2026-07-06 01:00:00Z",
+      "status": "FINISHED",
       "utc_date": "2026-07-06T01:00:00Z",
       "local_date": null,
       "minute": null,
@@ -3799,18 +3799,18 @@
       "venue": "Mercedes-Benz Stadium",
       "city": "Atlanta",
       "home_team": {
-        "id": null,
-        "name": "Por definir",
-        "short_name": "?",
-        "tla": "?",
-        "crest": null
+        "id": 770,
+        "name": "England",
+        "short_name": "England",
+        "tla": "ENG",
+        "crest": "https://crests.football-data.org/770.svg"
       },
       "away_team": {
-        "id": null,
-        "name": "Por definir",
-        "short_name": "?",
-        "tla": "?",
-        "crest": null
+        "id": 762,
+        "name": "Argentina",
+        "short_name": "Argentina",
+        "tla": "ARG",
+        "crest": "https://crests.football-data.org/762.png"
       },
       "score": {
         "home": null,
