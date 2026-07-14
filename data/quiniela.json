@@ -1,7 +1,7 @@
 {
   "_meta": {
     "source": "manual",
-    "updated_at": "2026-07-12T07:19:18.718Z",
+    "updated_at": "2026-07-14T21:09:32.768Z",
     "note": "El campo 'status' se actualiza automaticamente segun standings/resultados; ver scripts/quiniela-overrides.json para casos especiales (terceros lugares)."
   },
   "participants": [
@@ -203,7 +203,7 @@
         {
           "tla": "FRA",
           "name": "Francia",
-          "status": "active"
+          "status": "eliminated"
         },
         {
           "tla": "SCO",
