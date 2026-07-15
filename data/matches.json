@@ -1,7 +1,7 @@
 {
   "_meta": {
     "source": "football-data.org+openfootball/worldcup.json",
-    "updated_at": "2026-07-15T05:57:28.449Z"
+    "updated_at": "2026-07-15T08:28:15.533Z"
   },
   "matches": [
     {
@@ -3837,11 +3837,11 @@
       "venue": "Hard Rock Stadium",
       "city": "Miami Gardens, Florida",
       "home_team": {
-        "id": null,
-        "name": "Por definir",
-        "short_name": "?",
-        "tla": "?",
-        "crest": null
+        "id": 773,
+        "name": "France",
+        "short_name": "France",
+        "tla": "FRA",
+        "crest": "https://crests.football-data.org/773.svg"
       },
       "away_team": {
         "id": null,
@@ -3874,11 +3874,11 @@
       "venue": "MetLife Stadium",
       "city": "East Rutherford, New Jersey",
       "home_team": {
-        "id": null,
-        "name": "Por definir",
-        "short_name": "?",
-        "tla": "?",
-        "crest": null
+        "id": 760,
+        "name": "Spain",
+        "short_name": "Spain",
+        "tla": "ESP",
+        "crest": "https://crests.football-data.org/760.svg"
       },
       "away_team": {
         "id": null,
