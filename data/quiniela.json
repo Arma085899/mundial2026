@@ -1,7 +1,7 @@
 {
   "_meta": {
     "source": "manual",
-    "updated_at": "2026-07-14T21:09:32.768Z",
+    "updated_at": "2026-07-15T21:42:50.231Z",
     "note": "El campo 'status' se actualiza automaticamente segun standings/resultados; ver scripts/quiniela-overrides.json para casos especiales (terceros lugares)."
   },
   "participants": [
@@ -144,7 +144,7 @@
         {
           "tla": "ENG",
           "name": "Inglaterra",
-          "status": "active"
+          "status": "eliminated"
         }
       ],
       "quote": "Hasta aquí llegué, como mi presupuesto a mitad de mes."
