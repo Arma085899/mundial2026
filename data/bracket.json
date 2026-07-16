@@ -1,7 +1,7 @@
 {
   "_meta": {
     "source": "matches.json (derivado)",
-    "updated_at": "2026-07-16T04:28:19.984Z"
+    "updated_at": "2026-07-16T07:03:49.215Z"
   },
   "stages": [
     {
@@ -1113,8 +1113,14 @@
             }
           },
           "away": {
-            "placeholder": "Por definir",
-            "team": null
+            "placeholder": null,
+            "team": {
+              "id": 770,
+              "name": "England",
+              "short_name": "England",
+              "tla": "ENG",
+              "crest": "https://crests.football-data.org/770.svg"
+            }
           },
           "score": {
             "home": null,
@@ -1148,8 +1154,14 @@
             }
           },
           "away": {
-            "placeholder": "Por definir",
-            "team": null
+            "placeholder": null,
+            "team": {
+              "id": 762,
+              "name": "Argentina",
+              "short_name": "Argentina",
+              "tla": "ARG",
+              "crest": "https://crests.football-data.org/762.png"
+            }
           },
           "score": {
             "home": null,
