@@ -1,7 +1,7 @@
 {
   "_meta": {
     "source": "matches.json (derivado)",
-    "updated_at": "2026-07-18T20:31:59.258Z"
+    "updated_at": "2026-07-18T21:31:23.493Z"
   },
   "stages": [
     {
@@ -1101,7 +1101,7 @@
           "utc_date": "2026-07-18T21:00:00Z",
           "venue": "Hard Rock Stadium",
           "city": "Miami Gardens, Florida",
-          "status": "TIMED",
+          "status": "IN_PLAY",
           "home": {
             "placeholder": null,
             "team": {
@@ -1123,8 +1123,8 @@
             }
           },
           "score": {
-            "home": null,
-            "away": null
+            "home": 0,
+            "away": 2
           },
           "broadcast_mx": [
             "VIX"
