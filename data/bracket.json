@@ -1,7 +1,7 @@
 {
   "_meta": {
     "source": "matches.json (derivado)",
-    "updated_at": "2026-07-19T21:01:32.807Z"
+    "updated_at": "2026-07-19T22:06:31.729Z"
   },
   "stages": [
     {
@@ -1142,7 +1142,7 @@
           "utc_date": "2026-07-19T19:00:00Z",
           "venue": "MetLife Stadium",
           "city": "East Rutherford, New Jersey",
-          "status": "IN_PLAY",
+          "status": "LIVE",
           "home": {
             "placeholder": null,
             "team": {
@@ -1164,7 +1164,7 @@
             }
           },
           "score": {
-            "home": 0,
+            "home": 1,
             "away": 0
           },
           "broadcast_mx": [
